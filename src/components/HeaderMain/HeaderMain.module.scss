@@ -1,0 +1,35 @@
+.wrapper {
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    // flex-wrap: wrap;
+
+    .textInfo {
+      background-image: url("/image/fruits.png");
+      width: 1029px;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      div {
+        font-size: 80px;
+      }
+      div:last-child {
+        font-weight: 700;
+      }
+      button {
+        background: linear-gradient(90deg, #ea543c, #c5aa24);
+        padding: 22px 60px;
+        font-size: 20px;
+        border-radius: 12px;
+        color: white;
+      }
+      //   & > div:first-child {
+      //   }
+      //   & > div:last-child {
+      //     font-weight: 700;
+      //   }
+    }
+  }
+}
