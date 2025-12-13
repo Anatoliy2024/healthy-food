@@ -5,18 +5,18 @@
     // flex-wrap: wrap;
 
     .textInfo {
-      background-image: url("/image/fruits.png");
-      width: 1029px;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      width: 794px;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
+      font-family: var(--font-poppins), sans-serif;
       div {
         font-size: 80px;
       }
-      div:last-child {
+      div:nth-child(2) {
         font-weight: 700;
+        padding-bottom: 50px;
       }
       button {
         background: linear-gradient(90deg, #ea543c, #c5aa24);

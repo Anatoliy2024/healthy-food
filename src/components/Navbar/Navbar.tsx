@@ -15,11 +15,11 @@ export function Navbar() {
           </div>
         </div>
         <ul className={style.navbar}>
-          <li>советы</li>
-          <li>рецепты</li>
-          <li>индивидуальный подход</li>
-          <li>шаблоны</li>
-          <li>ценности</li>
+          <li>Советы</li>
+          <li>Рецепты</li>
+          <li>Индивидуальный подход</li>
+          <li>Шаблоны</li>
+          <li>Ценности</li>
         </ul>
       </div>
     </div>

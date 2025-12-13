@@ -1,0 +1,34 @@
+.wrapper {
+  height: 955px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -489.76px;
+    left: -590px;
+    width: 951.7px;
+    height: 951.7px;
+    border: 143px solid #f2dbbf;
+    border-radius: 50%;
+    filter: blur(30px);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -572px;
+    left: -686px;
+    width: 1599px;
+    height: 1511px;
+    border: 143px solid #f2dbbf;
+    border-radius: 50%;
+    filter: blur(30px);
+  }
+  .container {
+    background-image: url("/image/fruits.png");
+    background-repeat: no-repeat;
+    background-position: 12% 60%;
+  }
+}

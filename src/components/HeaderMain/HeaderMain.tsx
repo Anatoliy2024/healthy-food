@@ -5,7 +5,7 @@ export function HeaderMain() {
     <div className={style.wrapper}>
       <div className={style.container}>
         <div className={style.textInfo}>
-          <div>сбалансированное & здоровое </div>
+          <div>Сбалансированное & здоровое </div>
           <div>питание дома</div>
           <button>оформить подписку</button>
         </div>
