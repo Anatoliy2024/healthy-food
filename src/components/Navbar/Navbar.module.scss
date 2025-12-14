@@ -10,7 +10,8 @@
     // margin: 0 400px;
     .logo {
       display: flex;
-      background: linear-gradient(90deg, #ea543c, #c5aa24); /* градиент */
+      background: var(--color-gradient); /* градиент */
+      // background: linear-gradient(90deg, #ea543c, #c5aa24);
       -webkit-background-clip: text; /* градиент обрезается по тексту */
       -webkit-text-fill-color: transparent; /* текст становится прозрачным, чтобы был виден градиент */
       font-size: 40px;
@@ -33,7 +34,8 @@
         padding: 10px 20px;
 
         &:hover {
-          background: #ea543c;
+          background: var(--color-gradient);
+          color: white;
           border-radius: 20px;
         }
       }

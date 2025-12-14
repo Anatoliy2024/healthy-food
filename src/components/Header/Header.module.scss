@@ -1,6 +1,7 @@
 .wrapper {
-  height: 955px;
+  max-height: 955px;
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: "";

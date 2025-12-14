@@ -9,7 +9,7 @@ export function HeaderMain() {
           <div>питание дома</div>
           <button>оформить подписку</button>
         </div>
-        <div>
+        <div className={style.imageWrapper}>
           <Image src="/image/dish-2.png" width={716} height={670} alt="dish" />
         </div>
       </div>
