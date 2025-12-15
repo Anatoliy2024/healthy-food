@@ -1,0 +1,84 @@
+@mixin block-style {
+  border-radius: 20px;
+  //   max-width: 289px;
+  padding: 24px;
+  flex: 1;
+
+  h4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 110px;
+
+  .container {
+    h3 {
+      font-size: var(--fs-xsl);
+      font-family: var(--font-poppins), sans-serif;
+      margin-bottom: 70px;
+    }
+
+    .mainInfo {
+      display: flex;
+      gap: 20px;
+      align-items: end;
+      .textContainer {
+        max-width: 598px;
+
+        .othersInfo {
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 30px;
+          width: 242px;
+        }
+        .blockInfo {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr); // 4 колонки
+
+          //   align-items: start;
+          gap: 20px;
+          .col {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            ul {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+            }
+            .protein {
+              @include block-style;
+              background: var(--color-gradient-3);
+              color: white;
+            }
+            .vitamin {
+              @include block-style;
+              border: 1px solid black;
+            }
+            .carbohydrates {
+              @include block-style;
+              border: 1px solid black;
+            }
+            .fats {
+              @include block-style;
+              background: var(--color-gradient);
+              color: white;
+            }
+          }
+          @media (max-width: 1024px) {
+            grid-template-columns: 1fr; // в одну колонку
+          }
+        }
+      }
+      .imageContainer {
+        border-radius: 40px;
+        overflow: hidden;
+      }
+    }
+  }
+}

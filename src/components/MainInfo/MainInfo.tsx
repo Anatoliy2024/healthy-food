@@ -1,3 +1,9 @@
+import { GeneralInformation } from "../GeneralInformation/GeneralInformation"
+
 export function MainInfo() {
-  return <div>MainInfo</div>
+  return (
+    <div>
+      <GeneralInformation />
+    </div>
+  )
 }

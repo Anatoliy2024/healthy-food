@@ -26,18 +26,22 @@ body {
 } */
 
 :root {
-  --color-gradient: linear-gradient(90deg, #ea543c, #c5aa24);
+  --color-gradient: linear-gradient(135deg, #ea543c, #c5aa24);
   --color-gradient-2: linear-gradient(90deg, #f2dbbf, #f0d7b859);
+  --color-gradient-3: linear-gradient(135deg, #34bca6, #c5aa24);
 
   --fs-xs: 0.75rem; /* 12px */
   --fs-sm: 0.875rem; /* 14px */
   --fs-md: 1rem; /* 16px */
   --fs-lg: 1.25rem; /* 20px */
   --fs-xl: 2rem; /* 32px */
-  --fs-xxl: clamp(1.5rem, 5vw, 5rem); /* 32px */
+  --fs-xsl: 3.75rem; /* 60px */
+  --fs-xxl: clamp(1.5rem, 5vw, 5rem); /* 70px */
 }
 
 body {
   max-width: 1920px;
   margin: 0 auto;
+  font-family: var(--font-quicksand), sans-serif;
+  font-size: var(--fs-lg);
 }

@@ -10,7 +10,12 @@ export function HeaderMain() {
           <button>оформить подписку</button>
         </div>
         <div className={style.imageWrapper}>
-          <Image src="/image/dish-2.png" width={716} height={670} alt="dish" />
+          <Image
+            src="/image/dish-2.png"
+            width={716}
+            height={670}
+            alt="dishImage"
+          />
         </div>
       </div>
     </div>
