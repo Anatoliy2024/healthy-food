@@ -7,7 +7,7 @@ export function HeaderMain() {
         <div className={style.textInfo}>
           <div>Сбалансированное & здоровое </div>
           <div>питание дома</div>
-          <button>оформить подписку</button>
+          <button>Оформить подписку</button>
         </div>
         <div className={style.imageWrapper}>
           <Image

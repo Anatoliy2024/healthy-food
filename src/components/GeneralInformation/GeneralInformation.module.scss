@@ -25,16 +25,75 @@
 
     .mainInfo {
       display: flex;
+      // flex-wrap: wrap;
       gap: 20px;
-      align-items: end;
+      // align-items: end;
       .textContainer {
         max-width: 598px;
 
         .othersInfo {
-          display: flex;
-          flex-wrap: wrap;
+          // display: flex;
+          // flex-wrap: wrap;
           margin-bottom: 30px;
-          width: 242px;
+          width: 561px;
+          height: 242px;
+          position: relative;
+          div {
+            position: absolute;
+            // padding: 20px 27.5px;
+            width: 186px;
+            height: 65px;
+            border-radius: 12px;
+            border: 2px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 2px solid transparent;
+            background: linear-gradient(white, white) padding-box,
+              var(--color-gradient) border-box;
+
+            &:nth-child(1) {
+              top: 88px;
+              left: 38.75px;
+              transform: rotate(-18.03deg);
+            }
+            &:nth-child(2) {
+              top: 58px;
+              right: 177px;
+              transform: rotate(38.81deg);
+            }
+            &:nth-child(3) {
+              background: var(--color-gradient-3);
+              border: 0;
+              color: white;
+              top: 78px;
+              right: 22px;
+              transform: rotate(26.31deg);
+            }
+            &:nth-child(4) {
+              background: var(--color-gradient-3);
+              border: 0;
+              color: white;
+
+              bottom: 0;
+              left: 0;
+            }
+            &:nth-child(5) {
+              transform: rotate(16.28deg);
+
+              bottom: 24px;
+              right: 189.13px;
+            }
+            &:nth-child(6) {
+              bottom: 0;
+              right: 0;
+            }
+          }
+
+          // .greenBg {
+          //   background: var(--color-gradient-3);
+          // }
         }
         .blockInfo {
           display: grid;
@@ -50,24 +109,50 @@
               display: flex;
               flex-direction: column;
               gap: 16px;
+              li {
+                padding-left: 16px;
+                position: relative;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: 11px;
+                  left: -2px;
+                  width: 8px;
+                  height: 8px;
+                  border-radius: 50%;
+                  background: #000;
+                }
+              }
             }
             .protein {
               @include block-style;
               background: var(--color-gradient-3);
               color: white;
-            }
-            .vitamin {
-              @include block-style;
-              border: 1px solid black;
+              li {
+                &::before {
+                  background: #bcff58;
+                }
+              }
             }
             .carbohydrates {
               @include block-style;
               border: 1px solid black;
+              flex: 0;
+            }
+            .vitamin {
+              @include block-style;
+              border: 1px solid black;
+              flex: 0;
             }
             .fats {
               @include block-style;
               background: var(--color-gradient);
               color: white;
+              li {
+                &::before {
+                  background: #ffac58;
+                }
+              }
             }
           }
           @media (max-width: 1024px) {
@@ -77,7 +162,23 @@
       }
       .imageContainer {
         border-radius: 40px;
+        width: 950px;
         overflow: hidden;
+
+        // height: 990px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        // width: 100%;
+        // overflow: hidden;
+        // object-fit: cover;
+        // img {
+        //   min-width: 100%;
+        //   min-height: 100%;
+        // }
       }
     }
   }
