@@ -29,6 +29,7 @@ body {
   --color-gradient: linear-gradient(135deg, #ea543c, #c5aa24);
   --color-gradient-2: linear-gradient(90deg, #f2dbbf, #f0d7b859);
   --color-gradient-3: linear-gradient(135deg, #34bca6, #c5aa24);
+  --color-gradient-4: linear-gradient(180deg, #ea543c, #c5aa24);
 
   --fs-xs: 0.75rem; /* 12px */
   --fs-sm: 0.875rem; /* 14px */

@@ -1,6 +1,6 @@
 import Image from "next/image"
-import style from "./GeneralInformation.module.scss"
-export function GeneralInformation() {
+import style from "./GeneralInformationBlock.module.scss"
+export function GeneralInformationBlock() {
   return (
     <div className={style.wrapper}>
       <div className={style.container}>

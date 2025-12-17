@@ -1,9 +1,11 @@
-import { GeneralInformation } from "../GeneralInformation/GeneralInformation"
+import { GeneralInformationBlock } from "../GeneralInformation/GeneralInformationBlock"
+import { SubscribeBlock } from "../SubscribeBlock/SubscribeBlock"
 
 export function MainInfo() {
   return (
     <div>
-      <GeneralInformation />
+      <GeneralInformationBlock />
+      <SubscribeBlock />
     </div>
   )
 }
