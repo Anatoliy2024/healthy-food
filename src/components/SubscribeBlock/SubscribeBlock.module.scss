@@ -37,7 +37,8 @@
       }
     }
     .imageBlock {
-      //   flex: 0;
+      // min-width: 701px;
+      flex: 1;
       // border-radius: 20px;
       // overflow: hidden;
       img {

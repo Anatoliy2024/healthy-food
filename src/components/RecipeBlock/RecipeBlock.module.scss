@@ -1,0 +1,65 @@
+@mixin block-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+  & > div {
+    padding: 24px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  h4 {
+    font-family: var(--font-nunito), sans-serif;
+    font-size: var(--fs-xll);
+  }
+}
+
+.wrapper {
+  width: 1216px;
+  margin: 0 auto;
+  h3 {
+    font-family: var(--font-poppins), sans-serif;
+    font-size: var(--fs-xsl);
+    margin-bottom: 70px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .rowOne,
+    .rowTwo {
+      display: flex;
+      //   flex-wrap: wrap;
+      gap: 30px;
+      min-height: 500px;
+      .breakfast {
+        background: url("/image/dish-7.png");
+        @include block-background;
+        flex: 1;
+      }
+      .lunch {
+        background: url("/image/dish-9.png");
+        @include block-background;
+
+        flex: 0 0 40%;
+      }
+      .dinner {
+        background: url("/image/dish-5.png");
+        @include block-background;
+
+        flex: 0 0 40%;
+      }
+      .smoothie {
+        background: url("/image/dish-8.png");
+        @include block-background;
+
+        flex: 1;
+      }
+    }
+  }
+}
