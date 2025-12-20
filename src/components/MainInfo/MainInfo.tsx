@@ -1,3 +1,4 @@
+import { AdvantageBlock } from "../AdvantageBlock/AdvantageBlock"
 import { AdviceBlock } from "../AdviceBlock/AdviceBlock"
 import { GeneralInformationBlock } from "../GeneralInformation/GeneralInformationBlock"
 import { RecipeBlock } from "../RecipeBlock/RecipeBlock"
@@ -12,6 +13,7 @@ export function MainInfo() {
       <AdviceBlock />
       <SloganBlock />
       <RecipeBlock />
+      <AdvantageBlock />
     </div>
   )
 }

@@ -7,33 +7,49 @@ export function RecipeBlock() {
       <div className={style.content}>
         <div className={style.rowOne}>
           <div className={style.breakfast}>
-            <div>
+            <RecipeElem text={"Завтраки"} />
+            {/* <div>
               <h4>Завтраки</h4>
               <Arrow />
-            </div>
+            </div> */}
           </div>
           <div className={style.lunch}>
-            <div>
+            <RecipeElem text={"Обеды"} />
+
+            {/* <div>
               <h4>Обеды</h4>
               <Arrow />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={style.rowTwo}>
           <div className={style.dinner}>
-            <div>
+            <RecipeElem text={"Ужин"} />
+
+            {/* <div>
               <h4>Ужин</h4>
               <Arrow />
-            </div>
+            </div> */}
           </div>
           <div className={style.smoothie}>
-            <div>
+            <RecipeElem text={"Смузи"} />
+
+            {/* <div>
               <h4>Смузи</h4>
               <Arrow />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
+    </div>
+  )
+}
+
+function RecipeElem({ text }: { text: string }) {
+  return (
+    <div>
+      <h4>{text}</h4>
+      <Arrow />
     </div>
   )
 }
