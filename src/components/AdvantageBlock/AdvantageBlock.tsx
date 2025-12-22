@@ -143,8 +143,8 @@ export function AdvantageBlock() {
             </div>
           </div>
         </div> */}
-        <div>
-          <h4>доступно с платной подпиской «оптимальный» и выше</h4>
+        <div className={style.subscribeElem}>
+          <h4>Доступно с платной подпиской «оптимальный» и выше</h4>
           <button>Оформить подписку</button>
         </div>
       </div>
@@ -164,12 +164,12 @@ function AdvantageElem({
   return (
     <div className={style.advantageElem}>
       <h4>{title}</h4>
-      <div className={style.elemContent}>
-        <div>{description}</div>
-        <div className={style.imageContainer}>
-          <Image src={image} width={200} height={240} alt="image" />
-        </div>
+      <div>{description}</div>
+      <div className={style.imageContainer}>
+        <Image src={image} width={200} height={240} alt="image" />
       </div>
+      {/* <div className={style.elemContent}>
+      </div> */}
     </div>
   )
 }

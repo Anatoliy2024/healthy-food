@@ -1,0 +1,25 @@
+.wrapper {
+  //   min-height: 1100px;
+  background: url("/image/dish-10.png") no-repeat center;
+  margin-bottom: 110px;
+  .container {
+    padding: 252px 0;
+    max-width: 1216px;
+    margin: 0 auto;
+    // text-align: center;
+    font-size: var(--fs-xxxl);
+    font-weight: 700;
+    color: white;
+    line-height: 190px;
+
+    div:first-child {
+      padding-left: 150px;
+    }
+    div:nth-child(2) {
+      padding-left: 300px;
+    }
+    div:last-child {
+      padding-left: 450px;
+    }
+  }
+}
