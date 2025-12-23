@@ -6,6 +6,7 @@ import { RecipeBlock } from "../RecipeBlock/RecipeBlock"
 import { SloganBlock } from "../SloganBlock/SloganBlock"
 import { SloganBlockTwo } from "../SloganBlockTwo/SloganBlockTwo"
 import { SubscribeBlock } from "../SubscribeBlock/SubscribeBlock"
+import { TariffBlock } from "../TariffBlock/TariffBlock"
 
 export function MainInfo() {
   return (
@@ -18,6 +19,7 @@ export function MainInfo() {
       <AdvantageBlock />
       <SloganBlockTwo />
       <CheckList />
+      <TariffBlock />
     </div>
   )
 }

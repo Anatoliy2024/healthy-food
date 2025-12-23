@@ -1,11 +1,12 @@
+import { ArrowWhite } from "@/assets/svg/ArrowWhite"
 import style from "./CheckList.module.scss"
 export function CheckList() {
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
-        <h3>успей забрать чек-лист</h3>
-        <div>
-          <div>
+        <h3>Успей забрать чек-лист</h3>
+        <div className={style.content}>
+          <div className={style.offer}>
             <div>
               <p>
                 Оставьте свой адрес электронной почты и начните получать
@@ -18,10 +19,11 @@ export function CheckList() {
               </p>
             </div>
             <div>
-              <input type="text" placeholder='"Электронная почта' />
+              <input type="text" placeholder="Электронная почта" />
+              <ArrowWhite />
             </div>
           </div>
-          <div>
+          <div className={style.principles}>
             <div>Здоровье</div>
             <div>Сила</div>
             <div>Результат</div>
