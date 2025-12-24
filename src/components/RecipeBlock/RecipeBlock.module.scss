@@ -4,6 +4,7 @@
   background-position: center;
   border-radius: 30px;
   cursor: pointer;
+  transition: transform 0.2s ease;
   &:hover {
     transform: scale(1.05);
   }

@@ -64,6 +64,7 @@
         border-radius: 12px;
         background: #2c2c2c;
         cursor: pointer;
+        transition: transform 0.2s ease;
         &:hover {
           transform: scale(1.1);
         }

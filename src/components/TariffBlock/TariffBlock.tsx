@@ -23,7 +23,7 @@ export function TariffBlock() {
           fullPrice="3449P"
           styleElem="special2"
         />
-        <TrafficElem title="Оптимальный" price="1999P" styleElem="special" />
+        <TrafficElem title="Оптимальный" price="1999P" styleElem="special1" />
       </div>
     </div>
   )
@@ -42,9 +42,10 @@ function TrafficElem({
 }) {
   return (
     <div
-      className={`${style.col} ${
-        styleElem === "special" ? style.special : ""
-      } ${styleElem === "special2" ? style.specialTwo : ""}`}
+      className={`${style.col} 
+      ${styleElem === "special2" ? style.specialTwo : ""}
+      ${styleElem === "special1" ? style.specialOne : ""}
+      `}
     >
       <h4>{title}</h4>
       <div className={style.price}>
@@ -57,7 +58,9 @@ function TrafficElem({
           <li key={index}>{el}</li>
         ))}
       </ul>
-      <button>Оформить подписку</button>
+      <div className={style.buttonBlock}>
+        <button>Оформить подписку</button>
+      </div>
     </div>
   )
 }

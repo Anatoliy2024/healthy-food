@@ -1,0 +1,19 @@
+.navbar {
+  //   margin-right: auto;
+  display: flex;
+  gap: 20px;
+  font-size: 17px;
+  align-items: center;
+  // font-family: var(--font-quicksand), sans-serif;
+  & > li {
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 0.4s ease;
+
+    &:hover {
+      background: var(--color-gradient);
+      color: white;
+      border-radius: 10px;
+    }
+  }
+}
