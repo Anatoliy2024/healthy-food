@@ -29,8 +29,422 @@
     filter: blur(30px);
   }
   .container {
-    background-image: url("/image/fruits.png");
-    background-repeat: no-repeat;
-    background-position: 12% 60%;
+    position: relative;
+    // background-image: url("/image/fruits.png");
+    // background-repeat: no-repeat;
+    // background-position: 12% 60%;
+    .backgroundFruit {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      // animation-duration: 2s;
+      // animation-name: slideAppleThree;
+      div {
+        z-index: 1;
+        filter: blur(2.5px);
+        animation-fill-mode: forwards;
+      }
+
+      .appleThree {
+        position: absolute;
+        top: -100%;
+        left: 35%;
+        // top: 8%;
+        // left: 35%;
+        animation-duration: 2s;
+        animation-name: slideAppleThree;
+      }
+      .appleTwo {
+        position: absolute;
+        top: 26%;
+        right: -100%;
+        // top: 26%;
+        // right: 48%;
+
+        animation-duration: 2s;
+        animation-delay: 0.2s;
+        animation-name: slideAppleTwo;
+      }
+      .kiwiOne {
+        position: absolute;
+        bottom: 28%;
+        right: -100%;
+        // bottom: 28%;
+        // right: 46%;
+        // left: 54%;
+        animation-duration: 2s;
+        animation-delay: 0.4s;
+        animation-name: slideKiwiOne;
+      }
+      .pearTwo {
+        position: absolute;
+        bottom: -100%;
+        left: 37%;
+        // bottom: 8%;
+        // left: 37%;
+        animation-duration: 2s;
+        animation-delay: 0.6s;
+        animation-name: slidePearTwo;
+      }
+      .kiwiThree {
+        position: absolute;
+        bottom: -100%;
+        left: 12%;
+        // bottom: 4%;
+        // left: 12%;
+        animation-duration: 2s;
+        animation-delay: 0.8s;
+        animation-name: slideKiwiThree;
+      }
+      .appleOne {
+        position: absolute;
+        bottom: 25%;
+        left: -100%;
+        // bottom: 25%;
+        // left: 8%;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-name: slideAppleOne;
+      }
+      .pearOne {
+        position: absolute;
+        top: 31%;
+        left: -100%;
+        // top: 31%;
+        // left: 12%;
+        animation-duration: 2s;
+        animation-delay: 1.2s;
+        animation-name: slidePearOne;
+      }
+      .kiwiTwo {
+        position: absolute;
+        top: -100%;
+        left: 6%;
+        // top: 5%;
+        // left: 6%;
+        animation-duration: 2s;
+        animation-delay: 1.4s;
+        animation-name: slideKiwiTwo;
+      }
+    }
   }
 }
+
+// @keyframes slideAppleThree {
+//   from {
+//     top: -100%;
+//     left: 0;
+//   }
+
+//   to {
+//     top: 0;
+//     left: 0;
+//   }
+// }
+@keyframes slideAppleThree {
+  from {
+    top: -100%;
+    left: 35%;
+  }
+
+  to {
+    top: 8%;
+    left: 35%;
+  }
+}
+@keyframes slideAppleTwo {
+  from {
+    top: 26%;
+    right: -100%;
+  }
+
+  to {
+    top: 26%;
+    right: 48%;
+  }
+}
+@keyframes slideKiwiOne {
+  from {
+    bottom: 28%;
+    right: -100%;
+  }
+
+  to {
+    bottom: 28%;
+    right: 46%;
+  }
+}
+@keyframes slidePearTwo {
+  from {
+    bottom: -100%;
+    left: 37%;
+  }
+
+  to {
+    bottom: 8%;
+    left: 37%;
+  }
+}
+@keyframes slideKiwiThree {
+  from {
+    bottom: -100%;
+    left: 12%;
+  }
+
+  to {
+    bottom: 4%;
+    left: 12%;
+  }
+}
+@keyframes slideAppleOne {
+  from {
+    bottom: 25%;
+    left: -100%;
+  }
+
+  to {
+    bottom: 25%;
+    left: 8%;
+  }
+}
+@keyframes slidePearOne {
+  from {
+    top: 31%;
+    left: -100%;
+  }
+
+  to {
+    top: 31%;
+    left: 12%;
+  }
+}
+@keyframes slideKiwiTwo {
+  from {
+    top: -100%;
+    left: 6%;
+  }
+
+  to {
+    top: 5%;
+    left: 6%;
+  }
+}
+
+// .wrapper {
+//   // max-height: 955px;
+//   position: relative;
+//   overflow: hidden;
+//   margin-bottom: 60px;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     z-index: -1;
+//     top: -489.76px;
+//     left: -590px;
+//     width: 951.7px;
+//     height: 951.7px;
+//     border: 143px solid #f2dbbf;
+//     border-radius: 50%;
+//     filter: blur(30px);
+//   }
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     z-index: -1;
+//     top: -572px;
+//     left: -686px;
+//     width: 1599px;
+//     height: 1511px;
+//     border: 143px solid #f2dbbf;
+//     border-radius: 50%;
+//     filter: blur(30px);
+//   }
+//   .container {
+//     position: relative;
+//     // background-image: url("/image/fruits.png");
+//     // background-repeat: no-repeat;
+//     // background-position: 12% 60%;
+//     .backgroundFruit {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//       // animation-duration: 2s;
+//       // animation-name: slideAppleThree;
+//       div {
+//         z-index: 10;
+//         filter: blur(2.5px);
+//       }
+//       .appleOne {
+//         position: absolute;
+//         bottom: 25%;
+//         left: 8%;
+//         animation-duration: 2s;
+//         animation-name: slideAppleOne;
+//       }
+//       .appleTwo {
+//         position: absolute;
+
+//         top: 26%;
+//         right: 48%;
+//         // left: 52%;
+//         animation-duration: 2s;
+//         animation-delay: 2s;
+//         animation-name: slideAppleTwo;
+//       }
+//       .appleThree {
+//         position: absolute;
+
+//         top: 8%;
+//         left: 35%;
+//         animation-duration: 2s;
+//         animation-name: slideAppleThree;
+//       }
+//       .kiwiOne {
+//         position: absolute;
+
+//         bottom: 28%;
+//         right: 46%;
+//         // left: 54%;
+//         animation-duration: 2s;
+//         animation-name: slideKiwiOne;
+//       }
+//       .kiwiTwo {
+//         position: absolute;
+
+//         top: 5%;
+//         left: 6%;
+//         animation-duration: 2s;
+//         animation-name: slideKiwiTwo;
+//       }
+//       .kiwiThree {
+//         position: absolute;
+
+//         bottom: 4%;
+//         left: 12%;
+//         animation-duration: 2s;
+//         animation-name: slideKiwiThree;
+//       }
+//       .pearOne {
+//         position: absolute;
+
+//         top: 31%;
+//         left: 12%;
+//         animation-duration: 2s;
+//         animation-name: slidePearOne;
+//       }
+//       .pearTwo {
+//         position: absolute;
+
+//         bottom: 8%;
+//         left: 37%;
+//         animation-duration: 2s;
+//         animation-name: slidePearTwo;
+//       }
+//     }
+//   }
+// }
+
+// // @keyframes slideAppleThree {
+// //   from {
+// //     top: -100%;
+// //     left: 0;
+// //   }
+
+// //   to {
+// //     top: 0;
+// //     left: 0;
+// //   }
+// // }
+// @keyframes slideAppleThree {
+//   from {
+//     top: -50%;
+//     left: 35%;
+//   }
+
+//   to {
+//     top: 8%;
+//     left: 35%;
+//   }
+// }
+// @keyframes slideAppleTwo {
+//   from {
+//     top: 26%;
+//     right: -5%;
+//   }
+
+//   to {
+//     top: 26%;
+//     right: 48%;
+//   }
+// }
+// @keyframes slideKiwiOne {
+//   from {
+//     bottom: 28%;
+//     right: -5%;
+//   }
+
+//   to {
+//     bottom: 28%;
+//     right: 46%;
+//   }
+// }
+// @keyframes slidePearTwo {
+//   from {
+//     bottom: -20%;
+//     left: 37%;
+//   }
+
+//   to {
+//     bottom: 8%;
+//     left: 37%;
+//   }
+// }
+// @keyframes slideKiwiThree {
+//   from {
+//     bottom: -20%;
+//     left: 12%;
+//   }
+
+//   to {
+//     bottom: 4%;
+//     left: 12%;
+//   }
+// }
+// @keyframes slideAppleOne {
+//   from {
+//     bottom: 25%;
+//     left: -10%;
+//   }
+
+//   to {
+//     bottom: 25%;
+//     left: 8%;
+//   }
+// }
+// @keyframes slidePearOne {
+//   from {
+//     top: 31%;
+//     left: -10%;
+//   }
+
+//   to {
+//     top: 31%;
+//     left: 12%;
+//   }
+// }
+// @keyframes slideKiwiTwo {
+//   from {
+//     top: -10%;
+//     left: 6%;
+//   }
+
+//   to {
+//     top: 5%;
+//     left: 6%;
+//   }
+// }

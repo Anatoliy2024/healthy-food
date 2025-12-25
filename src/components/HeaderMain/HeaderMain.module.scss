@@ -1,4 +1,7 @@
 .wrapper {
+  position: relative;
+  z-index: 5;
+
   .container {
     display: flex;
     justify-content: flex-end;
