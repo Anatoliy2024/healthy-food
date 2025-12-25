@@ -6,13 +6,24 @@
     min-height: 574px;
     // min-height: 574px;
     display: flex;
-    flex-wrap: wrap;
-
     gap: 103px;
+    @media (max-width: 1700px) {
+      padding: 0 30px 0 30px;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     .textBlock {
       padding: 90px 0 110px;
-      max-width: 618px;
+      // max-width: 618px;
+      flex: 1 1 618px;
       color: white;
+      @media (max-width: 1450px) {
+        padding: 30px 0 30px;
+        text-align: center;
+        // max-width: auto;
+        // width: auto;
+      }
       h3 {
         font-size: var(--fs-xsl);
         font-family: var(--font-poppins), sans-serif;
@@ -39,7 +50,7 @@
     }
     .imageBlock {
       // min-width: 701px;
-      flex: 1;
+      flex: 1 1 701px;
       // border-radius: 20px;
       // overflow: hidden;
       img {

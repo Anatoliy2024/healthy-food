@@ -23,6 +23,13 @@
     //   padding-bottom: 16px;
     //   //   flex: 0 0 70px;
     // }
+
+    @media (max-width: 1050px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
     & > div:nth-child(2),
     & > div:nth-child(4) {
       background: #2c2c2c;
@@ -56,6 +63,7 @@
       justify-content: center;
       align-items: center;
       color: white;
+      padding: 50px 20px;
       h4 {
         text-align: center;
       }

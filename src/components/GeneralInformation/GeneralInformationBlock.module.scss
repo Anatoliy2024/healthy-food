@@ -16,8 +16,8 @@
   justify-content: flex-end;
 
   margin-bottom: 110px;
-
   .container {
+    width: 1568px;
     h3 {
       font-size: var(--fs-xsl);
       font-family: var(--font-poppins), sans-serif;
@@ -26,11 +26,15 @@
 
     .mainInfo {
       display: flex;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
 
       // flex-wrap: wrap;
       gap: 20px;
       // align-items: end;
+      @media (max-width: 1100px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
       .textContainer {
         max-width: 598px;
 
@@ -41,6 +45,13 @@
           width: 561px;
           height: 242px;
           position: relative;
+          @media (max-width: 700px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: auto;
+            height: auto;
+          }
           div {
             position: absolute;
             // padding: 20px 27.5px;
@@ -91,6 +102,12 @@
             &:nth-child(6) {
               bottom: 0;
               right: 0;
+            }
+            @media (max-width: 700px) {
+              position: static;
+              &:nth-child(-n + 5) {
+                transform: none;
+              }
             }
           }
 
@@ -165,10 +182,15 @@
       }
       .imageContainer {
         border-radius: 40px;
-        width: 950px;
+        // max-width: 950px;
         overflow: hidden;
+        flex: 0 1 950px;
 
         // height: 990px;
+        // @media (max-width: 1650px) {
+        //   width: auto;
+        //   max-width: 950px;
+        // }
 
         img {
           width: 100%;

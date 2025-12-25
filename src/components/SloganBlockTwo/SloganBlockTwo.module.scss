@@ -14,12 +14,36 @@
 
     div:first-child {
       padding-left: 150px;
+      @media (max-width: 940px) {
+        padding: 0;
+
+        text-align: center;
+      }
     }
     div:nth-child(2) {
       padding-left: 300px;
+      @media (max-width: 1234px) {
+        padding-left: 200px;
+      }
+      // @media (max-width: 940px) {
+      //   padding-left: 100px;
+      // }
+      @media (max-width: 940px) {
+        padding: 0;
+
+        text-align: center;
+      }
     }
     div:last-child {
       padding-left: 450px;
+      @media (max-width: 1234px) {
+        padding-left: 250px;
+      }
+      @media (max-width: 940px) {
+        padding: 0;
+
+        text-align: center;
+      }
     }
   }
 }

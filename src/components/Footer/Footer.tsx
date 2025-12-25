@@ -12,9 +12,6 @@ export function Footer() {
       <div className={style.container}>
         <div className={style.colOne}>
           <LogoFull />
-          <div className={style.privetPolitic}>
-            ©2024 — tea room Privacy Policy
-          </div>
         </div>
         <div className={style.colTwo}>
           <NavbarList />
@@ -37,6 +34,7 @@ export function Footer() {
           </div>
         </div>
       </div>
+      <div className={style.privetPolitic}>©2024 — tea room Privacy Policy</div>
     </div>
   )
 }

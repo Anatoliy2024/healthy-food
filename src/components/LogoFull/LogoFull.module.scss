@@ -10,4 +10,9 @@
   line-height: 140%;
   font-family: var(--font-inter), sans-serif;
   font-weight: 700;
+  div:last-child {
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
 }

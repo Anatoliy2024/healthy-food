@@ -12,6 +12,11 @@
   padding: 90px 0 110px 0;
   color: white;
   margin-bottom: 90px;
+  @media (max-width: 1300px) {
+    padding: 20px 30px;
+
+    // text-align: center;
+  }
   h3 {
     font-size: var(--fs-xsl);
     font-family: var(--font-poppins), sans-serif;
@@ -24,13 +29,18 @@
     .content {
       //   padding-top: 50px;
       display: flex;
+      flex-wrap: wrap;
       gap: 10px;
-
       .offer {
         // max-width: 709px;
         padding-top: 50px;
 
-        flex: 0 1 709px;
+        flex: 1 1 709px;
+        @media (max-width: 1300px) {
+          padding-bottom: 30px;
+
+          // text-align: center;
+        }
         div:first-child {
           display: flex;
           flex-direction: column;
@@ -64,10 +74,19 @@
         }
       }
       .principles {
-        flex: 0 0 495px;
+        flex: 1 0 495px;
         height: 288px;
         // flex: 1;
         position: relative;
+        @media (max-width: 1300px) {
+          display: flex;
+          flex-wrap: wrap;
+          height: auto;
+          gap: 10px;
+          // justify-content: center;
+
+          // text-align: center;
+        }
         div {
           width: 185px;
           height: 64px;
@@ -78,6 +97,7 @@
           border-radius: 12px;
           position: absolute;
         }
+
         div:nth-child(1) {
           @include block-style-different;
           transform: rotate(-41.59deg);
@@ -117,6 +137,14 @@
           @include block-style;
           right: 0;
           bottom: 0;
+        }
+        @media (max-width: 1300px) {
+          div:nth-child(-n + 7) {
+            transform: none;
+            position: static;
+          }
+
+          // text-align: center;
         }
       }
     }

@@ -21,7 +21,7 @@
 }
 
 .wrapper {
-  width: 1216px;
+  max-width: 1216px;
   margin: 0 auto;
   padding-bottom: 90px;
 
@@ -37,31 +37,41 @@
     .rowOne,
     .rowTwo {
       display: flex;
-      //   flex-wrap: wrap;
+      flex-wrap: wrap;
       gap: 30px;
       min-height: 500px;
+      // max-width: 1216px;
       .breakfast {
         background: url("/image/dish-7.png");
         @include block-background;
-        flex: 1;
+        flex: 1 1 40%;
+        min-width: 300px;
       }
       .lunch {
         background: url("/image/dish-9.png");
         @include block-background;
 
-        flex: 0 0 40%;
+        flex: 1;
+        min-width: 495px;
+        @media (max-width: 500px) {
+          min-width: 300px;
+        }
       }
       .dinner {
         background: url("/image/dish-5.png");
         @include block-background;
 
-        flex: 0 0 40%;
+        flex: 1;
+        min-width: 495px;
+        @media (max-width: 500px) {
+          min-width: 300px;
+        }
       }
       .smoothie {
         background: url("/image/dish-8.png");
         @include block-background;
-
-        flex: 1;
+        flex: 1 1 40%;
+        min-width: 300px;
       }
     }
   }

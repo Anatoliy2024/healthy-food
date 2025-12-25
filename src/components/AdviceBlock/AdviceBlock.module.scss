@@ -4,6 +4,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 123px;
+  @media (max-width: 1300px) {
+    gap: 30px;
+    justify-content: center;
+  }
   .imageBlock {
     img {
       width: 100%;
@@ -12,12 +16,23 @@
     }
   }
   .textBlock {
-    max-width: 598px;
+    flex: 1 1 598px;
+    // max-width: 598px;
+    @media (max-width: 1200px) {
+      // padding: 0 20px;
+    }
+    // @media (max-width: 1200px) {
+    //   padding: 0 20px;
+    // }
+
     h3 {
       font-size: var(--fs-xsl);
       font-family: var(--font-poppins), sans-serif;
       line-height: 110%;
       padding-bottom: 70px;
+      @media (max-width: 1200px) {
+        padding-bottom: 30px;
+      }
     }
     .textInfo {
       display: flex;
@@ -29,6 +44,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 30px;
+      @media (max-width: 1200px) {
+        gap: 10px;
+      }
       div {
         padding: 24px;
         color: white;
