@@ -42,10 +42,20 @@ body {
   --fs-xxxl: clamp(3.5rem, 10vw, 7.5rem); /* 120px */
 }
 
+@media (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+  h3 {
+    text-align: center;
+  }
+}
+
 body {
   max-width: 1920px;
   margin: 0 auto;
   font-family: var(--font-quicksand), sans-serif;
   font-size: var(--fs-lg);
   color: #1d1d1d;
+  position: relative;
 }

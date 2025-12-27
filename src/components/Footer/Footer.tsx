@@ -14,7 +14,7 @@ export function Footer() {
           <LogoFull />
         </div>
         <div className={style.colTwo}>
-          <NavbarList />
+          {/* <NavbarList /> */}
           <div className={style.socialMedia}>
             <div>
               <Telegram />

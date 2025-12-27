@@ -1,47 +1,67 @@
 .wrapper {
-  padding: 0 20px 90px;
-  position: relative;
-  z-index: 5;
+  // padding: 0 20px 90px;
+
+  height: clamp(85px, 13vh, 110px);
+  // padding: 10px;
+  // height: 200px;
+  width: 100%;
+  max-width: 1920px;
+  overflow: hidden;
+
+  position: fixed;
+  // top: 20px;
+  z-index: 1000;
+  padding: 0 40px;
+  // animation-duration: 0.5s;
   .container {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1920px;
+    height: 100%;
+    // margin: 0 auto;
+
     // max-width: 1163px;
     gap: 20px;
-    // margin: 0 400px;
-    // .logo {
-    //   display: flex;
-    //   background: var(--color-gradient); /* градиент */
-    //   // background: linear-gradient(90deg, #ea543c, #c5aa24);
-    //   -webkit-background-clip: text; /* градиент обрезается по тексту */
-    //   -webkit-text-fill-color: transparent; /* текст становится прозрачным, чтобы был виден градиент */
-    //   font-size: 40px;
-    //   gap: 20px;
-    //   align-items: center;
-    //   line-height: 140%;
-    //   font-family: var(--font-inter), sans-serif;
-    //   font-weight: 700;
-    // }
+    align-items: center;
+    .hamburger {
+      width: 50px;
+      height: 40px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      z-index: 1100;
+      background: none;
+      border: none;
+      span {
+        height: 3px;
+        background-color: black;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+      }
+    }
+    .hamburgerOpen span:nth-child(1) {
+      transform: rotate(45deg) translate(10px, 16px);
+    }
+    .hamburgerOpen span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburgerOpen span:nth-child(3) {
+      transform: rotate(-45deg) translate(10px, -16px);
+    }
 
-    // .navbar {
-    //   //   margin-right: auto;
-    //   display: flex;
-    //   gap: 20px;
-    //   font-size: 17px;
-    //   align-items: center;
-    //   // font-family: var(--font-quicksand), sans-serif;
-    //   & > li {
-    //     cursor: pointer;
-    //     padding: 10px 20px;
-    //     transition: 0.4s ease;
-
-    //     &:hover {
-    //       background: var(--color-gradient);
-    //       color: white;
-    //       border-radius: 10px;
-    //     }
-    //   }
-    // }
+    .overlay {
+      position: fixed;
+      z-index: 999; // меньше чем navbar
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
   }
+}
+.headerBg {
+  background: white;
 }

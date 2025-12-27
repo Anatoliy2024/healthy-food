@@ -17,4 +17,28 @@
       border-radius: 10px;
     }
   }
+  @media (max-width: 1200px) {
+    position: fixed;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    top: 85px;
+    left: 0;
+    width: 300px;
+    height: calc(100% - 85px);
+    // background: var(--color-gradient);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-top-right-radius: 20px;
+    // background-color: #333;
+    z-index: 1000;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    overflow-y: scroll;
+  }
+}
+
+.hidden {
+  @media (max-width: 1200px) {
+    transform: translateX(-110%);
+  }
 }

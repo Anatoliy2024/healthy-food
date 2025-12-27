@@ -9,15 +9,16 @@
 
 .wrapper {
   background: var(--color-gradient-3);
-  padding: 90px 0 110px 0;
   color: white;
-  margin-bottom: 90px;
-  @media (max-width: 1300px) {
-    padding: 20px 10px;
-    margin-bottom: 40px;
+  padding: clamp(20px, 4vw, 90px) 10px clamp(20px, 5vw, 110px);
+  margin-bottom: clamp(40px, 4vw, 90px);
+  // padding: 90px 0 110px 0;
+  // margin-bottom: 90px;
+  // @media (max-width: 1300px) {
+  //   padding: 20px 10px;
+  //   margin-bottom: 40px;
 
-    // text-align: center;
-  }
+  // }
   h3 {
     font-size: var(--fs-xsl);
     font-family: var(--font-poppins), sans-serif;
