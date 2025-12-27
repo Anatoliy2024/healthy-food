@@ -9,14 +9,24 @@
     flex-wrap: wrap;
 
     // flex-wrap: wrap;
+    @media (max-width: 1550px) {
+      // justify-content: center;
+      gap: 40px;
+    }
 
     .textInfo {
       width: 794px;
+      // display: flex;
       // display: flex;
       // flex-direction: column;
       // justify-content: center;
       // align-items: center;
       font-family: var(--font-poppins), sans-serif;
+      @media (max-width: 1550px) {
+        flex: 1 1 auto;
+        width: 100%;
+        text-align: center;
+      }
       div {
         font-size: var(--fs-xxl);
         // font-size: 80px;
@@ -47,6 +57,15 @@
       background: var(--color-gradient-2);
 
       border-radius: 50% 0 0 50%;
+      @media (max-width: 1550px) {
+        flex: 1 1 auto;
+        width: 100%;
+        border-radius: 355px 0 0 355px;
+        margin-left: 50px;
+      }
+      // @media (max-width: 1550px) {
+      //   border-radius: 50%;
+      // }
     }
   }
 }
