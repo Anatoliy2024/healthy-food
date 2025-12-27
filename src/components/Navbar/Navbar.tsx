@@ -6,19 +6,9 @@ import style from "./Navbar.module.scss"
 import { Logo } from "@/assets/svg/logo"
 
 export function Navbar() {
-  const mediaQuery = window.matchMedia("(min-width: 1200px)")
-  const scrollY = window.scrollY > 0
-  // на случай если страница уже проскроллена
-
-  const [menuOpen, setMenuOpen] = useState(!!mediaQuery.matches)
-  const [showButton, setShowButton] = useState(!mediaQuery.matches)
-  const [scrolled, setScrolled] = useState(scrollY)
-
-  // console.log("menuOpen", menuOpen)
-  // console.log("showButton", showButton)
-  // console.log("scrolled", scrolled)
-  // const [menuOpen, setMenuOpen] = useState(false)
-  // const [showButton, setShowButton] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [showButton, setShowButton] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
   const handleShowToggleMenu = () => {
     setMenuOpen((prev) => !prev)
@@ -27,19 +17,24 @@ export function Navbar() {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 1200px)")
 
-    const handleChange = (e: MediaQueryListEvent) => {
-      setMenuOpen(!!e.matches) // true — открыть, false — закрыть
-      setShowButton(!e.matches)
+    const updateMedia = () => {
+      setMenuOpen(mediaQuery.matches)
+      setShowButton(!mediaQuery.matches)
     }
+
     const onScroll = () => {
       setScrolled(window.scrollY > 0)
     }
 
-    mediaQuery.addEventListener("change", handleChange)
+    // начальное состояние (УЖЕ НА КЛИЕНТЕ)
+    updateMedia()
+    onScroll()
+
+    mediaQuery.addEventListener("change", updateMedia)
     window.addEventListener("scroll", onScroll, { passive: true })
 
     return () => {
-      mediaQuery.removeEventListener("change", handleChange)
+      mediaQuery.removeEventListener("change", updateMedia)
       window.removeEventListener("scroll", onScroll)
     }
   }, [])
@@ -60,15 +55,7 @@ export function Navbar() {
     <div className={`${style.wrapper} ${scrolled ? style.headerBg : ""}`}>
       <div className={style.container}>
         <LogoFull />
-        {/* <div className={style.logo}>
-          <div>
-            <Logo />
-          </div>
-          <div>
-            здоровое <br />
-            питания
-          </div>
-        </div> */}
+
         {menuOpen && showButton && (
           <div className={style.overlay} onClick={() => setMenuOpen(false)} />
         )}
@@ -85,13 +72,6 @@ export function Navbar() {
             <span></span>
           </div>
         )}
-        {/* <ul className={style.navbar}>
-          <li>Советы</li>
-          <li>Рецепты</li>
-          <li>Индивидуальный подход</li>
-          <li>Шаблоны</li>
-          <li>Ценности</li>
-        </ul> */}
       </div>
     </div>
   )
