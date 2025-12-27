@@ -16,12 +16,18 @@
   justify-content: flex-end;
 
   margin-bottom: 110px;
+  @media (max-width: 700px) {
+    margin-bottom: 50px;
+  }
   .container {
     width: 1568px;
     h3 {
       font-size: var(--fs-xsl);
       font-family: var(--font-poppins), sans-serif;
       margin-bottom: 70px;
+      @media (max-width: 700px) {
+        margin-bottom: 30px;
+      }
     }
 
     .mainInfo {
@@ -51,6 +57,7 @@
             gap: 10px;
             width: auto;
             height: auto;
+            justify-content: center;
           }
           div {
             position: absolute;

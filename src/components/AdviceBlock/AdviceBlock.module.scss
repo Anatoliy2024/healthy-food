@@ -6,6 +6,9 @@
   gap: 123px;
   @media (max-width: 1300px) {
     gap: 30px;
+    margin: 50px auto;
+    padding: 0 20px;
+
     justify-content: center;
   }
   .imageBlock {
@@ -16,11 +19,16 @@
     }
   }
   .textBlock {
-    flex: 1 1 598px;
+    // flex: 1 1 598px;
+    // min-width: 0;
+    flex: 1 1 auto;
+    max-width: 598px;
+    width: 100%;
     // max-width: 598px;
-    @media (max-width: 1200px) {
-      // padding: 0 20px;
-    }
+    // @media (max-width: 400px) {
+    //   width: 300px;
+    //   // padding: 0 20px;
+    // }
     // @media (max-width: 1200px) {
     //   padding: 0 20px;
     // }
@@ -46,6 +54,9 @@
       gap: 30px;
       @media (max-width: 1200px) {
         gap: 10px;
+      }
+      @media (max-width: 400px) {
+        grid-template-columns: 1fr;
       }
       div {
         padding: 24px;

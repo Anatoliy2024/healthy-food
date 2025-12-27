@@ -2,6 +2,9 @@
   //   min-height: 1100px;
   background: url("/image/dish-10.png") no-repeat center;
   margin-bottom: 110px;
+  @media (max-width: 700px) {
+    margin-bottom: 50px;
+  }
   .container {
     padding: 252px 0;
     max-width: 1216px;
@@ -11,7 +14,9 @@
     font-weight: 700;
     color: white;
     line-height: 190px;
-
+    @media (max-width: 700px) {
+      padding: 40px 0;
+    }
     div:first-child {
       padding-left: 150px;
       @media (max-width: 940px) {
