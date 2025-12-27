@@ -22,12 +22,12 @@ export const metadata: Metadata = {
 const inter = localFont({
   src: [
     {
-      path: "/fonts/inter/Inter18pt-Regular.woff2",
+      path: "../../public/fonts/inter/Inter18pt-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "/fonts/inter/Inter18pt-Bold.woff2",
+      path: "../../public/fonts/inter/Inter18pt-Bold.woff2",
       weight: "700",
       style: "normal",
     },
@@ -39,12 +39,12 @@ const inter = localFont({
 const nunito = localFont({
   src: [
     {
-      path: "/fonts/nunito/Nunito-Regular.woff2",
+      path: "../../public/fonts/nunito/Nunito-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "/fonts/nunito/Nunito-Bold.woff2",
+      path: "../../public/fonts/nunito/Nunito-Bold.woff2",
       weight: "700",
       style: "normal",
     },
@@ -56,12 +56,12 @@ const nunito = localFont({
 const poppins = localFont({
   src: [
     {
-      path: "/fonts/poppins/Poppins-Regular.woff2",
+      path: "../../public/fonts/poppins/Poppins-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "/fonts/poppins/Poppins-Bold.woff2",
+      path: "../../public/fonts/poppins/Poppins-Bold.woff2",
       weight: "700",
       style: "normal",
     },
@@ -73,12 +73,12 @@ const poppins = localFont({
 const quicksand = localFont({
   src: [
     {
-      path: "/fonts/quicksand/Quicksand-Medium.woff2",
+      path: "../../public/fonts/quicksand/Quicksand-Medium.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "/fonts/quicksand/Quicksand-Bold.woff2",
+      path: "../../public/fonts/quicksand/Quicksand-Bold.woff2",
       weight: "700",
       style: "normal",
     },
