@@ -14,9 +14,9 @@ export function Navbar() {
   const [showButton, setShowButton] = useState(!mediaQuery.matches)
   const [scrolled, setScrolled] = useState(scrollY)
 
-  console.log("menuOpen", menuOpen)
-  console.log("showButton", showButton)
-  console.log("scrolled", scrolled)
+  // console.log("menuOpen", menuOpen)
+  // console.log("showButton", showButton)
+  // console.log("scrolled", scrolled)
   // const [menuOpen, setMenuOpen] = useState(false)
   // const [showButton, setShowButton] = useState(false)
 
@@ -45,7 +45,7 @@ export function Navbar() {
   }, [])
 
   useEffect(() => {
-    if (menuOpen && window.matchMedia("(min-width: 1200px)")) {
+    if (menuOpen && showButton) {
       document.body.style.overflow = "hidden"
     } else {
       document.body.style.overflow = ""
@@ -54,7 +54,7 @@ export function Navbar() {
     return () => {
       document.body.style.overflow = ""
     }
-  }, [menuOpen])
+  }, [menuOpen, showButton])
 
   return (
     <div className={`${style.wrapper} ${scrolled ? style.headerBg : ""}`}>

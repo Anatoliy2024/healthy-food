@@ -1,18 +1,21 @@
 .wrapper {
   // padding: 0 20px 90px;
 
-  height: clamp(85px, 13vh, 110px);
+  height: clamp(60px, 13vh, 110px);
   // padding: 10px;
   // height: 200px;
   width: 100%;
   max-width: 1920px;
-  overflow: hidden;
+  // overflow: hidden;
 
   position: fixed;
   // top: 20px;
   z-index: 1000;
   padding: 0 40px;
   // animation-duration: 0.5s;
+  svg {
+    height: clamp(50px, 13vh, 95px);
+  }
   .container {
     display: flex;
     justify-content: space-between;
