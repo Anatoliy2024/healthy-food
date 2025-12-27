@@ -58,13 +58,16 @@
           gap: 10px;
           justify-content: space-between;
           align-items: center;
+          flex: 1 1 auto;
 
-          @media (max-width: 400px) {
-            width: 300px;
-            // justify-content: center;
+          width: 100%;
+          // @media (max-width: 400px) {
 
-            // text-align: center;
-          }
+          //   max-width: ;
+          //   // justify-content: center;
+
+          //   // text-align: center;
+          // }
 
           svg {
             transition: 0.2s ease;
@@ -75,7 +78,7 @@
           }
         }
         input {
-          flex: 1;
+          flex: 1 1 auto;
           width: 100%;
           // @media (max-width: 400px) {
           //   width: 200px;

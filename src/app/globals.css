@@ -39,7 +39,7 @@ body {
   --fs-xll: 2.5rem; /* 40px */
   --fs-xsl: clamp(1.4rem, 5vw, 3.75rem); /* 60px */
   --fs-xxl: clamp(1.5rem, 5vw, 5rem); /* 70px */
-  --fs-xxxl: clamp(4.5rem, 10vw, 7.5rem); /* 120px */
+  --fs-xxxl: clamp(3.5rem, 10vw, 7.5rem); /* 120px */
 }
 
 body {
