@@ -55,6 +55,11 @@
         // left: 35%;
         animation-duration: 2s;
         animation-name: slideAppleThree;
+        @media (max-width: 1550px) {
+          left: 65%;
+
+          animation-name: slideAppleThreeMobile;
+        }
       }
       .appleTwo {
         position: absolute;
@@ -66,6 +71,9 @@
         animation-duration: 2s;
         animation-delay: 0.2s;
         animation-name: slideAppleTwo;
+        @media (max-width: 1550px) {
+          animation-name: slideAppleTwoMobile;
+        }
       }
       .kiwiOne {
         position: absolute;
@@ -77,6 +85,9 @@
         animation-duration: 2s;
         animation-delay: 0.4s;
         animation-name: slideKiwiOne;
+        @media (max-width: 1550px) {
+          animation-name: slideKiwiOneMobile;
+        }
       }
       .pearTwo {
         position: absolute;
@@ -87,6 +98,11 @@
         animation-duration: 2s;
         animation-delay: 0.6s;
         animation-name: slidePearTwo;
+        @media (max-width: 1550px) {
+          left: 50%;
+
+          animation-name: slidePearTwoMobile;
+        }
       }
       .kiwiThree {
         position: absolute;
@@ -127,6 +143,11 @@
         animation-duration: 2s;
         animation-delay: 1.4s;
         animation-name: slideKiwiTwo;
+        @media (max-width: 1550px) {
+          left: 25%;
+
+          animation-name: slideKiwiTwoMobile;
+        }
       }
     }
   }
@@ -143,6 +164,16 @@
     left: 35%;
   }
 }
+@keyframes slideAppleThreeMobile {
+  from {
+    top: -100%;
+    left: 65%;
+  }
+  to {
+    top: 8%;
+    left: 65%;
+  }
+}
 @keyframes slideAppleTwo {
   from {
     top: 26%;
@@ -152,6 +183,17 @@
   to {
     top: 26%;
     right: 48%;
+  }
+}
+@keyframes slideAppleTwoMobile {
+  from {
+    top: 26%;
+    right: -100%;
+  }
+
+  to {
+    top: 26%;
+    right: 18%;
   }
 }
 @keyframes slideKiwiOne {
@@ -165,6 +207,17 @@
     right: 46%;
   }
 }
+@keyframes slideKiwiOneMobile {
+  from {
+    bottom: 28%;
+    right: -100%;
+  }
+
+  to {
+    bottom: 28%;
+    right: 16%;
+  }
+}
 @keyframes slidePearTwo {
   from {
     bottom: -100%;
@@ -174,6 +227,17 @@
   to {
     bottom: 8%;
     left: 37%;
+  }
+}
+@keyframes slidePearTwoMobile {
+  from {
+    bottom: -100%;
+    left: 50%;
+  }
+
+  to {
+    bottom: 8%;
+    left: 50%;
   }
 }
 @keyframes slideKiwiThree {
@@ -218,5 +282,16 @@
   to {
     top: 5%;
     left: 6%;
+  }
+}
+@keyframes slideKiwiTwoMobile {
+  from {
+    top: -100%;
+    left: 25%;
+  }
+
+  to {
+    top: 5%;
+    left: 25%;
   }
 }

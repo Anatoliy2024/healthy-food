@@ -12,7 +12,7 @@
     gap: clamp(20px, 5vw, 120px);
     // gap: 120px;
     @media (max-width: 700px) {
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       // gap: 20px;
     }
 
@@ -36,6 +36,7 @@
         padding-left: 15px;
         display: flex;
         gap: 20px;
+        flex-wrap: wrap;
 
         div {
           display: flex;
