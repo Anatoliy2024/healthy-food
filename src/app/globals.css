@@ -34,7 +34,8 @@ body {
   --fs-xs: 0.75rem; /* 12px */
   --fs-sm: 0.875rem; /* 14px */
   --fs-md: 1rem; /* 16px */
-  --fs-lg: 1.25rem; /* 20px */
+  --fs-lg: clamp(0.875rem, 2vw, 1.25rem); /* 20px */
+  /* --fs-lg: 1.25rem;  */
   --fs-xl: 2rem; /* 32px */
   --fs-xll: 2.5rem; /* 40px */
   --fs-xsl: clamp(1.4rem, 5vw, 3.75rem); /* 60px */
