@@ -35,7 +35,7 @@ const BD = [
 ]
 export function AdvantageBlock() {
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} id="advantage">
       <h3>
         Индивидуальный подход:
         <br /> Онлайн-поддержка тренера

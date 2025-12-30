@@ -6,7 +6,7 @@ export function AdviceBlock() {
       <div className={style.imageBlock}>
         <Image src="/image/dish.png" width={495} height={836} alt="dish" />
       </div>
-      <div className={style.textBlock}>
+      <div className={style.textBlock} id="advise">
         <h3>Простые советы для старта</h3>
         <div className={style.textInfo}>
           <p>

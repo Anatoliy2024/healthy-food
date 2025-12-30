@@ -10,6 +10,7 @@ import { SubscribeBlock } from "../SubscribeBlock/SubscribeBlock"
 import { TariffBlock } from "../TariffBlock/TariffBlock"
 import { TelegramChatBlock } from "../TelegramChatBlock/TelegramChatBlock"
 import { TemplatesDishBlock } from "../TemplatesDishBlock/TemplatesDishBlock"
+import { WorthBlock } from "../WorthBlock/WorthBlock"
 
 export function MainInfo() {
   return (
@@ -26,6 +27,7 @@ export function MainInfo() {
       <MisconceptionsBlock />
       <TelegramChatBlock />
       <TemplatesDishBlock />
+      <WorthBlock />
     </div>
   )
 }

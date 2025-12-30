@@ -57,7 +57,7 @@ export function TemplatesDishBlock() {
   // ]
 
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} id="templates">
       <div className={style.container}>
         <h3>Готовые шаблоны меню</h3>
         <div className={style.content}>

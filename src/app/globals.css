@@ -42,6 +42,10 @@ body {
   --fs-xxl: clamp(1.5rem, 5vw, 5rem); /* 70px */
   --fs-xxxl: clamp(3.5rem, 10vw, 7.5rem); /* 120px */
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
 
 @media (max-width: 500px) {
   html {

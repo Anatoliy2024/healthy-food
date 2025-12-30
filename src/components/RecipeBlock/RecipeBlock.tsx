@@ -2,7 +2,7 @@ import { Arrow } from "@/assets/svg/Arrow"
 import style from "./RecipeBlock.module.scss"
 export function RecipeBlock() {
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} id="recipe">
       <h3>Вкусные и полезные рецепты на каждый день</h3>
       <div className={style.content}>
         <div className={style.rowOne}>

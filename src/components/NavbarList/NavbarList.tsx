@@ -17,34 +17,20 @@ export function NavbarList({
 
   return (
     <ul className={`${style.navbar} ${!isOpen ? style.hidden : ""}`}>
-      <li>
-        <Link href="/advice" onClick={handleLinkClick} prefetch={false}>
-          Советы
-        </Link>
+      <li onClick={handleLinkClick}>
+        <a href="#advise">Советы</a>
       </li>
-      <li>
-        <Link href="/Recipe" onClick={handleLinkClick} prefetch={false}>
-          Рецепты
-        </Link>
+      <li onClick={handleLinkClick}>
+        <a href="#recipe">Рецепты</a>
       </li>
-      <li>
-        <Link
-          href="/IndividualApproach"
-          onClick={handleLinkClick}
-          prefetch={false}
-        >
-          Индивидуальный подход
-        </Link>
+      <li onClick={handleLinkClick}>
+        <a href="#advantage">Индивидуальный подход</a>
       </li>
-      <li>
-        <Link href="/Templates" onClick={handleLinkClick} prefetch={false}>
-          Шаблоны
-        </Link>
+      <li onClick={handleLinkClick}>
+        <a href="#templates">Шаблоны</a>
       </li>
-      <li>
-        <Link href="/Worth" onClick={handleLinkClick} prefetch={false}>
-          Ценности
-        </Link>
+      <li onClick={handleLinkClick}>
+        <a href="#worth">Ценности</a>
       </li>
       {/* <li>Советы</li> 
        <li>Рецепты</li>
