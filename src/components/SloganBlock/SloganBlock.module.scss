@@ -1,8 +1,12 @@
 .wrapper {
   //   min-height: 1100px;
-  background: url("/image/dish-6.png") no-repeat center;
+  background: url("/image/dish-6.png") no-repeat;
+  background-position: center;
   margin-bottom: clamp(40px, 4vw, 90px);
   // margin-bottom: 90px;
+  @media (max-width: 900px) {
+    background-position: left;
+  }
   div {
     padding: clamp(40px, 5vw, 112px) 0 clamp(40px, 14vw, 368px);
     // padding: 112px 0 368px;
@@ -13,8 +17,8 @@
     font-weight: 700;
     color: white;
     line-height: 190px;
-    // @media (max-width: 700px) {
-    //   padding: 40px 0;
-    // }
+    @media (max-width: 900px) {
+      text-shadow: 1px 1px 5px black;
+    }
   }
 }

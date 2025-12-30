@@ -1,11 +1,16 @@
 .wrapper {
   //   min-height: 1100px;
-  background: url("/image/dish-10.png") no-repeat center;
+  background: url("/image/dish-10.png") no-repeat;
+  background-position: center;
   margin-bottom: clamp(50px, 5vw, 110px);
   // margin-bottom: 110px;
   // @media (max-width: 700px) {
   //   margin-bottom: 50px;
   // }
+  @media (max-width: 900px) {
+    background-position: left;
+  }
+
   .container {
     padding: clamp(40px, 13vw, 252px) 0;
     // padding: 252px 0;
@@ -16,6 +21,9 @@
     font-weight: 700;
     color: white;
     line-height: 190px;
+    @media (max-width: 900px) {
+      text-shadow: 1px 1px 5px black;
+    }
     // @media (max-width: 700px) {
     //   padding: 40px 0;
     // }
