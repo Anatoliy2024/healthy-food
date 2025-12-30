@@ -20,6 +20,7 @@
   @media (max-width: 1200px) {
     position: fixed;
     flex-direction: column;
+
     flex-wrap: nowrap;
     top: 85px;
     left: 0;
@@ -34,6 +35,10 @@
     box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     overflow-y: auto;
+    li {
+      width: calc(100% - 40px);
+      text-align: center;
+    }
   }
 }
 
