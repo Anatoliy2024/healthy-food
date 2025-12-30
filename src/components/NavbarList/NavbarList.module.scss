@@ -6,10 +6,11 @@
   align-items: center;
   flex-wrap: wrap;
   // font-family: var(--font-quicksand), sans-serif;
-  & > li {
+  a {
     cursor: pointer;
     padding: 10px 20px;
     transition: 0.4s ease;
+    display: block;
 
     &:hover {
       background: var(--color-gradient);
@@ -20,7 +21,7 @@
   @media (max-width: 1200px) {
     position: fixed;
     flex-direction: column;
-
+    gap: 0;
     flex-wrap: nowrap;
     top: 85px;
     left: 0;
@@ -36,8 +37,12 @@
     transition: transform 0.3s ease;
     overflow-y: auto;
     li {
-      width: calc(100% - 40px);
+      width: 100%;
       text-align: center;
+    }
+    a {
+      padding: 20px;
+      min-width: calc(100% - 40px);
     }
   }
 }
