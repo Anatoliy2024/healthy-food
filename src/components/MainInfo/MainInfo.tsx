@@ -9,6 +9,7 @@ import { SloganBlockTwo } from "../SloganBlockTwo/SloganBlockTwo"
 import { SubscribeBlock } from "../SubscribeBlock/SubscribeBlock"
 import { TariffBlock } from "../TariffBlock/TariffBlock"
 import { TelegramChatBlock } from "../TelegramChatBlock/TelegramChatBlock"
+import { TemplatesDishBlock } from "../TemplatesDishBlock/TemplatesDishBlock"
 
 export function MainInfo() {
   return (
@@ -24,6 +25,7 @@ export function MainInfo() {
       <TariffBlock />
       <MisconceptionsBlock />
       <TelegramChatBlock />
+      <TemplatesDishBlock />
     </div>
   )
 }
