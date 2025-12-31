@@ -1,6 +1,6 @@
 import Image from "next/image"
-import style from "./HeaderMain.module.scss"
-export function HeaderMain() {
+import style from "./FaceBlockMain.module.scss"
+export function FaceBlockMain() {
   return (
     <div className={style.wrapper}>
       <div className={style.container}>

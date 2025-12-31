@@ -48,8 +48,14 @@
       flex-wrap: wrap;
       gap: 30px;
       min-height: clamp(400px, 20vw, 500px);
+      // div {
+      //   min-height: 100%;
+      // }
       // min-height: 500px;
       // max-width: 1216px;
+      // a {
+      //   cursor: pointer;
+      // }
       .breakfast {
         background: url("/image/dish-7.png");
         @include block-background;

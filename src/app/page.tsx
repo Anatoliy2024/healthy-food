@@ -1,13 +1,11 @@
-import { Header } from "@/components/Header/Header"
 import { MainInfo } from "@/components/MainInfo/MainInfo"
-import { Footer } from "@/components/Footer/Footer"
+
+import InnerApp from "@/providers/InnerApp"
 
 export default function Home() {
   return (
-    <div className="">
-      <Header />
+    <InnerApp>
       <MainInfo />
-      <Footer />
-    </div>
+    </InnerApp>
   )
 }

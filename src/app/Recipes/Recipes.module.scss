@@ -1,0 +1,29 @@
+.wrapper {
+  padding: clamp(100px, 9vw, 182px) 0 clamp(40px, 5vw, 110px);
+  max-width: 1216px;
+  margin: 0 auto;
+
+  .trigger {
+    padding: 14px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s ease;
+  }
+
+  .panel > .inner {
+    overflow: hidden;
+  }
+
+  .open {
+    grid-template-rows: 1fr;
+  }
+
+  .inner {
+    padding: 16px 0;
+  }
+}
