@@ -3,27 +3,43 @@
   max-width: 1216px;
   margin: 0 auto;
 
-  .trigger {
-    padding: 14px;
-    border-radius: 12px;
-    cursor: pointer;
-  }
+  .content {
+    display: flex;
+    gap: 20px;
+    .option {
+      flex: 1 1 auto;
+      max-width: 289px;
+      width: 100%;
 
-  .panel {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.35s ease;
-  }
+      // .triggerContainer {
+      //   display: flex;
+      //   justify-content: space-between;
+      //   align-items: center;
+      //   cursor: pointer;
+      //   padding: 14px;
+      //   .trigger {
+      //     cursor: pointer;
 
-  .panel > .inner {
-    overflow: hidden;
-  }
+      //     // border-radius: 12px;
+      //     // background: blue;
+      //   }
+      // }
+      // .panel {
+      //   display: grid;
+      //   grid-template-rows: 0fr;
+      //   transition: grid-template-rows 0.35s ease;
 
-  .open {
-    grid-template-rows: 1fr;
-  }
+      //   .inner {
+      //     overflow: hidden;
 
-  .inner {
-    padding: 16px 0;
+      //     // padding: 16px 0;
+      //   }
+      // }
+      // .open {
+      //   grid-template-rows: 1fr;
+      // }
+    }
+    .recipe {
+    }
   }
 }

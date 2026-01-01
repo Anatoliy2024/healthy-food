@@ -1,0 +1,27 @@
+.triggerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 14px;
+  .trigger {
+    cursor: pointer;
+
+    // border-radius: 12px;
+    // background: blue;
+  }
+}
+.panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+
+  .inner {
+    overflow: hidden;
+
+    // padding: 16px 0;
+  }
+}
+.open {
+  grid-template-rows: 1fr;
+}
