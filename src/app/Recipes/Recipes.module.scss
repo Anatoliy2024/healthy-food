@@ -2,6 +2,7 @@
   padding: clamp(100px, 9vw, 182px) 0 clamp(40px, 5vw, 110px);
   max-width: 1216px;
   margin: 0 auto;
+  flex: 1;
 
   .content {
     display: flex;
@@ -10,36 +11,10 @@
       flex: 1 1 auto;
       max-width: 289px;
       width: 100%;
-
-      // .triggerContainer {
-      //   display: flex;
-      //   justify-content: space-between;
-      //   align-items: center;
-      //   cursor: pointer;
-      //   padding: 14px;
-      //   .trigger {
-      //     cursor: pointer;
-
-      //     // border-radius: 12px;
-      //     // background: blue;
-      //   }
-      // }
-      // .panel {
-      //   display: grid;
-      //   grid-template-rows: 0fr;
-      //   transition: grid-template-rows 0.35s ease;
-
-      //   .inner {
-      //     overflow: hidden;
-
-      //     // padding: 16px 0;
-      //   }
-      // }
-      // .open {
-      //   grid-template-rows: 1fr;
-      // }
     }
     .recipe {
+      flex: 1 1 auto;
+      width: 100%;
     }
   }
 }

@@ -1,7 +1,7 @@
 import { ArrowOpen } from "@/assets/svg/ArrowOpen"
 import style from "./FilterBlock.module.scss"
 import { ArrowClose } from "@/assets/svg/ArrowClose"
-import { SetIsCheckedType, SetOpenType } from "@/app/Recipes/page"
+import { SetIsCheckedType, SetOpenType } from "@/app/recipes/page"
 import { Dispatch, SetStateAction } from "react"
 type FilterKey = keyof SetOpenType
 export function FilterBlock({

@@ -64,3 +64,9 @@ body {
   color: #1d1d1d;
   position: relative;
 }
+
+.innerAppContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
