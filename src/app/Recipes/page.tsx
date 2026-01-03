@@ -4,6 +4,9 @@ import style from "./Recipes.module.scss"
 import { useState } from "react"
 
 import { FilterBlock } from "@/components/FilterBlock/FilterBlock"
+import { title } from "process"
+import Image from "next/image"
+import { RecipesDishCard } from "@/components/RecipesDischCard/RecipesDishCard"
 
 const FILTERS = [
   {
@@ -46,6 +49,72 @@ const FILTERS = [
   },
 ]
 
+const dishBD = [
+  {
+    title: "Омлет с тунцом",
+    imageUrl: "/image/recipe-1.png",
+    nutrients: { protein: 25, fat: 7, carbohydrates: 13 },
+    calorieContent: 212,
+    private: false,
+  },
+  {
+    title: "Ленивые вареники",
+    imageUrl: "/image/recipe-2.png",
+    nutrients: { protein: 17, fat: 4, carbohydrates: 15 },
+    calorieContent: 180,
+    private: false,
+  },
+  {
+    title: "Овсяноблин с бананом и сыром",
+    imageUrl: "/image/recipe-3.png",
+    nutrients: { protein: 10, fat: 4, carbohydrates: 25 },
+    calorieContent: 150,
+    private: false,
+  },
+  {
+    title: "Тост с глазуньей и рукколой",
+    imageUrl: "/image/recipe-4.png",
+    nutrients: { protein: 14, fat: 11, carbohydrates: 13 },
+    calorieContent: 202,
+    private: false,
+  },
+  {
+    title: "Пшеничная каша с яблоком и корицей",
+    imageUrl: "/image/recipe-5.png",
+    nutrients: { protein: 25, fat: 7, carbohydrates: 13 },
+    calorieContent: 212,
+    private: true,
+  },
+  {
+    title: "Сырники с тыквой",
+    imageUrl: "/image/recipe-6.png",
+    nutrients: { protein: 17, fat: 5, carbohydrates: 19 },
+    calorieContent: 196,
+    private: false,
+  },
+  {
+    title: "Творожная запеканка с ягодами",
+    imageUrl: "/image/recipe-7.png",
+    nutrients: { protein: 27, fat: 7, carbohydrates: 13 },
+    calorieContent: 187,
+    private: false,
+  },
+  {
+    title: "Куриные маффины с сыром",
+    imageUrl: "/image/recipe-8.png",
+    nutrients: { protein: 23, fat: 7, carbohydrates: 8 },
+    calorieContent: 178,
+    private: false,
+  },
+  {
+    title: "Панкейки с бананом",
+    imageUrl: "/image/recipe-9.png",
+    nutrients: { protein: 25, fat: 7, carbohydrates: 13 },
+    calorieContent: 212,
+    private: false,
+  },
+]
+
 export type SetOpenType = {
   ingestion: boolean
   cookingTime: boolean
@@ -75,7 +144,7 @@ export default function Recipes() {
     yourTarget: "",
   })
   // const [isCheckedIngestion, setIsCheckedIngestion] = useState("")
-  console.log("isCheckedIngestion", isChecked)
+  // console.log("isCheckedIngestion", isChecked)
   return (
     <InnerApp>
       <div className={style.wrapper}>
@@ -99,7 +168,11 @@ export default function Recipes() {
               Контент ниже будет плавно сдвигаться
             </div> */}
           </div>
-          <div className={style.recipe}></div>
+          <div className={style.recipeContainer}>
+            {dishBD.map((recipes, index) => (
+              <RecipesDishCard key={index} recipes={recipes} />
+            ))}
+          </div>
         </div>
       </div>
     </InnerApp>

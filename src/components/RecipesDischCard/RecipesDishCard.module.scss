@@ -1,0 +1,27 @@
+.wrapper {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20px;
+  &:hover {
+    background: rgba(56, 45, 63, 0.395);
+  }
+  .imageBlock {
+    // background-image: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    min-height: 310px;
+    border-radius: 20px;
+    ul {
+      padding: 16px;
+      display: flex;
+      gap: 8px;
+      color: white;
+
+      li {
+        border-radius: 12px;
+        padding: 8px;
+        background: var(--color-gradient);
+      }
+    }
+  }
+}
