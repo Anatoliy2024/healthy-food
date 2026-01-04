@@ -44,9 +44,34 @@ export function FilterBlock({
         }`}
       >
         <div className={style.inner}>
-          {options.map((opt) => (
-            <div key={opt.value}>
-              <input
+          {options.map((opt) => {
+            // console.log("checked[opt.value]", checked[opt.value])
+            // console.log("checked[filterKey]", checked[filterKey])
+            // console.log("checked", checked)
+            // console.log("opt.value", opt.value)
+            // console.log("filterKey", filterKey)
+            return (
+              <div
+                key={opt.value}
+                onClick={() =>
+                  setChecked((c) => ({
+                    ...c,
+                    [filterKey]: opt.value,
+                  }))
+                }
+              >
+                <div
+                  className={`${style.customRadio} ${
+                    checked[filterKey as FilterKey] === opt.value
+                      ? style.selected
+                      : ""
+                  }`}
+                  // onClick={() => setSelected(opt)}
+                  id={opt.value}
+                  role="radio"
+                  aria-checked={checked[filterKey as FilterKey] === opt.value}
+                ></div>
+                {/* <input
                 type="radio"
                 id={opt.value}
                 name={filterKey}
@@ -58,10 +83,11 @@ export function FilterBlock({
                     [filterKey]: e.target.value,
                   }))
                 }
-              />
-              <label htmlFor={opt.value}>{opt.label}</label>
-            </div>
-          ))}
+              /> */}
+                <label htmlFor={opt.value}>{opt.label}</label>
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>

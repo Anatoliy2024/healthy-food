@@ -3,7 +3,7 @@
   padding: 10px;
   border-radius: 20px;
   &:hover {
-    background: rgba(56, 45, 63, 0.395);
+    background: var(--color-backgroundRecipe-hover);
   }
   .imageBlock {
     // background-image: cover;

@@ -143,6 +143,8 @@ export default function Recipes() {
     complexity: "",
     yourTarget: "",
   })
+  console.log("checked", isChecked)
+
   // const [isCheckedIngestion, setIsCheckedIngestion] = useState("")
   // console.log("isCheckedIngestion", isChecked)
   return (

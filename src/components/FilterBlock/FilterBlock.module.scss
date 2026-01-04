@@ -3,10 +3,16 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  padding: 14px;
+  padding: 8px;
+  border-radius: 12px;
+
+  &:hover {
+    background: var(--color-backgroundRecipe-hover);
+  }
   .trigger {
     cursor: pointer;
-
+    font-size: var(--fs-lg-m);
+    // margin-bottom: 16px;
     // border-radius: 12px;
     // background: blue;
   }
@@ -15,11 +21,46 @@
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.35s ease;
+  padding-bottom: 16px;
 
   .inner {
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    // gap: 16px;
 
-    // padding: 16px 0;
+    label {
+      cursor: pointer;
+    }
+    & > div {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 12px;
+      &:hover {
+        background: var(--color-backgroundRecipe-hover);
+      }
+    }
+    .customRadio {
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      // border: 2px solid black;
+      border: 2px solid transparent;
+
+      background: linear-gradient(white, white) padding-box, black border-box;
+
+      // background: black;
+      // accent-color: #c56fff;
+    }
+    .selected {
+      border: 5px solid transparent;
+
+      background: linear-gradient(white, white) padding-box,
+        var(--color-gradient) border-box;
+    }
   }
 }
 .open {

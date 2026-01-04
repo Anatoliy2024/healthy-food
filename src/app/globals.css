@@ -31,10 +31,13 @@ body {
   --color-gradient-3: linear-gradient(135deg, #34bca6, #c5aa24);
   --color-gradient-4: linear-gradient(180deg, #ea543c, #c5aa24);
 
+  --color-backgroundRecipe-hover: rgba(56, 45, 63, 0.395);
+
   --fs-xs: 0.75rem; /* 12px */
   --fs-sm: 0.875rem; /* 14px */
   --fs-md: 1rem; /* 16px */
   --fs-lg: 1.25rem; /* 20px */
+  --fs-lg-m: 1.5rem; /* 24px */
   /* --fs-lg: 1.25rem;  */
   --fs-xl: 2rem; /* 32px */
   --fs-xll: 2.5rem; /* 40px */
