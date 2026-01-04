@@ -1,0 +1,53 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20px;
+  &:hover {
+    background: var(--color-backgroundRecipe-hover);
+  }
+  .imageBlock {
+    // background-image: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    min-height: 310px;
+    border-radius: 20px;
+
+    ul {
+      padding: 16px;
+      display: flex;
+      gap: 8px;
+      color: white;
+
+      li {
+        border-radius: 12px;
+        padding: 8px;
+        background: var(--color-gradient);
+      }
+    }
+  }
+  // .text {
+  .title {
+    flex: 1 1 auto;
+
+    font-size: var(--fs-lg);
+    padding: 16px 0 4px;
+    max-width: 287px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @media (max-width: 500px) {
+      max-width: 497px;
+    }
+  }
+  .calorieContent {
+    flex: 0;
+    background: var(--color-gradient); /* градиент */
+    // background: linear-gradient(90deg, #ea543c, #c5aa24);
+    -webkit-background-clip: text; /* градиент обрезается по тексту */
+    -webkit-text-fill-color: transparent; /* текст становится прозрачным, чтобы был виден градиент */
+  }
+  // }
+}

@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import style from "./TemplatesDishBlock.module.scss"
-import MenuDishBD from "@/BD/MenuDish"
+import menuDishBD from "@/BD/menuDish"
 
 export function TemplatesDishBlock() {
   const [dayMenu, setDayMenu] = useState(0)
@@ -38,7 +38,7 @@ export function TemplatesDishBlock() {
             ))}
           </ul>
           <ul className={style.menuDish}>
-            {MenuDishBD[dayMenu].map((menu, i) => (
+            {menuDishBD[dayMenu].map((menu, i) => (
               <li key={i} className={style.menuDishElem}>
                 <h4>{menu.ingestion}</h4>
                 <div className={style.dishElemContent}>

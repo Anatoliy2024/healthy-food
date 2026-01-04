@@ -20,7 +20,7 @@ export function TariffBlock() {
         <TrafficElem
           title="Премиум"
           price="2449P"
-          fullPrice="3449P"
+          fullPrice="3265P"
           styleElem="special2"
         />
         <TrafficElem title="Оптимальный" price="1999P" styleElem="special1" />
