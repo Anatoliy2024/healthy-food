@@ -49,14 +49,16 @@ export default function Recipe() {
                   ))}
                 </ul>
               </div>
-              <div>
-                <h3>{recipeDish.recipe[1].stageName}</h3>
-                <ul>
-                  {recipeDish.recipe[1].stageList.map((el, index) => (
-                    <li key={index}>{el}</li>
-                  ))}
-                </ul>
-              </div>
+              {recipeDish.recipe[1] && (
+                <div>
+                  <h3>{recipeDish.recipe[1].stageName}</h3>
+                  <ul>
+                    {recipeDish.recipe[1].stageList.map((el, index) => (
+                      <li key={index}>{el}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
             <div className={style.advice}>
               <div>
