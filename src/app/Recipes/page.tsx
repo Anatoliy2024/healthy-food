@@ -11,28 +11,26 @@ import recipesDishBD from "@/BD/recipesDish"
 import { Paginator } from "@/components/Paginator/Paginator"
 
 import { useRouter, useSearchParams } from "next/navigation"
+import {
+  FilterKey,
+  FiltersType,
+  SetIsCheckedType,
+  SetOpenType,
+} from "@/types/recipes"
 
-export type SetOpenType = {
-  ingestion: boolean
-  cookingTime: boolean
-  complexity: boolean
-  yourTarget: boolean
-}
-export type SetIsCheckedType = {
-  ingestion: string
-  cookingTime: string
-  complexity: string
-  yourTarget: string
-}
-export type FilterKey = keyof SetIsCheckedType
-type FiltersType = {
-  key: FilterKey
-  title: string
-  options: {
-    value: string
-    label: string
-  }[]
-}[]
+// export type SetOpenType = {
+//   ingestion: boolean
+//   cookingTime: boolean
+//   complexity: boolean
+//   yourTarget: boolean
+// }
+// export type SetIsCheckedType = {
+//   ingestion: string
+//   cookingTime: string
+//   complexity: string
+//   yourTarget: string
+// }
+// export type FilterKey = keyof SetIsCheckedType
 
 const ITEMS_PER_PAGE = 12
 const FILTERS: FiltersType = [

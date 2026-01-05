@@ -1,9 +1,10 @@
 import { ArrowOpen } from "@/assets/svg/ArrowOpen"
 import style from "./FilterBlock.module.scss"
 import { ArrowClose } from "@/assets/svg/ArrowClose"
-import { FilterKey, SetIsCheckedType, SetOpenType } from "@/app/recipes/page"
+// import { FilterKey, SetIsCheckedType, SetOpenType } from "@/app/recipes/page"
 import { Dispatch, SetStateAction } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
+import { FilterKey, SetIsCheckedType, SetOpenType } from "@/types/recipes"
 
 export function FilterBlock({
   filterKey,
