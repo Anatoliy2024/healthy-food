@@ -1,12 +1,13 @@
 "use client"
 import { useState } from "react"
 import style from "./TemplatesDishBlock.module.scss"
+import test from "@/BD/test"
 import menuDishBD from "@/BD/menuDish"
 // import menuDishBD from "../../BD/menuDish"
 
 export function TemplatesDishBlock() {
   const [dayMenu, setDayMenu] = useState(0)
-
+  console.log("test", test)
   const today = new Date()
 
   const formatter = new Intl.DateTimeFormat("ru-RU", {
