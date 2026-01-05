@@ -1,4 +1,4 @@
-const MenuDishBD = [
+const menuDishBD = [
   // День 1
   [
     {
@@ -207,4 +207,4 @@ const MenuDishBD = [
   ],
 ]
 
-export default MenuDishBD
+export default menuDishBD
