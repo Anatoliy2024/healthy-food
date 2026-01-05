@@ -27,24 +27,49 @@
 
         flex-wrap: wrap;
       }
-    }
-    .recipeContainer {
-      flex: 1 1 auto;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-
-      // margin: 0 -10px;
-      // grid-auto-flow: row;
-      // display: flex;
-      // flex-wrap: wrap;
-      // gap: 20px;
-
-      @media (max-width: 1000px) {
-        grid-template-columns: repeat(2, 1fr);
+      .resetButton {
+        padding: 10px;
+        border-radius: 12px;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+          background: var(--color-gradient);
+          color: white;
+        }
       }
-      @media (max-width: 500px) {
-        grid-template-columns: 1fr;
+    }
+    .infoBlock {
+      flex: 1;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;
+      .recipeContainer {
+        flex: 1 1 auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 30px;
+        // margin: 0 -10px;
+        // grid-auto-flow: row;
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 20px;
+
+        @media (max-width: 1000px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 500px) {
+          grid-template-columns: 1fr;
+        }
+      }
+      .noRecipe {
+        padding: 30px;
+        font-size: var(--fs-lg-m);
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        // height: 100%;
+        // flex: 1;
       }
     }
   }

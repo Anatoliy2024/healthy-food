@@ -5,14 +5,40 @@ import { useParams } from "next/navigation"
 import recipesDishBD from "@/BD/recipesDish"
 import style from "./Recipe.module.scss"
 import Image from "next/image"
+import { useRouter, useSearchParams } from "next/navigation"
+import { ArrowLeft } from "@/assets/svg/ArrowLeft"
+
 export default function Recipe() {
+  const router = useRouter()
+  const searchParams = useSearchParams()
   const { id } = useParams()
   const recipeDish = recipesDishBD.filter((el) => el.id === Number(id))[0]
+
+  const goBack = () => {
+    // достаем page из query
+    const params = new URLSearchParams(searchParams.toString())
+    // const page = searchParams.get("page") || "1"
+
+    // params.set("page", String(page))
+    router.push(`/recipes?${params.toString()}`)
+
+    // идем на страницу списка с нужной пагинацией
+    // router.push(`/recipes?page=${page}`)
+    // if (window.history.length > 1) {
+    //   router.back()
+    // } else {
+    //   router.push("/recipes")
+    // }
+  }
   return (
     <InnerApp>
       <div className={style.wrapper}>
+        <div className={style.backButton} onClick={() => goBack()}>
+          <ArrowLeft />
+          <div>Назад</div>
+        </div>
         <h1>{recipeDish.title}</h1>
-        <div>
+        <div className={style.contentBlock}>
           <div className={style.imageContainer}>
             <Image
               src={recipeDish.imageUrl}
@@ -21,6 +47,7 @@ export default function Recipe() {
               alt="imageDish"
             />
           </div>
+
           <div className={style.textContainer}>
             <div className={style.description}>
               <div>
@@ -33,12 +60,14 @@ export default function Recipe() {
               </div>
               <div>{recipeDish.description}</div>
             </div>
-            <ul className={style.ingredients}>
+            <div className={style.ingredients}>
               <h2>Ингридиенты</h2>
-              {recipeDish.ingredients?.map((ingredient, index) => (
-                <li key={index}>{ingredient}</li>
-              ))}
-            </ul>
+              <ul>
+                {recipeDish.ingredients?.map((ingredient, index) => (
+                  <li key={index}>{ingredient}</li>
+                ))}
+              </ul>
+            </div>
             <div className={style.recipe}>
               <h2>Рецепт</h2>
               <div>

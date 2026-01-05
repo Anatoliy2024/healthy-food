@@ -3,6 +3,7 @@ import style from "./FilterBlock.module.scss"
 import { ArrowClose } from "@/assets/svg/ArrowClose"
 import { SetIsCheckedType, SetOpenType } from "@/app/recipes/page"
 import { Dispatch, SetStateAction } from "react"
+import { useRouter, useSearchParams } from "next/navigation"
 type FilterKey = keyof SetOpenType
 export function FilterBlock({
   filterKey,
@@ -11,27 +12,40 @@ export function FilterBlock({
   open,
   setOpen,
   checked,
-  setChecked,
+  // setChecked,
+  handleFilterChange,
 }: {
-  filterKey: string
+  filterKey: keyof SetIsCheckedType
   title: string
   options: { value: string; label: string }[]
 
   open: SetOpenType
   setOpen: Dispatch<SetStateAction<SetOpenType>>
   checked: SetIsCheckedType
-  setChecked: Dispatch<SetStateAction<SetIsCheckedType>>
+  // setChecked: Dispatch<SetStateAction<SetIsCheckedType>>
+  handleFilterChange: (type: keyof SetIsCheckedType, value: string) => void
 }) {
+  const searchParams = useSearchParams()
+  const router = useRouter()
   return (
     <div>
       <div
         className={style.triggerContainer}
         onClick={() => {
           setOpen((o) => ({ ...o, [filterKey]: !o[filterKey as FilterKey] }))
+          const params = new URLSearchParams(searchParams.toString())
 
-          if (open[filterKey as FilterKey]) {
-            setChecked((c) => ({ ...c, [filterKey]: "" }))
+          const urlParams = params.get(filterKey)
+          console.log("filterKey", filterKey)
+          console.log("urlParams", urlParams)
+          if (urlParams) {
+            params.delete(filterKey)
+            router.push(`/recipes?${params.toString()}`, { scroll: false })
           }
+          // if (open[filterKey as FilterKey]) {
+          //   checked[filterKey] = ""
+          //   // setChecked((c) => ({ ...c, [filterKey]: "" }))
+          // }
         }}
       >
         <button className={style.trigger}>{title}</button>
@@ -53,12 +67,13 @@ export function FilterBlock({
             return (
               <div
                 key={opt.value}
-                onClick={() =>
-                  setChecked((c) => ({
-                    ...c,
-                    [filterKey]: opt.value,
-                  }))
-                }
+                onClick={() => handleFilterChange(filterKey, opt.value)}
+                // onClick={() =>
+                //   setChecked((c) => ({
+                //     ...c,
+                //     [filterKey]: opt.value,
+                //   }))
+                // }
               >
                 <div
                   className={`${style.customRadio} ${

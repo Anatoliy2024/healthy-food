@@ -7,18 +7,21 @@ export function RecipeBlock() {
       <h3>Вкусные и полезные рецепты на каждый день</h3>
       <div className={style.content}>
         <div className={style.rowOne}>
-          <Link href={"/recipes?breakfast"} className={style.breakfast}>
+          <Link
+            href={"/recipes?ingestion=breakfast"}
+            className={style.breakfast}
+          >
             <RecipeElem text={"Завтраки"} />
           </Link>
-          <Link href={"/recipes?lunch"} className={style.lunch}>
+          <Link href={"/recipes?ingestion=lunch"} className={style.lunch}>
             <RecipeElem text={"Обеды"} />
           </Link>
         </div>
         <div className={style.rowTwo}>
-          <Link href={"/recipes?dinner"} className={style.dinner}>
+          <Link href={"/recipes?ingestion=dinner"} className={style.dinner}>
             <RecipeElem text={"Ужин"} />
           </Link>
-          <Link href={"/recipes?smoothie"} className={style.smoothie}>
+          <Link href={"/recipes?ingestion=smoothie"} className={style.smoothie}>
             <RecipeElem text={"Смузи"} />
           </Link>
         </div>

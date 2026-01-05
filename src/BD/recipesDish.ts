@@ -124,7 +124,7 @@ const recipesDishBD = [
   {
     id: 1,
     title: "Омлет с овощами и шпинатом",
-    imageUrl: "/image/recipe-1.jpg",
+    imageUrl: "/image/recipe/recipe-1.jpg",
     nutrients: { protein: 20, fat: 9, carbohydrates: 7 },
     calorieContent: 205,
     private: false,
@@ -169,7 +169,7 @@ const recipesDishBD = [
   {
     id: 2,
     title: "Овсяная каша с яблоком и корицей",
-    imageUrl: "/image/recipe-2.webp",
+    imageUrl: "/image/recipe/recipe-2.webp",
     nutrients: { protein: 10, fat: 4, carbohydrates: 34 },
     calorieContent: 230,
     private: false,
@@ -211,7 +211,7 @@ const recipesDishBD = [
   {
     id: 3,
     title: "Салат с киноа и авокадо",
-    imageUrl: "/image/recipe-3.jpeg",
+    imageUrl: "/image/recipe/recipe-3.jpeg",
     nutrients: { protein: 14, fat: 11, carbohydrates: 32 },
     calorieContent: 320,
     private: false,
@@ -254,7 +254,7 @@ const recipesDishBD = [
   {
     id: 4,
     title: "Куриная грудка на гриле",
-    imageUrl: "/image/recipe-4.jpg",
+    imageUrl: "/image/recipe/recipe-4.jpg",
     nutrients: { protein: 36, fat: 5, carbohydrates: 2 },
     calorieContent: 240,
     private: false,
@@ -292,7 +292,7 @@ const recipesDishBD = [
   {
     id: 5,
     title: "Запечённые овощи с травами",
-    imageUrl: "/image/recipe-5.jpg",
+    imageUrl: "/image/recipe/recipe-5.jpg",
     nutrients: { protein: 7, fat: 9, carbohydrates: 24 },
     calorieContent: 260,
     private: false,
@@ -332,7 +332,7 @@ const recipesDishBD = [
   {
     id: 6,
     title: "Творожный боул с ягодами",
-    imageUrl: "/image/recipe-6.webp",
+    imageUrl: "/image/recipe/recipe-6.webp",
     nutrients: { protein: 28, fat: 6, carbohydrates: 18 },
     calorieContent: 250,
     private: false,
@@ -362,8 +362,8 @@ const recipesDishBD = [
   {
     id: 7,
     title: "Рыба на пару с лимоном",
-    imageUrl: "/image/recipe-7.jpg",
-    nutrients: { protein: 30, fat: 4, carbohydrates: 0 },
+    imageUrl: "/image/recipe/recipe-7.jpg",
+    nutrients: { protein: 30, fat: 4, carbohydrates: 3 },
     calorieContent: 200,
     private: false,
     ingestion: ["dinner"],
@@ -393,7 +393,7 @@ const recipesDishBD = [
   {
     id: 8,
     title: "Смузи с бананом и арахисовой пастой",
-    imageUrl: "/image/recipe-8.jpg",
+    imageUrl: "/image/recipe/recipe-8.jpg",
     nutrients: { protein: 22, fat: 10, carbohydrates: 28 },
     calorieContent: 340,
     private: false,
@@ -428,7 +428,7 @@ const recipesDishBD = [
   {
     id: 9,
     title: "Индейка с овощами на сковороде",
-    imageUrl: "/image/recipe-9.jpg",
+    imageUrl: "/image/recipe/recipe-9.jpg",
     nutrients: { protein: 34, fat: 7, carbohydrates: 12 },
     calorieContent: 290,
     private: false,
@@ -466,7 +466,7 @@ const recipesDishBD = [
   {
     id: 10,
     title: "Чиа-пудинг с кокосовым молоком",
-    imageUrl: "/image/recipe-10.jpg",
+    imageUrl: "/image/recipe/recipe-10.jpg",
     nutrients: { protein: 9, fat: 12, carbohydrates: 20 },
     calorieContent: 270,
     private: false,
@@ -499,7 +499,7 @@ const recipesDishBD = [
   {
     id: 11,
     title: "Тыквенные маффины без сахара",
-    imageUrl: "/image/recipe-11.jpg",
+    imageUrl: "/image/recipe/recipe-11.jpg",
     nutrients: { protein: 10, fat: 5, carbohydrates: 22 },
     calorieContent: 180,
     private: false,
@@ -543,7 +543,7 @@ const recipesDishBD = [
   {
     id: 12,
     title: "Лосось с овощами в духовке",
-    imageUrl: "/image/recipe-12.jpg",
+    imageUrl: "/image/recipe/recipe-12.jpg",
     nutrients: { protein: 34, fat: 15, carbohydrates: 8 },
     calorieContent: 360,
     private: false,
@@ -586,7 +586,7 @@ const recipesDishBD = [
   {
     id: 13,
     title: "Смузи с манго и шпинатом",
-    imageUrl: "/image/recipe-13.jpg",
+    imageUrl: "/image/recipe/recipe-13.jpg",
     nutrients: { protein: 8, fat: 3, carbohydrates: 28 },
     calorieContent: 190,
     private: false,
@@ -621,7 +621,7 @@ const recipesDishBD = [
   {
     id: 14,
     title: "Запечённая куриная грудка с брокколи",
-    imageUrl: "/image/recipe-14.jpg",
+    imageUrl: "/image/recipe/recipe-14.jpg",
     nutrients: { protein: 35, fat: 7, carbohydrates: 6 },
     calorieContent: 250,
     private: false,
@@ -660,7 +660,7 @@ const recipesDishBD = [
   {
     id: 15,
     title: "Протеиновый боул с киноа и яйцом",
-    imageUrl: "/image/recipe-15.jpg",
+    imageUrl: "/image/recipe/recipe-15.jpg",
     nutrients: { protein: 28, fat: 9, carbohydrates: 32 },
     calorieContent: 370,
     private: false,
@@ -700,7 +700,7 @@ const recipesDishBD = [
   {
     id: 16,
     title: "Овсяноблин с бананом и орехами",
-    imageUrl: "/image/recipe-16.jpg",
+    imageUrl: "/image/recipe/recipe-16.jpg",
     nutrients: { protein: 12, fat: 7, carbohydrates: 25 },
     calorieContent: 220,
     private: false,
@@ -742,7 +742,7 @@ const recipesDishBD = [
   {
     id: 17,
     title: "Салат с тунцом и яйцом",
-    imageUrl: "/image/recipe-17.jpg",
+    imageUrl: "/image/recipe/recipe-17.jpg",
     nutrients: { protein: 26, fat: 12, carbohydrates: 8 },
     calorieContent: 280,
     private: false,
@@ -779,14 +779,14 @@ const recipesDishBD = [
   {
     id: 18,
     title: "Суп-пюре из брокколи",
-    imageUrl: "/image/recipe-18.jpg",
+    imageUrl: "/image/recipe/recipe-18.jpg",
     nutrients: { protein: 10, fat: 6, carbohydrates: 18 },
     calorieContent: 180,
     private: false,
     ingestion: ["lunch", "dinner"],
     cookingTime: "long",
     yourTarget: "detox",
-    complexity: "middle",
+    complexity: "difficult",
     description:
       "Лёгкий суп-пюре из брокколи — полезный ужин с мягкой текстурой.",
     ingredients: [
@@ -819,7 +819,7 @@ const recipesDishBD = [
   {
     id: 19,
     title: "Протеиновый смузи с ягодами",
-    imageUrl: "/image/recipe-19.jpg",
+    imageUrl: "/image/recipe/recipe-19.jpg",
     nutrients: { protein: 25, fat: 5, carbohydrates: 20 },
     calorieContent: 240,
     private: false,
@@ -854,7 +854,7 @@ const recipesDishBD = [
   {
     id: 20,
     title: "Кабачковые оладьи с чесноком",
-    imageUrl: "/image/recipe-20.jpg",
+    imageUrl: "/image/recipe/recipe-20.jpg",
     nutrients: { protein: 12, fat: 6, carbohydrates: 18 },
     calorieContent: 200,
     private: false,
@@ -900,7 +900,7 @@ const recipesDishBD = [
   {
     id: 21,
     title: "Овсянка с ягодами и орехами",
-    imageUrl: "/image/recipe-21.jpg",
+    imageUrl: "/image/recipe/recipe-21.jpg",
     nutrients: { protein: 12, fat: 7, carbohydrates: 28 },
     calorieContent: 230,
     private: false,
@@ -936,7 +936,7 @@ const recipesDishBD = [
   {
     id: 22,
     title: "Куриные тефтели с овощами",
-    imageUrl: "/image/recipe-22.jpg",
+    imageUrl: "/image/recipe/recipe-22.jpg",
     nutrients: { protein: 28, fat: 8, carbohydrates: 10 },
     calorieContent: 220,
     private: false,
@@ -980,7 +980,7 @@ const recipesDishBD = [
   {
     id: 23,
     title: "Салат с авокадо и яйцом",
-    imageUrl: "/image/recipe-23.jpg",
+    imageUrl: "/image/recipe/recipe-23.jpg",
     nutrients: { protein: 14, fat: 15, carbohydrates: 10 },
     calorieContent: 260,
     private: false,
@@ -1016,14 +1016,14 @@ const recipesDishBD = [
   {
     id: 24,
     title: "Суп из тыквы и моркови",
-    imageUrl: "/image/recipe-24.jpg",
+    imageUrl: "/image/recipe/recipe-24.jpg",
     nutrients: { protein: 7, fat: 6, carbohydrates: 20 },
     calorieContent: 180,
     private: false,
     ingestion: ["lunch", "dinner"],
     cookingTime: "long",
     yourTarget: "detox",
-    complexity: "middle",
+    complexity: "difficult",
     description:
       "Лёгкий суп-пюре из тыквы и моркови — отличный вариант для ужина без тяжести.",
     ingredients: [
@@ -1052,7 +1052,7 @@ const recipesDishBD = [
   {
     id: 25,
     title: "Протеиновый боул с курицей",
-    imageUrl: "/image/recipe-25.jpg",
+    imageUrl: "/image/recipe/recipe-25.jpg",
     nutrients: { protein: 32, fat: 10, carbohydrates: 20 },
     calorieContent: 350,
     private: false,
@@ -1089,7 +1089,7 @@ const recipesDishBD = [
   {
     id: 26,
     title: "Смузи с клубникой и бананом",
-    imageUrl: "/image/recipe-26.jpg",
+    imageUrl: "/image/recipe/recipe-26.jpg",
     nutrients: { protein: 10, fat: 4, carbohydrates: 25 },
     calorieContent: 180,
     private: false,
@@ -1124,7 +1124,7 @@ const recipesDishBD = [
   {
     id: 27,
     title: "Овсяные панкейки с ягодами",
-    imageUrl: "/image/recipe-27.webp",
+    imageUrl: "/image/recipe/recipe-27.webp",
     nutrients: { protein: 14, fat: 6, carbohydrates: 28 },
     calorieContent: 250,
     private: false,
@@ -1163,7 +1163,7 @@ const recipesDishBD = [
   {
     id: 28,
     title: "Салат с курицей и киноа",
-    imageUrl: "/image/recipe-28.jpeg",
+    imageUrl: "/image/recipe/recipe-28.jpeg",
     nutrients: { protein: 28, fat: 8, carbohydrates: 22 },
     calorieContent: 320,
     private: false,
@@ -1200,7 +1200,7 @@ const recipesDishBD = [
   {
     id: 29,
     title: "Творожный боул с бананом",
-    imageUrl: "/image/recipe-29.webp",
+    imageUrl: "/image/recipe/recipe-29.webp",
     nutrients: { protein: 25, fat: 5, carbohydrates: 20 },
     calorieContent: 240,
     private: false,
@@ -1236,7 +1236,7 @@ const recipesDishBD = [
   {
     id: 30,
     title: "Запечённая треска с овощами",
-    imageUrl: "/image/recipe-30.jpg",
+    imageUrl: "/image/recipe/recipe-30.jpg",
     nutrients: { protein: 30, fat: 5, carbohydrates: 8 },
     calorieContent: 240,
     private: false,
@@ -1278,14 +1278,14 @@ const recipesDishBD = [
   {
     id: 31,
     title: "Кабачковые запеканки с сыром",
-    imageUrl: "/image/recipe-31.jpg",
+    imageUrl: "/image/recipe/recipe-31.jpg",
     nutrients: { protein: 15, fat: 8, carbohydrates: 12 },
     calorieContent: 210,
     private: false,
     ingestion: ["breakfast", "lunch"],
     cookingTime: "middling",
     yourTarget: "weightSupport",
-    complexity: "middle",
+    complexity: "difficult",
     description:
       "Лёгкая и вкусная запеканка с кабачками и сыром для завтрака или обеда.",
     ingredients: [
@@ -1322,7 +1322,7 @@ const recipesDishBD = [
   {
     id: 32,
     title: "Смузи с киви и шпинатом",
-    imageUrl: "/image/recipe-32.webp",
+    imageUrl: "/image/recipe/recipe-32.webp",
     nutrients: { protein: 8, fat: 3, carbohydrates: 22 },
     calorieContent: 150,
     private: false,
@@ -1358,7 +1358,7 @@ const recipesDishBD = [
   {
     id: 33,
     title: "Протеиновый омлет с овощами",
-    imageUrl: "/image/recipe-33.jpeg",
+    imageUrl: "/image/recipe/recipe-33.jpeg",
     nutrients: { protein: 28, fat: 8, carbohydrates: 6 },
     calorieContent: 220,
     private: false,
@@ -1398,7 +1398,7 @@ const recipesDishBD = [
   {
     id: 34,
     title: "Боул с лососем и киноа",
-    imageUrl: "/image/recipe-34.webp",
+    imageUrl: "/image/recipe/recipe-34.webp",
     nutrients: { protein: 32, fat: 12, carbohydrates: 25 },
     calorieContent: 380,
     private: false,
@@ -1435,14 +1435,14 @@ const recipesDishBD = [
   {
     id: 35,
     title: "Суп-пюре из цветной капусты",
-    imageUrl: "/image/recipe-35.jpg",
+    imageUrl: "/image/recipe/recipe-35.jpg",
     nutrients: { protein: 8, fat: 5, carbohydrates: 15 },
     calorieContent: 160,
     private: false,
     ingestion: ["lunch", "dinner"],
     cookingTime: "long",
     yourTarget: "detox",
-    complexity: "middle",
+    complexity: "difficult",
     description:
       "Нежный суп-пюре из цветной капусты для лёгкого ужина без лишних калорий.",
     ingredients: [
@@ -1471,7 +1471,7 @@ const recipesDishBD = [
   {
     id: 36,
     title: "Смузи с манго и бананом",
-    imageUrl: "/image/recipe-36.png",
+    imageUrl: "/image/recipe/recipe-36.png",
     nutrients: { protein: 7, fat: 3, carbohydrates: 28 },
     calorieContent: 180,
     private: false,
@@ -1505,7 +1505,7 @@ const recipesDishBD = [
   {
     id: 37,
     title: "Творожная запеканка с яблоком",
-    imageUrl: "/image/recipe-37.webp",
+    imageUrl: "/image/recipe/recipe-37.webp",
     nutrients: { protein: 22, fat: 7, carbohydrates: 18 },
     calorieContent: 220,
     private: false,
@@ -1541,7 +1541,7 @@ const recipesDishBD = [
   {
     id: 38,
     title: "Салат с креветками и авокадо",
-    imageUrl: "/image/recipe-38.jpg",
+    imageUrl: "/image/recipe/recipe-38.jpg",
     nutrients: { protein: 20, fat: 12, carbohydrates: 10 },
     calorieContent: 280,
     private: false,
@@ -1577,7 +1577,7 @@ const recipesDishBD = [
   {
     id: 39,
     title: "Запечённая индейка с овощами",
-    imageUrl: "/image/recipe-39.jpeg",
+    imageUrl: "/image/recipe/recipe-39.jpeg",
     nutrients: { protein: 35, fat: 10, carbohydrates: 12 },
     calorieContent: 330,
     private: false,
@@ -1614,7 +1614,7 @@ const recipesDishBD = [
   {
     id: 40,
     title: "Овсяноблин с яблоком и корицей",
-    imageUrl: "/image/recipe-40.jpeg",
+    imageUrl: "/image/recipe/recipe-40.jpeg",
     nutrients: { protein: 12, fat: 6, carbohydrates: 24 },
     calorieContent: 210,
     private: false,
@@ -1653,7 +1653,7 @@ const recipesDishBD = [
   {
     id: 41,
     title: "Боул с тунцом и овощами",
-    imageUrl: "/image/recipe-41.webp",
+    imageUrl: "/image/recipe/recipe-41.webp",
     nutrients: { protein: 30, fat: 8, carbohydrates: 15 },
     calorieContent: 300,
     private: false,
@@ -1690,7 +1690,7 @@ const recipesDishBD = [
   {
     id: 42,
     title: "Смузи с шпинатом и ананасом",
-    imageUrl: "/image/recipe-42.jpg",
+    imageUrl: "/image/recipe/recipe-42.jpg",
     nutrients: { protein: 6, fat: 3, carbohydrates: 25 },
     calorieContent: 160,
     private: false,
@@ -1725,7 +1725,7 @@ const recipesDishBD = [
   {
     id: 43,
     title: "Творожные маффины с ягодами",
-    imageUrl: "/image/recipe-43.jpg",
+    imageUrl: "/image/recipe/recipe-43.jpg",
     nutrients: { protein: 20, fat: 7, carbohydrates: 22 },
     calorieContent: 250,
     private: false,
@@ -1762,14 +1762,14 @@ const recipesDishBD = [
   {
     id: 44,
     title: "Запечённый лосось с брокколи",
-    imageUrl: "/image/recipe-44.jpg",
+    imageUrl: "/image/recipe/recipe-44.jpg",
     nutrients: { protein: 32, fat: 10, carbohydrates: 10 },
     calorieContent: 320,
     private: false,
     ingestion: ["lunch", "dinner"],
     cookingTime: "middling",
     yourTarget: "muscleGain",
-    complexity: "middle",
+    complexity: "difficult",
     description:
       "Полезный ужин с лососем и брокколи для поддержания мышечной массы.",
     ingredients: [
@@ -1798,7 +1798,7 @@ const recipesDishBD = [
   {
     id: 45,
     title: "Овсянка с яблоком и корицей",
-    imageUrl: "/image/recipe-45.jpg",
+    imageUrl: "/image/recipe/recipe-45.jpg",
     nutrients: { protein: 10, fat: 5, carbohydrates: 30 },
     calorieContent: 200,
     private: false,
@@ -1830,7 +1830,7 @@ const recipesDishBD = [
   {
     id: 46,
     title: "Салат с тунцом и яйцом",
-    imageUrl: "/image/recipe-46.jpg",
+    imageUrl: "/image/recipe/recipe-46.jpg",
     nutrients: { protein: 25, fat: 12, carbohydrates: 10 },
     calorieContent: 280,
     private: false,
@@ -1861,7 +1861,7 @@ const recipesDishBD = [
   {
     id: 47,
     title: "Протеиновый смузи с арахисовой пастой",
-    imageUrl: "/image/recipe-47.jpg",
+    imageUrl: "/image/recipe/recipe-47.jpg",
     nutrients: { protein: 15, fat: 8, carbohydrates: 20 },
     calorieContent: 250,
     private: false,
@@ -1893,14 +1893,14 @@ const recipesDishBD = [
   {
     id: 48,
     title: "Запечённая куриная грудка с овощами",
-    imageUrl: "/image/recipe-48.jpg",
+    imageUrl: "/image/recipe/recipe-48.jpg",
     nutrients: { protein: 35, fat: 7, carbohydrates: 12 },
     calorieContent: 320,
     private: false,
     ingestion: ["lunch", "dinner"],
     cookingTime: "middling",
     yourTarget: "muscleGain",
-    complexity: "middle",
+    complexity: "difficult",
     description:
       "Сытное и полезное блюдо с куриной грудкой и овощами для ужина или обеда.",
     ingredients: [
@@ -1932,7 +1932,7 @@ const recipesDishBD = [
   {
     id: 49,
     title: "Овсяноблин с ягодами",
-    imageUrl: "/image/recipe-49.jpg",
+    imageUrl: "/image/recipe/recipe-49.jpg",
     nutrients: { protein: 12, fat: 5, carbohydrates: 25 },
     calorieContent: 210,
     private: false,
@@ -1967,7 +1967,7 @@ const recipesDishBD = [
   {
     id: 50,
     title: "Салат с киноа и овощами",
-    imageUrl: "/image/recipe-50.webp",
+    imageUrl: "/image/recipe/recipe-50.webp",
     nutrients: { protein: 15, fat: 7, carbohydrates: 25 },
     calorieContent: 260,
     private: false,
@@ -2003,7 +2003,7 @@ const recipesDishBD = [
   {
     id: 51,
     title: "Запечённые овощи с тофу",
-    imageUrl: "/image/recipe-51.png",
+    imageUrl: "/image/recipe/recipe-51.jpg",
     nutrients: { protein: 18, fat: 8, carbohydrates: 20 },
     calorieContent: 240,
     private: false,
@@ -2043,7 +2043,7 @@ const recipesDishBD = [
   {
     id: 52,
     title: "Смузи с клубникой и бананом",
-    imageUrl: "/image/recipe-52.png",
+    imageUrl: "/image/recipe/recipe-52.jpg",
     nutrients: { protein: 7, fat: 2, carbohydrates: 25 },
     calorieContent: 150,
     private: false,
@@ -2077,7 +2077,7 @@ const recipesDishBD = [
   {
     id: 53,
     title: "Творожная запеканка с тыквой",
-    imageUrl: "/image/recipe-53.png",
+    imageUrl: "/image/recipe/recipe-53.jpg",
     nutrients: { protein: 22, fat: 7, carbohydrates: 18 },
     calorieContent: 230,
     private: false,
@@ -2113,7 +2113,7 @@ const recipesDishBD = [
   {
     id: 54,
     title: "Салат с курицей и авокадо",
-    imageUrl: "/image/recipe-54.png",
+    imageUrl: "/image/recipe/recipe-54.jpg",
     nutrients: { protein: 28, fat: 12, carbohydrates: 10 },
     calorieContent: 300,
     private: false,
@@ -2149,7 +2149,7 @@ const recipesDishBD = [
   {
     id: 55,
     title: "Овсянка с ягодами и орехами",
-    imageUrl: "/image/recipe-55.png",
+    imageUrl: "/image/recipe/recipe-55.jpg",
     nutrients: { protein: 12, fat: 6, carbohydrates: 28 },
     calorieContent: 220,
     private: false,
@@ -2182,7 +2182,7 @@ const recipesDishBD = [
   {
     id: 56,
     title: "Смузи с яблоком и шпинатом",
-    imageUrl: "/image/recipe-56.png",
+    imageUrl: "/image/recipe/recipe-56.jpg",
     nutrients: { protein: 6, fat: 2, carbohydrates: 20 },
     calorieContent: 140,
     private: false,
@@ -2214,7 +2214,7 @@ const recipesDishBD = [
   {
     id: 57,
     title: "Куриные тефтели с овощами",
-    imageUrl: "/image/recipe-57.png",
+    imageUrl: "/image/recipe/recipe-57.jpg",
     nutrients: { protein: 30, fat: 8, carbohydrates: 15 },
     calorieContent: 310,
     private: false,
@@ -2251,7 +2251,7 @@ const recipesDishBD = [
   {
     id: 58,
     title: "Протеиновый смузи с ягодами",
-    imageUrl: "/image/recipe-58.png",
+    imageUrl: "/image/recipe/recipe-58.jpg",
     nutrients: { protein: 15, fat: 3, carbohydrates: 20 },
     calorieContent: 200,
     private: false,
@@ -2283,7 +2283,7 @@ const recipesDishBD = [
   {
     id: 59,
     title: "Запечённая индейка с кабачками",
-    imageUrl: "/image/recipe-59.png",
+    imageUrl: "/image/recipe/recipe-59.jpeg",
     nutrients: { protein: 35, fat: 8, carbohydrates: 15 },
     calorieContent: 330,
     private: false,
@@ -2321,7 +2321,7 @@ const recipesDishBD = [
   {
     id: 60,
     title: "Овсяноблин с бананом и корицей",
-    imageUrl: "/image/recipe-60.png",
+    imageUrl: "/image/recipe/recipe-60.jpg",
     nutrients: { protein: 12, fat: 5, carbohydrates: 26 },
     calorieContent: 210,
     private: false,
@@ -2358,7 +2358,7 @@ const recipesDishBD = [
   {
     id: 61,
     title: "Салат с нутом и овощами",
-    imageUrl: "/image/recipe-61.png",
+    imageUrl: "/image/recipe/recipe-61.jpg",
     nutrients: { protein: 15, fat: 6, carbohydrates: 25 },
     calorieContent: 260,
     private: false,
@@ -2394,7 +2394,7 @@ const recipesDishBD = [
   {
     id: 62,
     title: "Протеиновый смузи с манго",
-    imageUrl: "/image/recipe-62.png",
+    imageUrl: "/image/recipe/recipe-62.jpg",
     nutrients: { protein: 14, fat: 3, carbohydrates: 22 },
     calorieContent: 200,
     private: false,
@@ -2426,7 +2426,7 @@ const recipesDishBD = [
   {
     id: 63,
     title: "Овсянка с грушей и орехами",
-    imageUrl: "/image/recipe-63.png",
+    imageUrl: "/image/recipe/recipe-63.webp",
     nutrients: { protein: 12, fat: 6, carbohydrates: 28 },
     calorieContent: 220,
     private: false,
@@ -2458,7 +2458,7 @@ const recipesDishBD = [
   {
     id: 64,
     title: "Куриные рулетики с овощами",
-    imageUrl: "/image/recipe-64.png",
+    imageUrl: "/image/recipe/recipe-64.jpeg",
     nutrients: { protein: 32, fat: 8, carbohydrates: 12 },
     calorieContent: 320,
     private: false,
@@ -2497,7 +2497,7 @@ const recipesDishBD = [
   {
     id: 65,
     title: "Смузи с киви и шпинатом",
-    imageUrl: "/image/recipe-65.png",
+    imageUrl: "/image/recipe/recipe-65.jpg",
     nutrients: { protein: 6, fat: 2, carbohydrates: 20 },
     calorieContent: 140,
     private: false,
@@ -2529,7 +2529,7 @@ const recipesDishBD = [
   {
     id: 66,
     title: "Творожные оладьи с яблоком",
-    imageUrl: "/image/recipe-66.png",
+    imageUrl: "/image/recipe/recipe-66.webp",
     nutrients: { protein: 18, fat: 7, carbohydrates: 20 },
     calorieContent: 220,
     private: false,
@@ -2565,14 +2565,14 @@ const recipesDishBD = [
   {
     id: 67,
     title: "Запечённая треска с овощами",
-    imageUrl: "/image/recipe-67.png",
+    imageUrl: "/image/recipe/recipe-67.jpg",
     nutrients: { protein: 32, fat: 7, carbohydrates: 12 },
     calorieContent: 310,
     private: false,
     ingestion: ["lunch", "dinner"],
     cookingTime: "middling",
     yourTarget: "muscleGain",
-    complexity: "middle",
+    complexity: "difficult",
     description:
       "Полезное блюдо с треской и овощами для сытного обеда или ужина.",
     ingredients: [
@@ -2605,7 +2605,7 @@ const recipesDishBD = [
   {
     id: 68,
     title: "Смузи с апельсином и морковью",
-    imageUrl: "/image/recipe-68.png",
+    imageUrl: "/image/recipe/recipe-68.jpeg",
     nutrients: { protein: 5, fat: 2, carbohydrates: 22 },
     calorieContent: 150,
     private: false,
@@ -2637,7 +2637,7 @@ const recipesDishBD = [
   {
     id: 69,
     title: "Овсянка с киви и семенами",
-    imageUrl: "/image/recipe-69.png",
+    imageUrl: "/image/recipe/recipe-69.webp",
     nutrients: { protein: 12, fat: 5, carbohydrates: 26 },
     calorieContent: 210,
     private: false,
@@ -2668,7 +2668,7 @@ const recipesDishBD = [
   {
     id: 70,
     title: "Курица с томатами и базиликом",
-    imageUrl: "/image/recipe-70.png",
+    imageUrl: "/image/recipe/recipe-70.jpg",
     nutrients: { protein: 30, fat: 8, carbohydrates: 12 },
     calorieContent: 310,
     private: false,
@@ -2708,7 +2708,7 @@ const recipesDishBD = [
   {
     id: 71,
     title: "Тёплый салат с киноа и овощами",
-    imageUrl: "/image/recipe-71.png",
+    imageUrl: "/image/recipe/recipe-71.jpg",
     nutrients: { protein: 14, fat: 6, carbohydrates: 28 },
     calorieContent: 260,
     private: false,
@@ -2744,7 +2744,7 @@ const recipesDishBD = [
   {
     id: 72,
     title: "Смузи с персиком и морковью",
-    imageUrl: "/image/recipe-72.png",
+    imageUrl: "/image/recipe/recipe-72.jpeg",
     nutrients: { protein: 6, fat: 2, carbohydrates: 22 },
     calorieContent: 150,
     private: false,
@@ -2775,7 +2775,7 @@ const recipesDishBD = [
   {
     id: 73,
     title: "Запечённые баклажаны с сыром фета",
-    imageUrl: "/image/recipe-73.png",
+    imageUrl: "/image/recipe/recipe-73.jpg",
     nutrients: { protein: 16, fat: 10, carbohydrates: 14 },
     calorieContent: 260,
     private: false,
@@ -2812,7 +2812,7 @@ const recipesDishBD = [
   {
     id: 74,
     title: "Овсяноблин с ягодами и медом",
-    imageUrl: "/image/recipe-74.png",
+    imageUrl: "/image/recipe/recipe-74.jpg",
     nutrients: { protein: 12, fat: 5, carbohydrates: 25 },
     calorieContent: 210,
     private: false,
@@ -2846,7 +2846,7 @@ const recipesDishBD = [
   {
     id: 75,
     title: "Салат с авокадо и киноа",
-    imageUrl: "/image/recipe-75.png",
+    imageUrl: "/image/recipe/recipe-75.jpg",
     nutrients: { protein: 14, fat: 8, carbohydrates: 24 },
     calorieContent: 270,
     private: false,
@@ -2881,7 +2881,7 @@ const recipesDishBD = [
   {
     id: 76,
     title: "Смузи с малиной и бананом",
-    imageUrl: "/image/recipe-76.png",
+    imageUrl: "/image/recipe/recipe-76.webp",
     nutrients: { protein: 7, fat: 2, carbohydrates: 22 },
     calorieContent: 150,
     private: false,
@@ -2913,7 +2913,7 @@ const recipesDishBD = [
   {
     id: 77,
     title: "Творожная запеканка с яблоком",
-    imageUrl: "/image/recipe-77.png",
+    imageUrl: "/image/recipe/recipe-77.jpeg",
     nutrients: { protein: 22, fat: 7, carbohydrates: 18 },
     calorieContent: 230,
     private: false,
@@ -2948,14 +2948,14 @@ const recipesDishBD = [
   {
     id: 78,
     title: "Запечённая курица с брокколи",
-    imageUrl: "/image/recipe-78.png",
+    imageUrl: "/image/recipe/recipe-78.jpg",
     nutrients: { protein: 32, fat: 8, carbohydrates: 14 },
     calorieContent: 320,
     private: false,
     ingestion: ["lunch", "dinner"],
     cookingTime: "middling",
     yourTarget: "muscleGain",
-    complexity: "middle",
+    complexity: "difficult",
     description:
       "Сытный ужин с курицей и брокколи для поддержания мышечной массы.",
     ingredients: [
@@ -2984,7 +2984,7 @@ const recipesDishBD = [
   {
     id: 79,
     title: "Овсянка с черникой и миндалём",
-    imageUrl: "/image/recipe-79.png",
+    imageUrl: "/image/recipe/recipe-79.jpg",
     nutrients: { protein: 12, fat: 6, carbohydrates: 26 },
     calorieContent: 220,
     private: false,
@@ -3017,7 +3017,7 @@ const recipesDishBD = [
   {
     id: 80,
     title: "Смузи с шпинатом и яблоком",
-    imageUrl: "/image/recipe-80.png",
+    imageUrl: "/image/recipe/recipe-80.jpg",
     nutrients: { protein: 6, fat: 2, carbohydrates: 18 },
     calorieContent: 140,
     private: false,
@@ -3049,7 +3049,7 @@ const recipesDishBD = [
   {
     id: 81,
     title: "Салат с тунцом и авокадо",
-    imageUrl: "/image/recipe-81.png",
+    imageUrl: "/image/recipe/recipe-81.jpg",
     nutrients: { protein: 22, fat: 10, carbohydrates: 12 },
     calorieContent: 260,
     private: false,
@@ -3084,7 +3084,7 @@ const recipesDishBD = [
   {
     id: 82,
     title: "Протеиновый смузи с ягодами",
-    imageUrl: "/image/recipe-82.png",
+    imageUrl: "/image/recipe/recipe-82.jpg",
     nutrients: { protein: 15, fat: 3, carbohydrates: 20 },
     calorieContent: 200,
     private: false,
@@ -3116,7 +3116,7 @@ const recipesDishBD = [
   {
     id: 83,
     title: "Творожный десерт с ягодами",
-    imageUrl: "/image/recipe-83.png",
+    imageUrl: "/image/recipe/recipe-83.jpg",
     nutrients: { protein: 18, fat: 6, carbohydrates: 20 },
     calorieContent: 220,
     private: false,
@@ -3148,7 +3148,7 @@ const recipesDishBD = [
   {
     id: 84,
     title: "Куриные котлеты на пару",
-    imageUrl: "/image/recipe-84.png",
+    imageUrl: "/image/recipe/recipe-84.jpg",
     nutrients: { protein: 28, fat: 7, carbohydrates: 10 },
     calorieContent: 270,
     private: false,
@@ -3186,7 +3186,7 @@ const recipesDishBD = [
   {
     id: 85,
     title: "Овсянка с бананом и арахисом",
-    imageUrl: "/image/recipe-85.png",
+    imageUrl: "/image/recipe/recipe-85.jpeg",
     nutrients: { protein: 12, fat: 7, carbohydrates: 28 },
     calorieContent: 240,
     private: false,
@@ -3218,7 +3218,7 @@ const recipesDishBD = [
   {
     id: 86,
     title: "Смузи с ананасом и шпинатом",
-    imageUrl: "/image/recipe-86.png",
+    imageUrl: "/image/recipe/recipe-86.jpg",
     nutrients: { protein: 5, fat: 2, carbohydrates: 20 },
     calorieContent: 140,
     private: false,
@@ -3250,14 +3250,14 @@ const recipesDishBD = [
   {
     id: 87,
     title: "Запечённые овощи с прованскими травами",
-    imageUrl: "/image/recipe-87.png",
+    imageUrl: "/image/recipe/recipe-87.webp",
     nutrients: { protein: 6, fat: 5, carbohydrates: 20 },
     calorieContent: 180,
     private: false,
     ingestion: ["lunch", "dinner"],
     cookingTime: "middling",
     yourTarget: "detox",
-    complexity: "middle",
+    complexity: "difficult",
     description:
       "Полезное и ароматное блюдо из запечённых овощей с прованскими травами.",
     ingredients: [
@@ -3287,7 +3287,7 @@ const recipesDishBD = [
   {
     id: 88,
     title: "Творожный пудинг с ягодами",
-    imageUrl: "/image/recipe-88.png",
+    imageUrl: "/image/recipe/recipe-88.webp",
     nutrients: { protein: 18, fat: 5, carbohydrates: 18 },
     calorieContent: 210,
     private: false,
@@ -3321,7 +3321,7 @@ const recipesDishBD = [
   {
     id: 89,
     title: "Смузи с клубникой и бананом",
-    imageUrl: "/image/recipe-89.png",
+    imageUrl: "/image/recipe/recipe-89.jpeg",
     nutrients: { protein: 6, fat: 2, carbohydrates: 22 },
     calorieContent: 150,
     private: false,
@@ -3353,7 +3353,7 @@ const recipesDishBD = [
   {
     id: 90,
     title: "Овсянка с яблоком и корицей",
-    imageUrl: "/image/recipe-90.png",
+    imageUrl: "/image/recipe/recipe-90.jpg",
     nutrients: { protein: 12, fat: 5, carbohydrates: 28 },
     calorieContent: 220,
     private: false,
@@ -3387,7 +3387,7 @@ const recipesDishBD = [
   {
     id: 91,
     title: "Салат из шпината с киноа и гранатом",
-    imageUrl: "/image/recipe-91.png",
+    imageUrl: "/image/recipe/recipe-91.jpg",
     nutrients: { protein: 12, fat: 7, carbohydrates: 22 },
     calorieContent: 210,
     private: false,
@@ -3422,7 +3422,7 @@ const recipesDishBD = [
   {
     id: 92,
     title: "Протеиновый овсяноблин с бананом",
-    imageUrl: "/image/recipe-92.png",
+    imageUrl: "/image/recipe/recipe-92.jpg",
     nutrients: { protein: 18, fat: 5, carbohydrates: 22 },
     calorieContent: 210,
     private: false,
@@ -3457,7 +3457,7 @@ const recipesDishBD = [
   {
     id: 93,
     title: "Смузи с киви и шпинатом",
-    imageUrl: "/image/recipe-93.png",
+    imageUrl: "/image/recipe/recipe-93.jpg",
     nutrients: { protein: 5, fat: 2, carbohydrates: 18 },
     calorieContent: 140,
     private: false,
@@ -3489,14 +3489,14 @@ const recipesDishBD = [
   {
     id: 94,
     title: "Куриные тефтели с овощами",
-    imageUrl: "/image/recipe-94.png",
+    imageUrl: "/image/recipe/recipe-94.jpg",
     nutrients: { protein: 28, fat: 8, carbohydrates: 12 },
     calorieContent: 280,
     private: false,
     ingestion: ["lunch", "dinner"],
     cookingTime: "middling",
     yourTarget: "muscleGain",
-    complexity: "middle",
+    complexity: "difficult",
     description:
       "Сытное блюдо с куриными тефтелями и овощами для обеда или ужина.",
     ingredients: [
@@ -3528,7 +3528,7 @@ const recipesDishBD = [
   {
     id: 95,
     title: "Овсянка с грушей и орехами",
-    imageUrl: "/image/recipe-95.png",
+    imageUrl: "/image/recipe/recipe-95.webp",
     nutrients: { protein: 12, fat: 7, carbohydrates: 26 },
     calorieContent: 240,
     private: false,
@@ -3560,7 +3560,7 @@ const recipesDishBD = [
   {
     id: 96,
     title: "Смузи с манго и бананом",
-    imageUrl: "/image/recipe-96.png",
+    imageUrl: "/image/recipe/recipe-96.jpg",
     nutrients: { protein: 6, fat: 2, carbohydrates: 20 },
     calorieContent: 150,
     private: false,
@@ -3592,14 +3592,14 @@ const recipesDishBD = [
   {
     id: 97,
     title: "Запечённые кабачки с томатами",
-    imageUrl: "/image/recipe-97.png",
+    imageUrl: "/image/recipe/recipe-97.jpg",
     nutrients: { protein: 6, fat: 5, carbohydrates: 18 },
     calorieContent: 170,
     private: false,
     ingestion: ["lunch", "dinner"],
     cookingTime: "middling",
     yourTarget: "detox",
-    complexity: "middle",
+    complexity: "difficult",
     description: "Полезное и лёгкое блюдо из запечённых кабачков с томатами.",
     ingredients: [
       "Кабачок - 100г.",
@@ -3629,7 +3629,7 @@ const recipesDishBD = [
   {
     id: 98,
     title: "Творожные кексы с бананом",
-    imageUrl: "/image/recipe-98.png",
+    imageUrl: "/image/recipe/recipe-98.jpeg",
     nutrients: { protein: 18, fat: 6, carbohydrates: 18 },
     calorieContent: 210,
     private: false,
@@ -3662,7 +3662,7 @@ const recipesDishBD = [
   {
     id: 99,
     title: "Смузи с апельсином и морковью",
-    imageUrl: "/image/recipe-99.png",
+    imageUrl: "/image/recipe/recipe-99.jpg",
     nutrients: { protein: 5, fat: 2, carbohydrates: 20 },
     calorieContent: 140,
     private: false,
@@ -3694,7 +3694,7 @@ const recipesDishBD = [
   {
     id: 100,
     title: "Овсянка с курагой и орехами",
-    imageUrl: "/image/recipe-100.png",
+    imageUrl: "/image/recipe/recipe-100.jpg",
     nutrients: { protein: 12, fat: 7, carbohydrates: 28 },
     calorieContent: 240,
     private: false,

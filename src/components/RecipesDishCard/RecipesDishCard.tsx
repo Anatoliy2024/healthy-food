@@ -1,6 +1,6 @@
 "use client"
 import style from "./RecipesDishCard.module.scss"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 
 type RecipeType = {
   id: number
@@ -9,28 +9,44 @@ type RecipeType = {
   nutrients: { protein: number; fat: number; carbohydrates: number }
   calorieContent: number
   private: boolean
-  ingestion?: string[]
-  cookingTime?: string
-  yourTarget?: string
-  complexity?: string
-  description?: string
-  ingredients?: string[]
-  recipe?: {
+  ingestion: string[]
+  cookingTime: string
+  yourTarget: string
+  complexity: string
+  description: string
+  ingredients: string[]
+  recipe: {
     stageName: string
     stageList: string[]
+  }[]
+  advice: {
+    temperature: string
+    time: string
+    otherAdvice: string[]
   }
-  advice?: Record<string, string>
 }
 
 export function RecipesDishCard({ recipes }: { recipes: RecipeType }) {
   const router = useRouter()
+
+  const searchParams = useSearchParams()
+
+  // const page = Number(searchParams.get("page")) || 1
+
+  const openRecipe = (id: number) => {
+    router.push(`/recipes/${id}?${searchParams.toString()}`)
+  }
+
   return (
     <div
       className={style.wrapper}
       title={recipes.title}
-      onClick={() => {
-        router.push(`/recipes/${recipes.id}`)
-      }}
+      onClick={
+        () => openRecipe(recipes.id)
+        //   {
+        //   router.push(`/recipes/${recipes.id}`)
+        // }
+      }
     >
       <div
         className={style.imageBlock}
