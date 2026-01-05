@@ -1,10 +1,10 @@
 import { ArrowOpen } from "@/assets/svg/ArrowOpen"
 import style from "./FilterBlock.module.scss"
 import { ArrowClose } from "@/assets/svg/ArrowClose"
-import { SetIsCheckedType, SetOpenType } from "@/app/recipes/page"
+import { FilterKey, SetIsCheckedType, SetOpenType } from "@/app/recipes/page"
 import { Dispatch, SetStateAction } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
-type FilterKey = keyof SetOpenType
+
 export function FilterBlock({
   filterKey,
   title,
@@ -15,7 +15,7 @@ export function FilterBlock({
   // setChecked,
   handleFilterChange,
 }: {
-  filterKey: keyof SetIsCheckedType
+  filterKey: FilterKey
   title: string
   options: { value: string; label: string }[]
 
@@ -23,7 +23,7 @@ export function FilterBlock({
   setOpen: Dispatch<SetStateAction<SetOpenType>>
   checked: SetIsCheckedType
   // setChecked: Dispatch<SetStateAction<SetIsCheckedType>>
-  handleFilterChange: (type: keyof SetIsCheckedType, value: string) => void
+  handleFilterChange: (type: FilterKey, value: string) => void
 }) {
   const searchParams = useSearchParams()
   const router = useRouter()

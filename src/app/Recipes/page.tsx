@@ -24,8 +24,9 @@ export type SetIsCheckedType = {
   complexity: string
   yourTarget: string
 }
+export type FilterKey = keyof SetIsCheckedType
 type FiltersType = {
-  key: keyof SetIsCheckedType
+  key: FilterKey
   title: string
   options: {
     value: string
@@ -144,7 +145,7 @@ export default function Recipes() {
 
   console.log("isChecked", isChecked)
 
-  const handleFilterChange = (type: keyof SetIsCheckedType, value: string) => {
+  const handleFilterChange = (type: FilterKey, value: string) => {
     const params = new URLSearchParams(searchParams.toString())
 
     if (value) {
