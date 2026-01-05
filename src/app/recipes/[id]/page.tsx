@@ -101,7 +101,7 @@
 import RecipeClient from "@/components/RecipeClient/RecipeClient"
 import { Suspense } from "react"
 
-export const dynamic = "force-dynamic"
+// export const dynamic = "force-dynamic"
 
 export default function Page() {
   return (
