@@ -5,16 +5,9 @@ import {
   SetIsCheckedType,
   SetOpenType,
 } from "@/types/recipes"
-// import InnerApp from "@/providers/InnerApp"
+
 import style from "./RecipesClient.module.scss"
-import { useEffect, useState } from "react"
-
-// import { FilterBlock } from "@/components/FilterBlock/FilterBlock"
-
-// import { RecipesDishCard } from "@/components/RecipesDishCard/RecipesDishCard"
-
-// import recipesDishBD from "@/BD/recipesDish"
-// import { Paginator } from "@/components/Paginator/Paginator"
+import { useState } from "react"
 
 import { useRouter, useSearchParams } from "next/navigation"
 import recipesDishBD from "@/BD/recipesDish"
@@ -22,26 +15,6 @@ import InnerApp from "@/providers/InnerApp"
 import { FilterBlock } from "../FilterBlock/FilterBlock"
 import { RecipesDishCard } from "../RecipesDishCard/RecipesDishCard"
 import { Paginator } from "../Paginator/Paginator"
-// import {
-//   FilterKey,
-//   FiltersType,
-//   SetIsCheckedType,
-//   SetOpenType,
-// } from "@/types/recipes"
-
-// export type SetOpenType = {
-//   ingestion: boolean
-//   cookingTime: boolean
-//   complexity: boolean
-//   yourTarget: boolean
-// }
-// export type SetIsCheckedType = {
-//   ingestion: string
-//   cookingTime: string
-//   complexity: string
-//   yourTarget: string
-// }
-// export type FilterKey = keyof SetIsCheckedType
 
 const ITEMS_PER_PAGE = 12
 const FILTERS: FiltersType = [
@@ -85,32 +58,18 @@ const FILTERS: FiltersType = [
   },
 ]
 
-// const initialOpenState: SetOpenType = {
-//   ingestion: false,
-//   cookingTime: false,
-//   complexity: false,
-//   yourTarget: false,
-// }
-
-// const initialCheckedState: SetIsCheckedType = {
-//   ingestion: "",
-//   cookingTime: "",
-//   complexity: "",
-//   yourTarget: "",
-// }
-
 const EMPTY_OPEN: SetOpenType = {
   ingestion: false,
   cookingTime: false,
   complexity: false,
   yourTarget: false,
 }
-const EMPTY_CHECKED: SetIsCheckedType = {
-  ingestion: "",
-  cookingTime: "",
-  complexity: "",
-  yourTarget: "",
-}
+// const EMPTY_CHECKED: SetIsCheckedType = {
+//   ingestion: "",
+//   cookingTime: "",
+//   complexity: "",
+//   yourTarget: "",
+// }
 
 export default function RecipesClient() {
   const router = useRouter()
@@ -131,26 +90,7 @@ export default function RecipesClient() {
   }
   const [open, setOpen] = useState<SetOpenType>(openCalculate)
 
-  // const initialCheckedState: SetIsCheckedType = {
-  //   ingestion: searchParams.get("ingestion") || "",
-  //   cookingTime: searchParams.get("cookingTime") || "",
-  //   complexity: searchParams.get("complexity") || "",
-  //   yourTarget: searchParams.get("yourTarget") || "",
-  // }
-
-  // const initialOpenState: SetOpenType = Object.fromEntries(
-  //   Object.entries(initialCheckedState).map(([key, value]) => [key, !!value])
-  // ) as SetOpenType
-
   const page = Number(searchParams.get("page")) || 1
-
-  // const ingestion = searchParams.get("ingestion") // "smoothie"
-  // const cookingTime = searchParams.get("cookingTime") // null если нет
-  // const complexity = searchParams.get("complexity") // null если нет
-  // const yourTarget = searchParams.get("yourTarget") // null если нет
-
-  // const [isChecked, setIsChecked] =
-  //   useState<SetIsCheckedType>(EMPTY_CHECKED)
 
   console.log("isChecked", isChecked)
 
@@ -167,23 +107,7 @@ export default function RecipesClient() {
     router.push(`/recipes?${params.toString()}`, { scroll: false })
   }
 
-  // const handleFilterChange = (type: keyof SetIsCheckedType, value: string) => {
-  //   setIsChecked((prev) => ({ ...prev, [type]: value }))
-
-  //   // автоматически открываем блок при выборе
-  //   setOpen((prev) => ({ ...prev, [type]: true }))
-
-  //   // обновляем URL
-  //   const params = new URLSearchParams()
-  //   Object.entries({ ...isChecked, [type]: value }).forEach(([key, val]) => {
-  //     if (val) params.set(key, val)
-  //   })
-  //   router.push(`/recipes?${params.toString()}`)
-  // }
-
   const filteredRecipes = recipesDishBD.filter((recipe) => {
-    // проверяем каждый фильтр только если он выбран
-    // if (isChecked.ingestion && recipe.ingestion !== isChecked.ingestion) return false
     if (isChecked.ingestion && !recipe.ingestion.includes(isChecked.ingestion))
       return false
     if (isChecked.cookingTime && recipe.cookingTime !== isChecked.cookingTime)
@@ -193,43 +117,25 @@ export default function RecipesClient() {
     if (isChecked.yourTarget && recipe.yourTarget !== isChecked.yourTarget)
       return false
 
-    return true // если все условия пройдены
+    return true
   })
 
   const start = (page - 1) * ITEMS_PER_PAGE
   const end = start + ITEMS_PER_PAGE
 
   const currentItems = filteredRecipes.slice(start, end)
-  // const currentItems = recipesDishBD.slice(start, end)
 
   const onPageChange = (page: number) => {
     const params = new URLSearchParams(searchParams.toString())
     params.set("page", String(page))
     router.push(`/recipes?${params.toString()}`)
-
-    // router.push(`?page=${page}`)
   }
-
-  // const toggle = () => {
-  //   setOpen((prev) => ({
-  //     ...prev,
-  //     [key]: !prev[key],
-  //   }))
-  // }
 
   const resetOption = () => {
-    // router.push("?")
     router.replace("/recipes")
     setOpen(EMPTY_OPEN)
-    // setIsChecked(EMPTY_CHECKED)
-    // console.log("open", open)
-    // console.log("isChecked", isChecked)
-
-    // setPage(1)
   }
 
-  // const [isCheckedIngestion, setIsCheckedIngestion] = useState("")
-  // console.log("isCheckedIngestion", isChecked)
   return (
     <InnerApp>
       <div className={style.wrapper}>
@@ -246,7 +152,6 @@ export default function RecipesClient() {
                 open={open}
                 setOpen={setOpen}
                 checked={isChecked}
-                // setChecked={setIsChecked}
                 handleFilterChange={handleFilterChange}
               />
             ))}
@@ -269,7 +174,6 @@ export default function RecipesClient() {
             )}
             <Paginator
               totalItems={filteredRecipes.length}
-              // totalItems={recipesDishBD.length}
               currentPage={page}
               itemsPerPage={ITEMS_PER_PAGE}
               onPageChange={onPageChange}
@@ -279,5 +183,4 @@ export default function RecipesClient() {
       </div>
     </InnerApp>
   )
-  //   return <div className={style.wrapper}></div>
 }

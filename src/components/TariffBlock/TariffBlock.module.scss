@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    font-family: var(--font-inter);
+    font-family: var(--font-inter), sans-serif;
     @media (max-width: 1000px) {
       flex-wrap: wrap;
       justify-content: center;
@@ -27,7 +27,7 @@
       gap: 40px;
     }
     h4 {
-      font-family: var(--font-nunito);
+      font-family: var(--font-nunito), sans-serif;
       padding-bottom: 20px;
     }
     .price {
@@ -157,7 +157,7 @@
           justify-content: center;
           align-items: center;
           font-size: var(--fs-xl);
-          font-family: var(--font-inter);
+          font-family: var(--font-inter), sans-serif;
           @media (max-width: 1000px) {
             // width: 90px;
             // height: 90px;

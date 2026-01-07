@@ -119,6 +119,9 @@
 
           border-radius: 12px;
           position: absolute;
+          @media (max-width: 450px) {
+            width: 150px;
+          }
         }
 
         div:nth-child(1) {

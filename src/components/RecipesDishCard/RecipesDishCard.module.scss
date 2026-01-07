@@ -38,12 +38,23 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    @media (max-width: 500px) {
-      max-width: 497px;
+    @media (max-width: 650px) {
+      max-width: 100%;
+      white-space: normal;
+      overflow: visible;
+      text-overflow: clip;
+
+      // max-width: clamp(200px, 25vw, 495px) 497px;
+      // max-width: calc(100% - 50px);
+      // max-width: 200px;
     }
-    @media (max-width: 400px) {
-      max-width: 350px;
-    }
+    // @media (max-width: 500px) {
+    //   // max-width: clamp(200px, 25vw, 495px) 497px;
+    //   max-width: 497px;
+    // }
+    // @media (max-width: 450px) {
+    //   max-width: 350px;
+    // }
   }
   .calorieContent {
     flex: 0;

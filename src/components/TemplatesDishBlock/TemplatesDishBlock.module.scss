@@ -33,6 +33,9 @@
           border-radius: 20px;
           border: 1px solid #ea543c;
           cursor: pointer;
+          @media (max-width: 450px) {
+            width: 150px;
+          }
           &:hover {
             background: var(--color-gradient);
             color: white;

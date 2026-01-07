@@ -1,15 +1,13 @@
 "use client"
 
-// import InnerApp from "@/providers/InnerApp"
 import { useParams } from "next/navigation"
-// import recipesDishBD from "@/BD/recipesDish"
-// import style from "./Recipe.module.scss"
+
 import Image from "next/image"
 import { useRouter, useSearchParams } from "next/navigation"
 import recipesDishBD from "@/BD/recipesDish"
 import InnerApp from "@/providers/InnerApp"
 import { ArrowLeft } from "@/assets/svg/ArrowLeft"
-// import { ArrowLeft } from "@/assets/svg/ArrowLeft"
+
 import style from "./RecipeClient.module.scss"
 export default function RecipeClient() {
   const router = useRouter()
@@ -18,20 +16,9 @@ export default function RecipeClient() {
   const recipeDish = recipesDishBD.filter((el) => el.id === Number(id))[0]
 
   const goBack = () => {
-    // достаем page из query
     const params = new URLSearchParams(searchParams.toString())
-    // const page = searchParams.get("page") || "1"
 
-    // params.set("page", String(page))
     router.push(`/recipes?${params.toString()}`)
-
-    // идем на страницу списка с нужной пагинацией
-    // router.push(`/recipes?page=${page}`)
-    // if (window.history.length > 1) {
-    //   router.back()
-    // } else {
-    //   router.push("/recipes")
-    // }
   }
   return (
     <InnerApp>

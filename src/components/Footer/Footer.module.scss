@@ -60,7 +60,7 @@
   }
   .privetPolitic {
     color: #a0a0a0;
-    font-family: --font-inter;
+    font-family: var(--font-inter), sans-serif;
     font-size: var(--fs-sm);
     max-width: 1164px;
     margin: 0 auto;

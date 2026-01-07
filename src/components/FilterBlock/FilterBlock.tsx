@@ -1,7 +1,7 @@
 import { ArrowOpen } from "@/assets/svg/ArrowOpen"
 import style from "./FilterBlock.module.scss"
 import { ArrowClose } from "@/assets/svg/ArrowClose"
-// import { FilterKey, SetIsCheckedType, SetOpenType } from "@/app/recipes/page"
+
 import { Dispatch, SetStateAction } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { FilterKey, SetIsCheckedType, SetOpenType } from "@/types/recipes"
@@ -13,7 +13,7 @@ export function FilterBlock({
   open,
   setOpen,
   checked,
-  // setChecked,
+
   handleFilterChange,
 }: {
   filterKey: FilterKey
@@ -23,7 +23,7 @@ export function FilterBlock({
   open: SetOpenType
   setOpen: Dispatch<SetStateAction<SetOpenType>>
   checked: SetIsCheckedType
-  // setChecked: Dispatch<SetStateAction<SetIsCheckedType>>
+
   handleFilterChange: (type: FilterKey, value: string) => void
 }) {
   const searchParams = useSearchParams()
@@ -43,10 +43,6 @@ export function FilterBlock({
             params.delete(filterKey)
             router.push(`/recipes?${params.toString()}`, { scroll: false })
           }
-          // if (open[filterKey as FilterKey]) {
-          //   checked[filterKey] = ""
-          //   // setChecked((c) => ({ ...c, [filterKey]: "" }))
-          // }
         }}
       >
         <button className={style.trigger}>{title}</button>
@@ -60,21 +56,10 @@ export function FilterBlock({
       >
         <div className={style.inner}>
           {options.map((opt) => {
-            // console.log("checked[opt.value]", checked[opt.value])
-            // console.log("checked[filterKey]", checked[filterKey])
-            // console.log("checked", checked)
-            // console.log("opt.value", opt.value)
-            // console.log("filterKey", filterKey)
             return (
               <div
                 key={opt.value}
                 onClick={() => handleFilterChange(filterKey, opt.value)}
-                // onClick={() =>
-                //   setChecked((c) => ({
-                //     ...c,
-                //     [filterKey]: opt.value,
-                //   }))
-                // }
               >
                 <div
                   className={`${style.customRadio} ${
@@ -82,24 +67,11 @@ export function FilterBlock({
                       ? style.selected
                       : ""
                   }`}
-                  // onClick={() => setSelected(opt)}
                   id={opt.value}
                   role="radio"
                   aria-checked={checked[filterKey as FilterKey] === opt.value}
                 ></div>
-                {/* <input
-                type="radio"
-                id={opt.value}
-                name={filterKey}
-                value={opt.value}
-                checked={checked[filterKey as FilterKey] === opt.value}
-                onChange={(e) =>
-                  setChecked((c) => ({
-                    ...c,
-                    [filterKey]: e.target.value,
-                  }))
-                }
-              /> */}
+
                 <label htmlFor={opt.value}>{opt.label}</label>
               </div>
             )

@@ -77,6 +77,10 @@
             background: linear-gradient(white, white) padding-box,
               var(--color-gradient) border-box;
 
+            @media (max-width: 450px) {
+              width: 150px;
+            }
+
             &:nth-child(1) {
               top: 88px;
               left: 38.75px;
