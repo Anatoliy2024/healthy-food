@@ -58,6 +58,7 @@ export function FilterBlock({
           {options.map((opt) => {
             return (
               <div
+                className="noSelect"
                 key={opt.value}
                 onClick={() => handleFilterChange(filterKey, opt.value)}
               >

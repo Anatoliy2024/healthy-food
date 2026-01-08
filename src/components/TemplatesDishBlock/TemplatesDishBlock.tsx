@@ -33,7 +33,7 @@ export function TemplatesDishBlock() {
               <li
                 key={i}
                 onClick={() => setDayMenu(i)}
-                className={dayMenu === i ? style.dataActive : ""}
+                className={`${dayMenu === i ? style.dataActive : ""} noSelect`}
               >
                 {el}
               </li>

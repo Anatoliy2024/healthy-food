@@ -11,9 +11,12 @@
     height: 60px;
     cursor: pointer;
     border-radius: 12px;
-
     &:hover {
-      background: orange;
+      background: rgb(255, 166, 0);
+      // filter: brightness(1.2);
+    }
+    &:active {
+      background: rgba(255, 166, 0, 0.697);
     }
   }
 

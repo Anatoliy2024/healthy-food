@@ -39,7 +39,7 @@ export function RecipesDishCard({ recipes }: { recipes: RecipeType }) {
 
   return (
     <div
-      className={style.wrapper}
+      className={`${style.wrapper} noSelect`}
       title={recipes.title}
       onClick={
         () => openRecipe(recipes.id)

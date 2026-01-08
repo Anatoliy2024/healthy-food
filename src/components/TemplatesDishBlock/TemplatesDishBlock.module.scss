@@ -33,12 +33,16 @@
           border-radius: 20px;
           border: 1px solid #ea543c;
           cursor: pointer;
+          transition: filter 0.15s ease;
           @media (max-width: 450px) {
             width: 150px;
           }
           &:hover {
             background: var(--color-gradient);
             color: white;
+          }
+          &:active {
+            filter: brightness(1.2);
           }
         }
         .dataActive {

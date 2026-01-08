@@ -69,6 +69,11 @@
         &:hover {
           transform: scale(1.1);
         }
+        &:active {
+          // background: var(--color-gradient-4);
+          filter: brightness(0.8);
+          // color: white;
+        }
       }
     }
   }

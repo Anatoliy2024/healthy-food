@@ -155,7 +155,10 @@ export default function RecipesClient() {
                 handleFilterChange={handleFilterChange}
               />
             ))}
-            <div className={style.resetButton} onClick={resetOption}>
+            <div
+              className={`${style.resetButton}  noSelect`}
+              onClick={resetOption}
+            >
               Сброс
             </div>
           </div>

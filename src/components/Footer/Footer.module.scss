@@ -48,11 +48,14 @@
           color: white;
           transition: 0.4s ease;
           cursor: pointer;
-
+          transition: filter 0.15s ease;
           &:hover {
             background: var(--color-gradient);
             color: black;
             border-radius: 10px;
+          }
+          &:active {
+            filter: brightness(2);
           }
         }
       }

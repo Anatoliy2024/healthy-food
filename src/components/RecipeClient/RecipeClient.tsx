@@ -23,7 +23,10 @@ export default function RecipeClient() {
   return (
     <InnerApp>
       <div className={style.wrapper}>
-        <div className={style.backButton} onClick={() => goBack()}>
+        <div
+          className={`${style.backButton} noSelect`}
+          onClick={() => goBack()}
+        >
           <ArrowLeft />
           <div>Назад</div>
         </div>

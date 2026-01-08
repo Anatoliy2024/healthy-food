@@ -93,6 +93,9 @@
         &:hover {
           transform: scale(1.1);
         }
+        &:active {
+          background: #595959;
+        }
       }
     }
   }

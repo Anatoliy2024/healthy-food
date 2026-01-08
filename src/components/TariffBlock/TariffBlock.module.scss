@@ -98,9 +98,14 @@
           border-radius: 12px;
           cursor: pointer;
           // align-self: flex-start;
-          transition: transform 0.2s ease;
+          transition: transform 0.2s ease, filter 0.15s ease;
           &:hover {
             transform: scale(1.1);
+          }
+          &:active {
+            // background: var(--color-gradient-4);
+            filter: brightness(1.2);
+            // color: white;
           }
         }
       }
@@ -141,6 +146,12 @@
           button {
             background: white;
             color: #000000;
+
+            &:active {
+              // background: var(--color-gradient-4);
+              filter: brightness(0.8);
+              // color: white;
+            }
           }
         }
         &::after {

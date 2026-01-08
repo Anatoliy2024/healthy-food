@@ -8,6 +8,11 @@
   &:hover {
     transform: scale(1.05);
   }
+  &:active {
+    &:active {
+      filter: brightness(1.15);
+    }
+  }
   & > div {
     padding: 24px;
     color: white;

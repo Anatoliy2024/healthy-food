@@ -28,10 +28,16 @@
     align-items: center;
     gap: 10px;
     justify-content: left;
-
+    transition: filer 0.15s ease;
     &:hover {
       background: var(--color-gradient);
       color: white;
+    }
+
+    &:active {
+      filter: brightness(1.2);
+
+      // color: white;
     }
   }
   h1 {
