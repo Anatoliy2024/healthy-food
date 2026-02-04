@@ -1,6 +1,6 @@
 .pagination {
   font-size: var(--fs-lg-m);
-  // margin-top: auto;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -13,7 +13,6 @@
     border-radius: 12px;
     &:hover {
       background: rgb(255, 166, 0);
-      // filter: brightness(1.2);
     }
     &:active {
       background: rgba(255, 166, 0, 0.697);
@@ -23,7 +22,6 @@
   .active {
     background: var(--color-gradient);
 
-    // background: orange;
     color: white;
   }
 }

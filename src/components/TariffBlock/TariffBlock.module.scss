@@ -2,18 +2,11 @@
   max-width: 1217px;
   margin: 0 auto;
   padding-bottom: clamp(50px, 5vw, 110px);
-  // padding-bottom: 110px;
-  // @media (max-width: 700px) {
-  //   padding-bottom: 50px;
-  // }
+
   h3 {
     font-size: var(--fs-xsl);
     font-family: var(--font-poppins), sans-serif;
     padding-bottom: clamp(40px, 3vw, 70px);
-    // padding-bottom: 70px;
-    // @media (max-width: 700px) {
-    //   padding-bottom: 40px;
-    // }
   }
   .content {
     display: flex;
@@ -51,12 +44,11 @@
       padding: 24px;
       display: flex;
       flex-direction: column;
-      // align-items: center;
-      // justify-content: start;
+
       ul {
         color: #a0a0a0;
         display: flex;
-        // align-items: center;
+
         flex-direction: column;
         gap: 20px;
         padding-bottom: 30px;
@@ -89,23 +81,17 @@
         button {
           padding: 20px 60px;
           color: white;
-          // text-align: center;
-          // flex: 1;
-          // display: flex;
-          // justify-content: center;
-          // align-items: center;
+
           background: var(--color-gradient);
           border-radius: 12px;
           cursor: pointer;
-          // align-self: flex-start;
+
           transition: transform 0.2s ease, filter 0.15s ease;
           &:hover {
             transform: scale(1.1);
           }
           &:active {
-            // background: var(--color-gradient-4);
             filter: brightness(1.2);
-            // color: white;
           }
         }
       }
@@ -120,10 +106,6 @@
               background: black;
             }
           }
-
-          // li::before {
-          //   background: blue;
-          // }
         }
       }
 
@@ -148,9 +130,7 @@
             color: #000000;
 
             &:active {
-              // background: var(--color-gradient-4);
               filter: brightness(0.8);
-              // color: white;
             }
           }
         }
@@ -170,8 +150,6 @@
           font-size: var(--fs-xl);
           font-family: var(--font-inter), sans-serif;
           @media (max-width: 1000px) {
-            // width: 90px;
-            // height: 90px;
             top: -33px;
             right: -23px;
           }

@@ -31,8 +31,6 @@ export function RecipesDishCard({ recipes }: { recipes: RecipeType }) {
 
   const searchParams = useSearchParams()
 
-  // const page = Number(searchParams.get("page")) || 1
-
   const openRecipe = (id: number) => {
     router.push(`/recipes/${id}?${searchParams.toString()}`)
   }
@@ -41,12 +39,7 @@ export function RecipesDishCard({ recipes }: { recipes: RecipeType }) {
     <div
       className={`${style.wrapper} noSelect`}
       title={recipes.title}
-      onClick={
-        () => openRecipe(recipes.id)
-        //   {
-        //   router.push(`/recipes/${recipes.id}`)
-        // }
-      }
+      onClick={() => openRecipe(recipes.id)}
     >
       <div
         className={style.imageBlock}

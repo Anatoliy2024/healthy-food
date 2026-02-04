@@ -9,9 +9,6 @@
   }
 
   .imageBlock {
-    // background-image: cover;
-    // background-position: center;
-    // background-repeat: no-repeat;
     min-height: 310px;
     border-radius: 20px;
 
@@ -28,7 +25,7 @@
       }
     }
   }
-  // .text {
+
   .title {
     flex: 1 1 auto;
 
@@ -44,25 +41,14 @@
       white-space: normal;
       overflow: visible;
       text-overflow: clip;
-
-      // max-width: clamp(200px, 25vw, 495px) 497px;
-      // max-width: calc(100% - 50px);
-      // max-width: 200px;
     }
-    // @media (max-width: 500px) {
-    //   // max-width: clamp(200px, 25vw, 495px) 497px;
-    //   max-width: 497px;
-    // }
-    // @media (max-width: 450px) {
-    //   max-width: 350px;
-    // }
   }
   .calorieContent {
     flex: 0;
-    background: var(--color-gradient); /* градиент */
-    // background: linear-gradient(90deg, #ea543c, #c5aa24);
-    -webkit-background-clip: text; /* градиент обрезается по тексту */
-    -webkit-text-fill-color: transparent; /* текст становится прозрачным, чтобы был виден градиент */
+    background: var(--color-gradient);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   // }
 }

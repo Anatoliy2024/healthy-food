@@ -1,6 +1,6 @@
 import { Telegram } from "@/assets/svg/Telegram"
 import { LogoFull } from "../LogoFull/LogoFull"
-import { NavbarList } from "../NavbarList/NavbarList"
+
 import style from "./Footer.module.scss"
 import { WhatsApp } from "@/assets/svg/WhatsApp"
 import { Instagram } from "@/assets/svg/Instagram"

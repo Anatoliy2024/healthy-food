@@ -76,8 +76,6 @@ function AdvantageElem({
       <div className={style.imageContainer}>
         <Image src={image} width={200} height={240} alt="image" />
       </div>
-      {/* <div className={style.elemContent}>
-      </div> */}
     </div>
   )
 }

@@ -1,22 +1,18 @@
 .wrapper {
-  //   min-height: 1100px;
   background: url("/image/dish-10.png") no-repeat;
   background-position: center;
   margin-bottom: clamp(50px, 5vw, 110px);
-  // margin-bottom: 110px;
-  // @media (max-width: 700px) {
-  //   margin-bottom: 50px;
-  // }
+
   @media (max-width: 900px) {
     background-position: left;
   }
 
   .container {
     padding: clamp(40px, 13vw, 252px) 0;
-    // padding: 252px 0;
+
     max-width: 1216px;
     margin: 0 auto;
-    // text-align: center;
+
     font-size: var(--fs-xxxl);
     font-weight: 700;
     color: white;
@@ -24,9 +20,7 @@
     @media (max-width: 900px) {
       text-shadow: 1px 1px 5px black;
     }
-    // @media (max-width: 700px) {
-    //   padding: 40px 0;
-    // }
+
     div:first-child {
       padding-left: 150px;
       @media (max-width: 940px) {
@@ -40,9 +34,7 @@
       @media (max-width: 1234px) {
         padding-left: 200px;
       }
-      // @media (max-width: 940px) {
-      //   padding-left: 100px;
-      // }
+
       @media (max-width: 940px) {
         padding: 0;
 

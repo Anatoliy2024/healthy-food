@@ -12,13 +12,7 @@
   color: white;
   padding: clamp(20px, 4vw, 90px) 10px clamp(20px, 5vw, 110px);
   margin-bottom: clamp(40px, 4vw, 90px);
-  // padding: 90px 0 110px 0;
-  // margin-bottom: 90px;
-  // @media (max-width: 1300px) {
-  //   padding: 20px 10px;
-  //   margin-bottom: 40px;
 
-  // }
   h3 {
     font-size: var(--fs-xsl);
     font-family: var(--font-poppins), sans-serif;
@@ -29,19 +23,15 @@
     max-width: 1214px;
     margin: 0 auto;
     .content {
-      //   padding-top: 50px;
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       .offer {
-        // max-width: 709px;
         padding-top: 50px;
 
         flex: 1 1 709px;
         @media (max-width: 1300px) {
           padding-bottom: 30px;
-
-          // text-align: center;
         }
         div:first-child {
           display: flex;
@@ -62,13 +52,6 @@
           flex: 1 1 auto;
 
           width: 100%;
-          // @media (max-width: 400px) {
-
-          //   max-width: ;
-          //   // justify-content: center;
-
-          //   // text-align: center;
-          // }
 
           svg {
             transition: 0.2s ease;
@@ -81,22 +64,16 @@
         input {
           flex: 1 1 auto;
           width: 100%;
-          // @media (max-width: 400px) {
-          //   width: 200px;
-          //   // justify-content: center;
-
-          //   // text-align: center;
-          // }
         }
         input::placeholder {
           color: #a0a0a0;
-          opacity: 1; /* важно для Firefox */
+          opacity: 1;
         }
       }
       .principles {
         flex: 1 0 495px;
         height: 288px;
-        // flex: 1;
+
         position: relative;
         @media (max-width: 1300px) {
           flex: 1 1 495px;
@@ -106,9 +83,6 @@
           justify-content: center;
           height: auto;
           gap: 10px;
-          // justify-content: center;
-
-          // text-align: center;
         }
         div {
           width: 185px;
@@ -169,8 +143,6 @@
             transform: none;
             position: static;
           }
-
-          // text-align: center;
         }
       }
     }

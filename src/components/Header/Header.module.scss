@@ -1,31 +1,23 @@
 .wrapper {
-  // padding: 0 20px 90px;
-
   height: clamp(30px, 13vh, 60px);
-  // padding: 10px;
-  // height: 200px;
+
   width: 100%;
   max-width: 1920px;
-  // overflow: hidden;
 
   position: fixed;
-  // top: 20px;
+
   z-index: 1000;
   padding: 0 40px;
-  // animation-duration: 0.5s;
+
   svg {
     height: clamp(30px, 13vh, 60px);
-
-    // height: clamp(50px, 13vh, 95px);
   }
   .container {
     display: flex;
     justify-content: space-between;
     max-width: 1920px;
     height: 100%;
-    // margin: 0 auto;
 
-    // max-width: 1163px;
     gap: 20px;
     align-items: center;
     .hamburger {
@@ -58,7 +50,7 @@
 
     .overlay {
       position: fixed;
-      z-index: 999; // меньше чем navbar
+      z-index: 999;
       top: 0;
       left: 0;
       width: 100vw;

@@ -3,7 +3,6 @@ import { useEffect, useState } from "react"
 import { LogoFull } from "../LogoFull/LogoFull"
 import { NavbarList } from "../NavbarList/NavbarList"
 import style from "./Header.module.scss"
-import { Logo } from "@/assets/svg/logo"
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -26,7 +25,6 @@ export function Header() {
       setScrolled(window.scrollY > 0)
     }
 
-    // начальное состояние (УЖЕ НА КЛИЕНТЕ)
     updateMedia()
     onScroll()
 

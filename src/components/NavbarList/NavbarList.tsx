@@ -42,11 +42,6 @@ export function NavbarList({
           Ценности
         </Link>
       </li>
-      {/* <li>Советы</li> 
-       <li>Рецепты</li>
-      <li>Индивидуальный подход</li>
-      <li>Шаблоны</li>
-      <li>Ценности</li> */}
     </ul>
   )
 }

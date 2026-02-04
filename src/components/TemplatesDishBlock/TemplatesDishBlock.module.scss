@@ -22,7 +22,7 @@
         color: #a0a0a0;
         padding-bottom: 30px;
         justify-content: center;
-        // @media(max-width:650)
+
         li {
           width: 175px;
           height: 57px;
@@ -52,8 +52,6 @@
       }
 
       .menuDish {
-        // display: flex;
-        // flex-wrap: wrap;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-auto-rows: 1fr;
@@ -70,17 +68,17 @@
 
           @media (max-width: 460px) {
             text-align: center;
-            // width: 100%;
+
             max-width: 100%;
           }
 
           h4 {
             padding-bottom: 20px;
             font-size: var(--fs-lg);
-            background: var(--color-gradient); /* градиент */
+            background: var(--color-gradient);
 
-            -webkit-background-clip: text; /* градиент обрезается по тексту */
-            -webkit-text-fill-color: transparent; /* текст становится прозрачным, чтобы был виден градиент */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
           .dishElemContent {
             display: flex;

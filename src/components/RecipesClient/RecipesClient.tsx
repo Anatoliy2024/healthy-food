@@ -64,12 +64,6 @@ const EMPTY_OPEN: SetOpenType = {
   complexity: false,
   yourTarget: false,
 }
-// const EMPTY_CHECKED: SetIsCheckedType = {
-//   ingestion: "",
-//   cookingTime: "",
-//   complexity: "",
-//   yourTarget: "",
-// }
 
 export default function RecipesClient() {
   const router = useRouter()

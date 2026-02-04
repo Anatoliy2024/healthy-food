@@ -11,8 +11,6 @@
     @media (max-width: 1000px) {
       height: auto;
       overflow: auto;
-
-      // position: relative;
     }
     .imageBlock {
       max-width: 70%;
@@ -20,7 +18,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      //   z-index: 1;
+
       @media (max-width: 1000px) {
         position: relative;
       }
@@ -46,9 +44,6 @@
         position: relative;
         top: 0;
         margin: 20px 20px 0 20px;
-        // right: 0;
-        // width: 50%;
-        // height: auto;
       }
 
       h4 {
@@ -70,9 +65,7 @@
           transform: scale(1.1);
         }
         &:active {
-          // background: var(--color-gradient-4);
           filter: brightness(0.8);
-          // color: white;
         }
       }
     }

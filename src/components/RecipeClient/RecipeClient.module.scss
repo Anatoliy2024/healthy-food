@@ -20,7 +20,7 @@
   .backButton {
     padding: 10px;
     border-radius: 12px;
-    // text-align: center;
+
     cursor: pointer;
     margin-bottom: 20px;
     display: inline-flex;
@@ -36,8 +36,6 @@
 
     &:active {
       filter: brightness(1.2);
-
-      // color: white;
     }
   }
   h1 {
@@ -53,10 +51,9 @@
       justify-content: center;
     }
     .imageContainer {
-      // width: 100%;
       max-width: 492px;
       max-height: 492px;
-      // aspect-ratio: 1 / 1;
+
       border-radius: 20px;
       overflow: hidden;
       img {
@@ -70,10 +67,7 @@
     .textContainer {
       .description {
         @include description-block;
-        // background: var(--color-gradient);
-        // border-radius: 20px;
-        // color: white;
-        // padding: 24px;
+
         margin-bottom: 33px;
         div:first-child {
           display: flex;
@@ -96,12 +90,7 @@
         }
         ul {
           @include ul-block;
-          // display: flex;
-          // flex-direction: column;
-          // gap: 16px;
-          // font-size: var(--fs-lg);
-          // padding-left: 22px;
-          // list-style: disc;
+
           li {
           }
         }
@@ -119,14 +108,6 @@
           ul {
             @include ul-block;
             padding-bottom: 24px;
-
-            // display: flex;
-            // flex-direction: column;
-            // gap: 16px;
-            // font-size: var(--fs-lg);
-            // padding-left: 22px;
-            // list-style: disc;
-            // padding-bottom: 24px;
           }
         }
       }

@@ -3,7 +3,6 @@ import { useState } from "react"
 import style from "./TemplatesDishBlock.module.scss"
 import test from "@/BD/test"
 import menuDishBD from "@/BD/menuDishBD"
-// import menuDishBD from "../../BD/menuDish"
 
 export function TemplatesDishBlock() {
   const [dayMenu, setDayMenu] = useState(0)
