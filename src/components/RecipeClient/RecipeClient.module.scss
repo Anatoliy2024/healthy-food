@@ -13,11 +13,11 @@
   list-style: disc;
 }
 
-.wrapper {
+.recipeClient {
   padding: clamp(100px, 9vw, 182px) 10px clamp(40px, 5vw, 110px);
   max-width: 1216px;
   margin: 0 auto;
-  .backButton {
+  &__backButton {
     padding: 10px;
     border-radius: 12px;
 
@@ -43,89 +43,90 @@
     font-size: var(--fs-xsl);
     font-family: var(--font-poppins), sans-serif;
   }
-  .contentBlock {
+  &__contentBlock {
     display: flex;
     gap: 20px;
     @media (max-width: 800px) {
       flex-wrap: wrap;
       justify-content: center;
     }
-    .imageContainer {
-      max-width: 492px;
-      max-height: 492px;
+  }
 
-      border-radius: 20px;
-      overflow: hidden;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
+  &__imageContainer {
+    max-width: 492px;
+    max-height: 492px;
+
+    border-radius: 20px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__textContainer {
+  }
+  &__description {
+    @include description-block;
+
+    margin-bottom: 33px;
+    div:first-child {
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: space-between;
+      font-size: var(--fs-lg-m);
+      padding-bottom: 16px;
+      ul {
+        display: flex;
+        gap: 20px;
       }
     }
+  }
+  &__ingredients {
+    padding-bottom: 30px;
+    h2 {
+      font-size: var(--fs-lg-m);
+      padding-bottom: 28px;
+    }
+    ul {
+      @include ul-block;
 
-    .textContainer {
-      .description {
-        @include description-block;
-
-        margin-bottom: 33px;
-        div:first-child {
-          display: flex;
-          flex-wrap: wrap;
-
-          justify-content: space-between;
-          font-size: var(--fs-lg-m);
-          padding-bottom: 16px;
-          ul {
-            display: flex;
-            gap: 20px;
-          }
-        }
+      li {
       }
-      .ingredients {
-        padding-bottom: 30px;
-        h2 {
-          font-size: var(--fs-lg-m);
-          padding-bottom: 28px;
-        }
-        ul {
-          @include ul-block;
-
-          li {
-          }
-        }
+    }
+  }
+  &__recipe {
+    h2 {
+      font-size: 1.8rem;
+      padding-bottom: 28px;
+    }
+    & > div {
+      h3 {
+        font-size: var(--fs-lg-m);
+        padding-bottom: 16px;
       }
-      .recipe {
-        h2 {
-          font-size: 1.8rem;
-          padding-bottom: 28px;
-        }
-        & > div {
-          h3 {
-            font-size: var(--fs-lg-m);
-            padding-bottom: 16px;
-          }
-          ul {
-            @include ul-block;
-            padding-bottom: 24px;
-          }
-        }
+      ul {
+        @include ul-block;
+        padding-bottom: 24px;
       }
-      .advice {
-        @include description-block;
-        & > div {
-          font-size: var(--fs-lg-m);
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          padding-bottom: 16px;
-        }
-        ul {
-          display: flex;
-          flex-direction: column;
-          gap: 16px;
-        }
-      }
+    }
+  }
+  &__advice {
+    @include description-block;
+    & > div {
+      font-size: var(--fs-lg-m);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-bottom: 16px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
   }
 }

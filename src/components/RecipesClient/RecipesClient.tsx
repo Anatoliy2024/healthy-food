@@ -132,11 +132,11 @@ export default function RecipesClient() {
 
   return (
     <InnerApp>
-      <div className={style.wrapper}>
+      <div className={style.recipesClient}>
         <h1>Рецепты</h1>
         {/* <Link href="/">Назад</Link> */}
-        <div className={style.content}>
-          <div className={style.option}>
+        <div className={style.recipesClient__content}>
+          <div className={style.recipesClient__option}>
             {FILTERS.map((f) => (
               <FilterBlock
                 key={f.key}
@@ -150,20 +150,20 @@ export default function RecipesClient() {
               />
             ))}
             <div
-              className={`${style.resetButton}  noSelect`}
+              className={`${style.recipesClient__resetButton}  noSelect`}
               onClick={resetOption}
             >
               Сброс
             </div>
           </div>
-          <div className={style.infoBlock}>
+          <div className={style.recipesClient__infoBlock}>
             {currentItems.length === 0 && (
-              <div className={style.noRecipe}>
+              <div className={style.recipesClient__noRecipe}>
                 По заданным парамертам рецептов нет
               </div>
             )}
             {currentItems.length > 0 && (
-              <div className={style.recipeContainer}>
+              <div className={style.recipesClient__recipeContainer}>
                 {currentItems.map((recipes, index) => (
                   <RecipesDishCard key={index} recipes={recipes} />
                 ))}

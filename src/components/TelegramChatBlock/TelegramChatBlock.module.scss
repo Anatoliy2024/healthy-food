@@ -1,7 +1,7 @@
-.wrapper {
+.telegramChatBlock {
   background: #f2dbbf;
   margin-bottom: clamp(50px, 5vw, 110px);
-  .container {
+  &__container {
     margin: 0 auto;
     max-width: 1216px;
     // height: 1100px;
@@ -12,61 +12,61 @@
       height: auto;
       overflow: auto;
     }
-    .imageBlock {
-      max-width: 70%;
-      max-height: 90%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
+  }
+  &__imageBlock {
+    max-width: 70%;
+    max-height: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
-      @media (max-width: 1000px) {
-        position: relative;
-      }
+    @media (max-width: 1000px) {
+      position: relative;
     }
-    .textBlock {
-      max-width: 598px;
-      padding: 48px 24px;
-      border-radius: 20px;
-      background: var(--color-gradient);
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
-      color: white;
-      font-size: var(--fs-lg);
-      position: absolute;
-      top: clamp(0px, 10vw, 227px);
-      right: 0;
-      z-index: 5;
-      @media (max-width: 1000px) {
-        max-width: 100%;
+  }
+  &__textBlock {
+    max-width: 598px;
+    padding: 48px 24px;
+    border-radius: 20px;
+    background: var(--color-gradient);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    font-size: var(--fs-lg);
+    position: absolute;
+    top: clamp(0px, 10vw, 227px);
+    right: 0;
+    z-index: 5;
+    @media (max-width: 1000px) {
+      max-width: 100%;
 
-        position: relative;
-        top: 0;
-        margin: 20px 20px 0 20px;
-      }
+      position: relative;
+      top: 0;
+      margin: 20px 20px 0 20px;
+    }
 
-      h4 {
-        font-size: var(--fs-xll);
-        font-family: var(--font-poppins), sans-serif;
-        text-align: center;
+    h4 {
+      font-size: var(--fs-xll);
+      font-family: var(--font-poppins), sans-serif;
+      text-align: center;
+    }
+    div {
+      text-align: center;
+    }
+    button {
+      padding: 20px 60px;
+      background: white;
+      border-radius: 12px;
+      color: black;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      &:hover {
+        transform: scale(1.1);
       }
-      div {
-        text-align: center;
-      }
-      button {
-        padding: 20px 60px;
-        background: white;
-        border-radius: 12px;
-        color: black;
-        cursor: pointer;
-        transition-duration: 0.2s;
-        &:hover {
-          transform: scale(1.1);
-        }
-        &:active {
-          filter: brightness(0.8);
-        }
+      &:active {
+        filter: brightness(0.8);
       }
     }
   }

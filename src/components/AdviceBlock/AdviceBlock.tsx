@@ -1,14 +1,15 @@
 import Image from "next/image"
 import style from "./AdviceBlock.module.scss"
+
 export function AdviceBlock() {
   return (
-    <div className={style.wrapper}>
-      <div className={style.imageBlock}>
+    <div className={style.adviceBlock}>
+      <div className={style.adviceBlock__imageBlock}>
         <Image src="/image/dish.png" width={495} height={836} alt="dish" />
       </div>
-      <div className={style.textBlock} id="advise">
+      <div className={style.adviceBlock__textBlock} id="advise">
         <h3>Простые советы для старта</h3>
-        <div className={style.textInfo}>
+        <div className={style.adviceBlock__textInfo}>
           <p>
             Начать путь к здоровому питанию можно с простых шагов. Постарайтесь
             заменить сладкие напитки чистой водой и добавить в рацион больше
@@ -22,7 +23,7 @@ export function AdviceBlock() {
             сразу.
           </p>
         </div>
-        <div className={style.advice}>
+        <div className={style.adviceBlock__advice}>
           <div>Планируйте приёмы пищи заранее</div>
           <div>Пейте достаточно воды</div>
           <div>Соблюдайте режим питания</div>

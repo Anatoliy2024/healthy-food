@@ -2,12 +2,12 @@ import Image from "next/image"
 import style from "./GeneralInformationBlock.module.scss"
 export function GeneralInformationBlock() {
   return (
-    <div className={style.wrapper}>
-      <div className={style.container}>
+    <div className={style.generalInformationBlock}>
+      <div className={style.generalInformationBlock__container}>
         <h3>Что такое здоровое питание?</h3>
-        <div className={style.mainInfo}>
-          <div className={style.textContainer}>
-            <div className={style.othersInfo}>
+        <div className={style.generalInformationBlock__mainInfo}>
+          <div className={style.generalInformationBlock__textContainer}>
+            <div className={style.generalInformationBlock__othersInfo}>
               <div>Разнообразие</div>
               <div>Регулярное</div>
               <div>Натуральное</div>
@@ -15,9 +15,9 @@ export function GeneralInformationBlock() {
               <div>Баланс</div>
               <div>Вкус</div>
             </div>
-            <div className={style.blockInfo}>
-              <div className={style.col}>
-                <div className={style.protein}>
+            <div className={style.generalInformationBlock__blockInfo}>
+              <div className={style.generalInformationBlock__col}>
+                <div className={style.generalInformationBlock__protein}>
                   <h4>Белки</h4>
                   <ul>
                     <li>Рост и регенерацию мышц</li>
@@ -26,7 +26,7 @@ export function GeneralInformationBlock() {
                     <li>Способствуют насыщению</li>
                   </ul>
                 </div>
-                <div className={style.carbohydrates}>
+                <div className={style.generalInformationBlock__carbohydrates}>
                   <h4>Углеводы</h4>
                   <ul>
                     <li>Продолжительная энергия</li>
@@ -37,8 +37,8 @@ export function GeneralInformationBlock() {
                 </div>
               </div>
 
-              <div className={style.col}>
-                <div className={style.vitamin}>
+              <div className={style.generalInformationBlock__col}>
+                <div className={style.generalInformationBlock__vitamin}>
                   <h4>Витамины</h4>
                   <ul>
                     <li>Укрепляет иммунитет </li>
@@ -46,7 +46,7 @@ export function GeneralInformationBlock() {
                     <li>Защищают клетки от свободных радикалов</li>
                   </ul>
                 </div>
-                <div className={style.fats}>
+                <div className={style.generalInformationBlock__fats}>
                   <h4>Жиры</h4>
                   <ul>
                     <li>Рост клеток и заживление ран</li>
@@ -58,7 +58,7 @@ export function GeneralInformationBlock() {
               </div>
             </div>
           </div>
-          <div className={style.imageContainer}>
+          <div className={style.generalInformationBlock__imageContainer}>
             <Image
               src="/image/dish-4.png"
               width={950}

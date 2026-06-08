@@ -1,10 +1,10 @@
 import style from "./MisconceptionsBlock.module.scss"
 export function MisconceptionsBlock() {
   return (
-    <div className={style.wrapper}>
+    <div className={style.misconceptionsBlock}>
       <h3>Заблуждения о правильном питании</h3>
-      <div className={style.content}>
-        <div className={style.myth}>
+      <div className={style.misconceptionsBlock__content}>
+        <div className={style.misconceptionsBlock__myth}>
           <h4>Мифы</h4>
           <ul>
             <li>Пропуск приёма пищи помогает похудеть</li>
@@ -17,7 +17,7 @@ export function MisconceptionsBlock() {
             <li>Витамины в капсулах заменят полноценное питание</li>
           </ul>
         </div>
-        <div className={style.fact}>
+        <div className={style.misconceptionsBlock__fact}>
           <h4>Факты</h4>
           <ul>
             <li>

@@ -1,4 +1,4 @@
-.wrapper {
+.recipesDishCard {
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -8,7 +8,7 @@
     background: var(--color-backgroundRecipe-hover);
   }
 
-  .imageBlock {
+  &__imageBlock {
     min-height: 310px;
     border-radius: 20px;
 
@@ -26,7 +26,7 @@
     }
   }
 
-  .title {
+  &__title {
     flex: 1 1 auto;
 
     font-size: var(--fs-lg);
@@ -43,7 +43,7 @@
       text-overflow: clip;
     }
   }
-  .calorieContent {
+  &__calorieContent {
     flex: 0;
     background: var(--color-gradient);
 

@@ -54,7 +54,7 @@ export function FilterBlock({
           open[filterKey as FilterKey] ? style.open : ""
         }`}
       >
-        <div className={style.inner}>
+        <div className={style.panel__inner}>
           {options.map((opt) => {
             return (
               <div
@@ -63,9 +63,9 @@ export function FilterBlock({
                 onClick={() => handleFilterChange(filterKey, opt.value)}
               >
                 <div
-                  className={`${style.customRadio} ${
+                  className={`${style.panel__customRadio} ${
                     checked[filterKey as FilterKey] === opt.value
-                      ? style.selected
+                      ? style.panel__selected
                       : ""
                   }`}
                   id={opt.value}

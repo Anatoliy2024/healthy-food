@@ -19,7 +19,7 @@
   }
 }
 
-.wrapper {
+.misconceptionsBlock {
   max-width: 1216px;
   margin: 0 auto;
   padding-bottom: clamp(50px, 5vw, 110px);
@@ -27,7 +27,7 @@
     font-size: var(--fs-xsl);
     padding-bottom: clamp(40px, 3vw, 70px);
   }
-  .content {
+  &__content {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -47,20 +47,20 @@
         padding-bottom: 20px;
       }
     }
-    .myth {
-      border: 1px solid black;
-      ul {
-        @include flex-block;
-      }
+  }
+  &__myth {
+    border: 1px solid black;
+    ul {
+      @include flex-block;
     }
-    .fact {
-      color: white;
-      background: var(--color-gradient-3);
-      ul {
-        @include flex-block;
-        li::before {
-          background: #bcff58;
-        }
+  }
+  &__fact {
+    color: white;
+    background: var(--color-gradient-3);
+    ul {
+      @include flex-block;
+      li::before {
+        background: #bcff58;
       }
     }
   }

@@ -20,7 +20,7 @@
   transition: grid-template-rows 0.35s ease;
   padding-bottom: 16px;
 
-  .inner {
+  &__inner {
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -39,21 +39,24 @@
         background: var(--color-backgroundRecipe-hover);
       }
     }
-    .customRadio {
-      width: 20px;
-      height: 20px;
-      border-radius: 20px;
+  }
+  &__customRadio {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
 
-      border: 2px solid transparent;
+    border: 2px solid transparent;
 
-      background: linear-gradient(white, white) padding-box, black border-box;
-    }
-    .selected {
-      border: 5px solid transparent;
+    background:
+      linear-gradient(white, white) padding-box,
+      black border-box;
+  }
+  &__selected {
+    border: 5px solid transparent;
 
-      background: linear-gradient(white, white) padding-box,
-        var(--color-gradient) border-box;
-    }
+    background:
+      linear-gradient(white, white) padding-box,
+      var(--color-gradient) border-box;
   }
 }
 .open {

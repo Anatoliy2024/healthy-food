@@ -2,9 +2,9 @@ import Image from "next/image"
 import style from "./TelegramChatBlock.module.scss"
 export function TelegramChatBlock() {
   return (
-    <div className={style.wrapper}>
-      <div className={style.container}>
-        <div className={style.textBlock}>
+    <div className={style.telegramChatBlock}>
+      <div className={style.telegramChatBlock__container}>
+        <div className={style.telegramChatBlock__textBlock}>
           <h4>Телеграмм чат</h4>
           <div>
             Получайте ценные знания напрямую от экспертов и находите
@@ -13,7 +13,7 @@ export function TelegramChatBlock() {
           </div>
           <button>Оформить подписку</button>
         </div>
-        <div className={style.imageBlock}>
+        <div className={style.telegramChatBlock__imageBlock}>
           <Image
             src={"/image/smile-girl.png"}
             width={927}

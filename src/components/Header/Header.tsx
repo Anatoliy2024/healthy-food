@@ -50,19 +50,22 @@ export function Header() {
   }, [menuOpen, showButton])
 
   return (
-    <div className={`${style.wrapper} ${scrolled ? style.headerBg : ""}`}>
-      <div className={style.container}>
+    <div className={`${style.header} ${scrolled ? style.headerBg : ""}`}>
+      <div className={style.header__container}>
         <LogoFull />
 
         {menuOpen && showButton && (
-          <div className={style.overlay} onClick={() => setMenuOpen(false)} />
+          <div
+            className={style.header__overlay}
+            onClick={() => setMenuOpen(false)}
+          />
         )}
         <NavbarList isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
         {showButton && (
           <div
             onClick={handleShowToggleMenu}
-            className={`${style.hamburger} ${
-              menuOpen ? style.hamburgerOpen : ""
+            className={`${style.header__hamburger} ${
+              menuOpen ? style.header__hamburgerOpen : ""
             }`}
           >
             <span></span>

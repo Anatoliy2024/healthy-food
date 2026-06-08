@@ -22,7 +22,7 @@ export const Paginator = ({
         return (
           <button
             key={page}
-            className={currentPage === page ? style.active : ""}
+            className={currentPage === page ? style.pagination__active : ""}
             onClick={() => onPageChange(page)}
           >
             {page}

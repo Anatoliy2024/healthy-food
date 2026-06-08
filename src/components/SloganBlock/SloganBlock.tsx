@@ -1,7 +1,7 @@
 import style from "./SloganBlock.module.scss"
 export function SloganBlock() {
   return (
-    <div className={style.wrapper}>
+    <div className={style.sloganBlock}>
       <div>
         начинай
         <br />

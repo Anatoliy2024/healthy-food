@@ -23,26 +23,26 @@ export function TemplatesDishBlock() {
   })
 
   return (
-    <div className={style.wrapper} id="templates">
-      <div className={style.container}>
+    <div className={style.templatesDishBlock} id="templates">
+      <div className={style.templatesDishBlock__container}>
         <h3>Готовые шаблоны меню</h3>
-        <div className={style.content}>
-          <ul className={style.data}>
+        <div className={style.templatesDishBlock__content}>
+          <ul className={style.templatesDishBlock__data}>
             {dates.map((el, i) => (
               <li
                 key={i}
                 onClick={() => setDayMenu(i)}
-                className={`${dayMenu === i ? style.dataActive : ""} noSelect`}
+                className={`${dayMenu === i ? style.templatesDishBlock__dataActive : ""} noSelect`}
               >
                 {el}
               </li>
             ))}
           </ul>
-          <ul className={style.menuDish}>
+          <ul className={style.templatesDishBlock__menuDish}>
             {menuDishBD[dayMenu].map((menu, i) => (
-              <li key={i} className={style.menuDishElem}>
+              <li key={i} className={style.templatesDishBlock__menuDishElem}>
                 <h4>{menu.ingestion}</h4>
-                <div className={style.dishElemContent}>
+                <div className={style.templatesDishBlock__dishElemContent}>
                   <div>{menu.nameDish}</div>
                   <div>{menu.kal}</div>
                   <div>{menu.nutrients}</div>

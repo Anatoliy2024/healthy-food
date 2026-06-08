@@ -8,14 +8,14 @@ import { TicToc } from "@/assets/svg/TicToc"
 import { Vk } from "@/assets/svg/Vk"
 export function Footer() {
   return (
-    <div className={style.wrapper}>
-      <div className={style.container}>
-        <div className={style.colOne}>
+    <div className={style.footer}>
+      <div className={style.footer__container}>
+        <div className={style.footer__colOne}>
           <LogoFull />
         </div>
-        <div className={style.colTwo}>
+        <div className={style.footer__colTwo}>
           {/* <NavbarList /> */}
-          <div className={style.socialMedia}>
+          <div className={style.footer__socialMedia}>
             <div>
               <Telegram />
             </div>
@@ -34,7 +34,9 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className={style.privetPolitic}>©2024 — tea room Privacy Policy</div>
+      <div className={style.footer__privetPolitic}>
+        ©2024 — tea room Privacy Policy
+      </div>
     </div>
   )
 }

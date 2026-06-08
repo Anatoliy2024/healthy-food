@@ -37,12 +37,12 @@ export function RecipesDishCard({ recipes }: { recipes: RecipeType }) {
 
   return (
     <div
-      className={`${style.wrapper} noSelect`}
+      className={`${style.recipesDishCard} noSelect`}
       title={recipes.title}
       onClick={() => openRecipe(recipes.id)}
     >
       <div
-        className={style.imageBlock}
+        className={style.recipesDishCard__imageBlock}
         style={{
           background: `url(${recipes.imageUrl}) center / cover no-repeat`,
         }}
@@ -54,8 +54,8 @@ export function RecipesDishCard({ recipes }: { recipes: RecipeType }) {
         </ul>
       </div>
 
-      <div className={style.title}>{recipes.title}</div>
-      <div className={style.calorieContent}>
+      <div className={style.recipesDishCard__title}>{recipes.title}</div>
+      <div className={style.recipesDishCard__calorieContent}>
         {recipes.calorieContent} ккал - 100 грамм
       </div>
     </div>

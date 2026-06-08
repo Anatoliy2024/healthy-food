@@ -7,7 +7,7 @@
   background: white;
 }
 
-.wrapper {
+.checkList {
   background: var(--color-gradient-3);
   color: white;
   padding: clamp(20px, 4vw, 90px) 10px clamp(20px, 5vw, 110px);
@@ -17,133 +17,134 @@
     font-size: var(--fs-xsl);
     font-family: var(--font-poppins), sans-serif;
   }
-  .container {
+  &__container {
     font-family: var(--font-inter), sans-serif;
     font-size: var(--fs-lg);
     max-width: 1214px;
     margin: 0 auto;
-    .content {
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  &__offer {
+    padding-top: 50px;
+
+    flex: 1 1 709px;
+    @media (max-width: 1300px) {
+      padding-bottom: 30px;
+    }
+    div:first-child {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-bottom: 30px;
+    }
+    div:last-child {
+      padding: 13px 10px;
+      border-radius: 12px;
+      background: white;
+      color: black;
+      max-width: 392px;
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1 1 auto;
+
+      width: 100%;
+
+      svg {
+        transition: 0.2s ease;
+      }
+      & > svg:hover {
+        cursor: pointer;
+        transform: scale(1.4);
+      }
+    }
+    input {
+      flex: 1 1 auto;
+      width: 100%;
+    }
+    input::placeholder {
+      color: #a0a0a0;
+      opacity: 1;
+    }
+  }
+
+  &__principles {
+    flex: 1 0 495px;
+    height: 288px;
+
+    position: relative;
+    @media (max-width: 1300px) {
+      flex: 1 1 495px;
+
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
       gap: 10px;
-      .offer {
-        padding-top: 50px;
+    }
+    div {
+      width: 185px;
+      height: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-        flex: 1 1 709px;
-        @media (max-width: 1300px) {
-          padding-bottom: 30px;
-        }
-        div:first-child {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          padding-bottom: 30px;
-        }
-        div:last-child {
-          padding: 13px 10px;
-          border-radius: 12px;
-          background: white;
-          color: black;
-          max-width: 392px;
-          display: flex;
-          gap: 10px;
-          justify-content: space-between;
-          align-items: center;
-          flex: 1 1 auto;
-
-          width: 100%;
-
-          svg {
-            transition: 0.2s ease;
-          }
-          & > svg:hover {
-            cursor: pointer;
-            transform: scale(1.4);
-          }
-        }
-        input {
-          flex: 1 1 auto;
-          width: 100%;
-        }
-        input::placeholder {
-          color: #a0a0a0;
-          opacity: 1;
-        }
+      border-radius: 12px;
+      position: absolute;
+      @media (max-width: 450px) {
+        width: 150px;
       }
-      .principles {
-        flex: 1 0 495px;
-        height: 288px;
+    }
 
-        position: relative;
-        @media (max-width: 1300px) {
-          flex: 1 1 495px;
-
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          height: auto;
-          gap: 10px;
-        }
-        div {
-          width: 185px;
-          height: 64px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          border-radius: 12px;
-          position: absolute;
-          @media (max-width: 450px) {
-            width: 150px;
-          }
-        }
-
-        div:nth-child(1) {
-          @include block-style-different;
-          transform: rotate(-41.59deg);
-          bottom: 112px;
-          left: 9px;
-        }
-        div:nth-child(2) {
-          @include block-style;
-          transform: rotate(19.94deg);
-          top: 51px;
-          left: 171px;
-        }
-        div:nth-child(3) {
-          @include block-style;
-          transform: rotate(12.37deg);
-          right: 65px;
-          bottom: 81px;
-        }
-        div:nth-child(4) {
-          @include block-style-different;
-          transform: rotate(48deg);
-          top: 59px;
-          right: -3px;
-        }
-        div:nth-child(5) {
-          @include block-style-different;
-          bottom: 0;
-          left: 0;
-        }
-        div:nth-child(6) {
-          @include block-style;
-          transform: rotate(25.96deg);
-          bottom: 47px;
-          left: 126px;
-        }
-        div:nth-child(7) {
-          @include block-style;
-          right: 0;
-          bottom: 0;
-        }
-        @media (max-width: 1300px) {
-          div:nth-child(-n + 7) {
-            transform: none;
-            position: static;
-          }
-        }
+    div:nth-child(1) {
+      @include block-style-different;
+      transform: rotate(-41.59deg);
+      bottom: 112px;
+      left: 9px;
+    }
+    div:nth-child(2) {
+      @include block-style;
+      transform: rotate(19.94deg);
+      top: 51px;
+      left: 171px;
+    }
+    div:nth-child(3) {
+      @include block-style;
+      transform: rotate(12.37deg);
+      right: 65px;
+      bottom: 81px;
+    }
+    div:nth-child(4) {
+      @include block-style-different;
+      transform: rotate(48deg);
+      top: 59px;
+      right: -3px;
+    }
+    div:nth-child(5) {
+      @include block-style-different;
+      bottom: 0;
+      left: 0;
+    }
+    div:nth-child(6) {
+      @include block-style;
+      transform: rotate(25.96deg);
+      bottom: 47px;
+      left: 126px;
+    }
+    div:nth-child(7) {
+      @include block-style;
+      right: 0;
+      bottom: 0;
+    }
+    @media (max-width: 1300px) {
+      div:nth-child(-n + 7) {
+        transform: none;
+        position: static;
       }
     }
   }

@@ -35,13 +35,13 @@ const BD = [
 ]
 export function AdvantageBlock() {
   return (
-    <div className={style.wrapper} id="advantage">
+    <div className={style.advantageBlock} id="advantage">
       <h3>
         Индивидуальный подход:
         <br /> Онлайн-поддержка тренера
       </h3>
 
-      <div className={style.content}>
+      <div className={style.advantageBlock__content}>
         {BD.map((el, index) => (
           <AdvantageElem
             title={el.title}
@@ -51,7 +51,7 @@ export function AdvantageBlock() {
           />
         ))}
 
-        <div className={style.subscribeElem}>
+        <div className={style.advantageBlock__subscribeElem}>
           <h4>Доступно с платной подпиской «оптимальный» и выше</h4>
           <button>Оформить подписку</button>
         </div>
@@ -73,7 +73,7 @@ function AdvantageElem({
     <div className={style.advantageElem}>
       <h4>{title}</h4>
       <div>{description}</div>
-      <div className={style.imageContainer}>
+      <div className={style.advantageElem__imageContainer}>
         <Image src={image} width={200} height={240} alt="image" />
       </div>
     </div>

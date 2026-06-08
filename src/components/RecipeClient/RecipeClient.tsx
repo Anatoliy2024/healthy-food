@@ -22,17 +22,17 @@ export default function RecipeClient() {
   }
   return (
     <InnerApp>
-      <div className={style.wrapper}>
+      <div className={style.recipeClient}>
         <div
-          className={`${style.backButton} noSelect`}
+          className={`${style.recipeClient__backButton} noSelect`}
           onClick={() => goBack()}
         >
           <ArrowLeft />
           <div>Назад</div>
         </div>
         <h1>{recipeDish.title}</h1>
-        <div className={style.contentBlock}>
-          <div className={style.imageContainer}>
+        <div className={style.recipeClient__contentBlock}>
+          <div className={style.recipeClient__imageContainer}>
             <Image
               src={recipeDish.imageUrl}
               width={495}
@@ -41,8 +41,8 @@ export default function RecipeClient() {
             />
           </div>
 
-          <div className={style.textContainer}>
-            <div className={style.description}>
+          <div className={style.recipeClient__textContainer}>
+            <div className={style.recipeClient__description}>
               <div>
                 <div>{recipeDish.calorieContent} ккал- 100 грамм</div>
                 <ul>
@@ -53,7 +53,7 @@ export default function RecipeClient() {
               </div>
               <div>{recipeDish.description}</div>
             </div>
-            <div className={style.ingredients}>
+            <div className={style.recipeClient__ingredients}>
               <h2>Ингридиенты</h2>
               <ul>
                 {recipeDish.ingredients?.map((ingredient, index) => (
@@ -61,7 +61,7 @@ export default function RecipeClient() {
                 ))}
               </ul>
             </div>
-            <div className={style.recipe}>
+            <div className={style.recipeClient__recipe}>
               <h2>Рецепт</h2>
               <div>
                 <h3>{recipeDish.recipe[0].stageName}</h3>
@@ -82,7 +82,7 @@ export default function RecipeClient() {
                 </div>
               )}
             </div>
-            <div className={style.advice}>
+            <div className={style.recipeClient__advice}>
               <div>
                 <div>{recipeDish.advice.temperature}</div>
                 <div>{recipeDish.advice.time}</div>

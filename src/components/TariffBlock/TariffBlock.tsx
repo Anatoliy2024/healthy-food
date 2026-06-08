@@ -13,9 +13,9 @@ const BD = [
 ]
 export function TariffBlock() {
   return (
-    <div className={style.wrapper}>
+    <div className={style.tariffBlock}>
       <h3>Тарифы</h3>
-      <div className={style.content}>
+      <div className={style.tariffBlock__content}>
         <TrafficElem title="Базовый" price="1299P" styleElem="basic" />
         <TrafficElem
           title="Премиум"
@@ -42,15 +42,17 @@ function TrafficElem({
 }) {
   return (
     <div
-      className={`${style.col} 
-      ${styleElem === "special2" ? style.specialTwo : ""}
-      ${styleElem === "special1" ? style.specialOne : ""}
+      className={`${style.tariffBlock__item} 
+      ${styleElem === "special2" ? style.tariffBlock__specialTwo : ""}
+      ${styleElem === "special1" ? style.tariffBlock__specialOne : ""}
       `}
     >
       <h4>{title}</h4>
-      <div className={style.price}>
+      <div className={style.tariffBlock__price}>
         {price}
-        {fullPrice && <div className={style.fullPrice}>{fullPrice}</div>}
+        {fullPrice && (
+          <div className={style.tariffBlock__fullPrice}>{fullPrice}</div>
+        )}
       </div>
 
       <ul>

@@ -1,4 +1,4 @@
-.wrapper {
+.sloganBlockTwo {
   background: url("/image/dish-10.png") no-repeat;
   background-position: center;
   margin-bottom: clamp(50px, 5vw, 110px);
@@ -7,7 +7,7 @@
     background-position: left;
   }
 
-  .container {
+  &__container {
     padding: clamp(40px, 13vw, 252px) 0;
 
     max-width: 1216px;

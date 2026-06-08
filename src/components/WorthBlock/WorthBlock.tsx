@@ -2,8 +2,8 @@ import Image from "next/image"
 import style from "./WorthBlock.module.scss"
 export function WorthBlock() {
   return (
-    <div className={style.wrapper} id="worth">
-      <div className={style.textBlock}>
+    <div className={style.worthBlock} id="worth">
+      <div className={style.worthBlock__textBlock}>
         <h3>Наши ценности и философия</h3>
         <p>
           Мы верим, что здоровый образ жизни — это не ограничения, а свобода
@@ -21,7 +21,7 @@ export function WorthBlock() {
           <li>Уверенность</li>
         </ul>
       </div>
-      <div className={style.imageBlock}>
+      <div className={style.worthBlock__imageBlock}>
         <Image
           src="/image/smile-girl-2.png"
           width={598}
